@@ -1,8 +1,95 @@
 # Changelog
 
-## 14.4.2 (2024-06-12)
+## 15.0.3 (2024-10-14)
 
-* [bitnami/rabbitmq] Align ulimitNofiles default value on containerd runc runtime default ulimit -n value ([#27052](https://github.com/bitnami/charts/pull/27052))
+* [bitnami/rabbitmq] Use common password/secrets manager to handle credentials ([#29879](https://github.com/bitnami/charts/pull/29879))
+
+## <small>15.0.2 (2024-10-07)</small>
+
+* [Bitnami/rabbitmq] - Fix duplicate key issue with Helm/FluxCD integration (#29780) ([cea9e6c](https://github.com/bitnami/charts/commit/cea9e6c9ea4b97b5ec48c5156d8d6c9fcd1ded13)), closes [#29780](https://github.com/bitnami/charts/issues/29780)
+
+## <small>15.0.1 (2024-09-25)</small>
+
+* [bitnami/rabbitmq] docs: :memo: Add upgrade notes for version 15.x.x ([012685d](https://github.com/bitnami/charts/commit/012685db9831eefe1a77be9122fbcdf5933198a1))
+* [bitnami/rabbitmq] Release 15.0.1 (#29600) ([f0bcc5c](https://github.com/bitnami/charts/commit/f0bcc5cb258b5329bcb6cacd998d4f4170d3b06a)), closes [#29600](https://github.com/bitnami/charts/issues/29600)
+
+## 15.0.0 (2024-09-20)
+
+* [bitnami/rabbitmq] Release 15.0.0 (#29555) ([595df29](https://github.com/bitnami/charts/commit/595df29e55c616de44a5f0794738bf7520e6eb58)), closes [#29555](https://github.com/bitnami/charts/issues/29555)
+
+## 14.7.0 (2024-09-12)
+
+* [bitnami/rabbitmq] Breaking out RabbitMQ metrics endpoints to configure separately (#28891) ([3b9cfe9](https://github.com/bitnami/charts/commit/3b9cfe99e23c485ea95bbeb128dc44961374d434)), closes [#28891](https://github.com/bitnami/charts/issues/28891)
+
+## <small>14.6.10 (2024-09-11)</small>
+
+* [bitnami/rabbitmq] Allow rendering resources values (#29347) ([7479317](https://github.com/bitnami/charts/commit/747931744d2242abe11ff29ea8f499ed292e731a)), closes [#29347](https://github.com/bitnami/charts/issues/29347)
+
+## <small>14.6.9 (2024-08-28)</small>
+
+* [bitnami/rabbitmq] Release 14.6.9 (#29092) ([711e2f7](https://github.com/bitnami/charts/commit/711e2f720d92e936b9a67bbdc269d57c33a9dca6)), closes [#29092](https://github.com/bitnami/charts/issues/29092)
+
+## <small>14.6.8 (2024-08-28)</small>
+
+* [bitnami/rabbitmq] Improve Ginkgo test (#29082) ([778a269](https://github.com/bitnami/charts/commit/778a269c23fd9e6534c3c15e85f016c38f498e81)), closes [#29082](https://github.com/bitnami/charts/issues/29082)
+
+## <small>14.6.7 (2024-08-26)</small>
+
+* [bitnami/rabbitmq] Release 14.6.7 (#29018) ([8eb9085](https://github.com/bitnami/charts/commit/8eb9085b47699e839bae9f0238a775c1d0b0dfa5)), closes [#29018](https://github.com/bitnami/charts/issues/29018)
+
+## <small>14.6.6 (2024-08-08)</small>
+
+* [bitnami/rabbitmq] Fix rabbitmq pods not being restarted after changing init scripts (#27900) ([95148a9](https://github.com/bitnami/charts/commit/95148a9ae1363f9da6415b64085aadfd8add1413)), closes [#27900](https://github.com/bitnami/charts/issues/27900)
+
+## <small>14.6.5 (2024-07-25)</small>
+
+* [bitnami/rabbitmq] Release 14.6.5 (#28473) ([40abb28](https://github.com/bitnami/charts/commit/40abb284adcd42c0c27190899e9e3a115dbf46e8)), closes [#28473](https://github.com/bitnami/charts/issues/28473)
+
+## <small>14.6.4 (2024-07-24)</small>
+
+* [bitnami/rabbitmq] Release 14.6.4 (#28361) ([ab8d156](https://github.com/bitnami/charts/commit/ab8d1562d3da46daeca8f0a70119b57aa5f402c5)), closes [#28361](https://github.com/bitnami/charts/issues/28361)
+
+## <small>14.6.3 (2024-07-23)</small>
+
+* [bitnami/rabbitmq] Release 14.6.3 (#28204) ([5a213c4](https://github.com/bitnami/charts/commit/5a213c4352403949d91fb28f30361bb676121dc3)), closes [#28204](https://github.com/bitnami/charts/issues/28204)
+
+## <small>14.6.2 (2024-07-22)</small>
+
+* [bitnami/rabbitmq] Release 14.6.2 (#28192) ([69ced0b](https://github.com/bitnami/charts/commit/69ced0b8f41f3a3ebeeb595df864880a79cbdff2)), closes [#28192](https://github.com/bitnami/charts/issues/28192)
+
+## <small>14.6.1 (2024-07-18)</small>
+
+* [bitnami/rabbitmq] Global StorageClass as default value (#28087) ([a4143c5](https://github.com/bitnami/charts/commit/a4143c5e397df6a5124381f7531d2d508f526221)), closes [#28087](https://github.com/bitnami/charts/issues/28087)
+
+## 14.6.0 (2024-07-17)
+
+* [bitnami/rabbitmq] make queue_master_locator configurable (#27990) ([7266748](https://github.com/bitnami/charts/commit/726674875655c7f90ccd17370950c858f951a96a)), closes [#27990](https://github.com/bitnami/charts/issues/27990)
+
+## 14.5.0 (2024-07-09)
+
+* [bitnami/rabbitmq] Replace extraPorts with extraPortsHeadless in headless service (#27853) ([b205f7a](https://github.com/bitnami/charts/commit/b205f7a39c528e0fe365568f955c25c460649c4f)), closes [#27853](https://github.com/bitnami/charts/issues/27853)
+
+## <small>14.4.6 (2024-07-03)</small>
+
+* [bitnami/rabbitmq] Release 14.4.6 (#27739) ([891935d](https://github.com/bitnami/charts/commit/891935dae482369fc75a9be9cdf13e9a148fdb3f)), closes [#27739](https://github.com/bitnami/charts/issues/27739)
+
+## <small>14.4.5 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/rabbitmq] Release 14.4.5 (#27713) ([c54e941](https://github.com/bitnami/charts/commit/c54e941e790295203771c7574c907c72a00aef80)), closes [#27713](https://github.com/bitnami/charts/issues/27713)
+
+## <small>14.4.4 (2024-06-18)</small>
+
+* [bitnami/rabbitmq] Release 14.4.4 (#27409) ([e809d66](https://github.com/bitnami/charts/commit/e809d66db6e5bbd2d90fdb7fce9b67d2fb9cf64d)), closes [#27409](https://github.com/bitnami/charts/issues/27409)
+
+## <small>14.4.3 (2024-06-17)</small>
+
+* [bitnami/rabbitmq] Release 14.4.3 (#27276) ([7fc3346](https://github.com/bitnami/charts/commit/7fc3346f8835f684a1e87c763e9f37c69834eba2)), closes [#27276](https://github.com/bitnami/charts/issues/27276)
+
+## <small>14.4.2 (2024-06-13)</small>
+
+* [bitnami/rabbitmq] Align ulimitNofiles default value on containerd runc runtime default ulimit -n va ([34a4923](https://github.com/bitnami/charts/commit/34a4923799d19456818466a6ca3f42b207071868)), closes [#27052](https://github.com/bitnami/charts/issues/27052)
+* RabbitMQ: explain how to safely avoid a deployment deadlock (#25931) ([3117b57](https://github.com/bitnami/charts/commit/3117b573147401387321a2a0e1f587978cef0ed2)), closes [#25931](https://github.com/bitnami/charts/issues/25931)
 
 ## <small>14.4.1 (2024-06-06)</small>
 

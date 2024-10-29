@@ -1,8 +1,69 @@
 # Changelog
 
-## 22.2.6 (2024-06-10)
+## 24.0.0 (2024-10-08)
 
-* [bitnami/moodle] Release 22.2.6 ([#27065](https://github.com/bitnami/charts/pull/27065))
+* [bitnami/moodle] Release 24.0.0 ([#29813](https://github.com/bitnami/charts/pull/29813))
+
+## <small>23.0.8 (2024-10-07)</small>
+
+* [bitnami/moodle] Release 23.0.8 (#29791) ([1cd63b4](https://github.com/bitnami/charts/commit/1cd63b45109343ffedc6289e7a030e9a3d1ba63d)), closes [#29791](https://github.com/bitnami/charts/issues/29791)
+
+## <small>23.0.7 (2024-09-19)</small>
+
+* [bitnami/moodle] Release 23.0.7 (#29521) ([8f12839](https://github.com/bitnami/charts/commit/8f128395fc07f7aefdd1a27ef96e064e8546ed53)), closes [#29521](https://github.com/bitnami/charts/issues/29521)
+
+## <small>23.0.6 (2024-09-02)</small>
+
+* [bitnami/moodle] Release 23.0.6 (#29146) ([53d9a60](https://github.com/bitnami/charts/commit/53d9a60fcffa8446cca173aa4d5f26ca725fa261)), closes [#29146](https://github.com/bitnami/charts/issues/29146)
+
+## <small>23.0.5 (2024-08-23)</small>
+
+* [bitnami/moodle] Release 23.0.5 (#28985) ([1bcda99](https://github.com/bitnami/charts/commit/1bcda9901d2d25be9a87ab2b0fd92ff1cae2da3b)), closes [#28985](https://github.com/bitnami/charts/issues/28985)
+
+## <small>23.0.4 (2024-08-12)</small>
+
+* [bitnami/moodle] Release 23.0.4 (#28829) ([fbc3628](https://github.com/bitnami/charts/commit/fbc362830813dfa719cf384f4fcef694a8f44acd)), closes [#28829](https://github.com/bitnami/charts/issues/28829)
+
+## <small>23.0.3 (2024-07-25)</small>
+
+* [bitnami/moodle] Release 23.0.3 (#28481) ([77d4a8a](https://github.com/bitnami/charts/commit/77d4a8a5d2d520b988c9285c14a114a729971a0e)), closes [#28481](https://github.com/bitnami/charts/issues/28481)
+
+## <small>23.0.2 (2024-07-24)</small>
+
+* [bitnami/moodle] Release 23.0.2 (#28326) ([d34f453](https://github.com/bitnami/charts/commit/d34f4534561dcdf2b71fadfe6293b40ff7dc5ca2)), closes [#28326](https://github.com/bitnami/charts/issues/28326)
+
+## <small>23.0.1 (2024-07-18)</small>
+
+* [bitnami/moodle] Global StorageClass as default value (#28063) ([486e76a](https://github.com/bitnami/charts/commit/486e76ac4581cbd1f64f40407e5427b49b6ca452)), closes [#28063](https://github.com/bitnami/charts/issues/28063)
+
+## 23.0.0 (2024-07-13)
+
+* [bitnami/moodle] chore!: :arrow_up: :boom: Update mariadb to 11.4 (#27925) ([fb35951](https://github.com/bitnami/charts/commit/fb35951a5dee0e14def01cb9d7113fc5f8764728)), closes [#27925](https://github.com/bitnami/charts/issues/27925)
+
+## <small>22.2.11 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/moodle] Release 22.2.11 (#27702) ([85b4c78](https://github.com/bitnami/charts/commit/85b4c78eb0321af711b6a5f463af34fe1f47fc16)), closes [#27702](https://github.com/bitnami/charts/issues/27702)
+
+## <small>22.2.10 (2024-06-24)</small>
+
+* [bitnami/moodle] Release 22.2.10 (#27516) ([9332734](https://github.com/bitnami/charts/commit/933273476efc9e5f5b66eb7a98f0da684173ec57)), closes [#27516](https://github.com/bitnami/charts/issues/27516)
+
+## <small>22.2.9 (2024-06-18)</small>
+
+* [bitnami/moodle] Release 22.2.9 (#27384) ([a6c9335](https://github.com/bitnami/charts/commit/a6c933586984cf79a5407d9d67706c7015e86798)), closes [#27384](https://github.com/bitnami/charts/issues/27384)
+
+## <small>22.2.8 (2024-06-17)</small>
+
+* [bitnami/moodle] Release 22.2.8 (#27282) ([0d3ad94](https://github.com/bitnami/charts/commit/0d3ad94e673dcbb994678741d74426340fc654a6)), closes [#27282](https://github.com/bitnami/charts/issues/27282)
+
+## <small>22.2.7 (2024-06-14)</small>
+
+* [bitnami/moodle] Release 22.2.7 (#27164) ([59bb8d4](https://github.com/bitnami/charts/commit/59bb8d451d1318d2825a90d133a53e910851d58e)), closes [#27164](https://github.com/bitnami/charts/issues/27164)
+
+## <small>22.2.6 (2024-06-10)</small>
+
+* [bitnami/moodle] Release 22.2.6 (#27065) ([eb7d110](https://github.com/bitnami/charts/commit/eb7d1103f15bf6f756764e682c1e2bd739ce2bdf)), closes [#27065](https://github.com/bitnami/charts/issues/27065)
 
 ## <small>22.2.5 (2024-06-07)</small>
 

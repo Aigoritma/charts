@@ -1,8 +1,121 @@
 # Changelog
 
-## 21.2.3 (2024-06-12)
+## 21.3.22 (2024-10-17)
 
-* [bitnami/elasticsearch] Release 21.2.3 ([#27133](https://github.com/bitnami/charts/pull/27133))
+* [bitnami/elasticsearch] Release 21.3.22 ([#29972](https://github.com/bitnami/charts/pull/29972))
+
+## <small>21.3.21 (2024-10-08)</small>
+
+* [bitnami/elasticsearch] Release 21.3.21 (#29832) ([104e9a7](https://github.com/bitnami/charts/commit/104e9a736297e7701970bec9813246d703026d3e)), closes [#29832](https://github.com/bitnami/charts/issues/29832)
+
+## <small>21.3.20 (2024-10-03)</small>
+
+* [bitnami/elasticsearch] Release 21.3.20 (#29765) ([a4ae3dc](https://github.com/bitnami/charts/commit/a4ae3dc6a83bce166b670e2bb3732cfa03c07b70)), closes [#29765](https://github.com/bitnami/charts/issues/29765)
+
+## <small>21.3.19 (2024-10-03)</small>
+
+* [bitnami/elasticsearch] Release 21.3.19 (#29764) ([8af879a](https://github.com/bitnami/charts/commit/8af879a0b69f5ed056fbfe63ed1f26eb4aff5d0d)), closes [#29764](https://github.com/bitnami/charts/issues/29764)
+
+## <small>21.3.18 (2024-09-26)</small>
+
+* [bitnami/elasticsearch] Release 21.3.18 (#29634) ([3ae31b7](https://github.com/bitnami/charts/commit/3ae31b7ab6059661bc799f50ea9cdcc0e2acc0db)), closes [#29634](https://github.com/bitnami/charts/issues/29634)
+
+## <small>21.3.17 (2024-09-17)</small>
+
+* [bitnami/elasticsearch] test: :white_check_mark: Improve reliability of ginkgo tests (#29465) ([958ed7f](https://github.com/bitnami/charts/commit/958ed7f0d11d5d91f63948aa050f813f32903f76)), closes [#29465](https://github.com/bitnami/charts/issues/29465)
+
+## <small>21.3.16 (2024-09-12)</small>
+
+* [bitnami/elasticsearch] fix: add apiVersion and kind to volumeClaimTemplates (#29362) ([cf547d6](https://github.com/bitnami/charts/commit/cf547d6743e7db4e771ff1d7d6393c5f70a63799)), closes [#29362](https://github.com/bitnami/charts/issues/29362)
+
+## <small>21.3.15 (2024-09-09)</small>
+
+* [bitnami/elasticsearch] Release 21.3.15 (#29303) ([092082a](https://github.com/bitnami/charts/commit/092082a307547a2fcf7acc00c7ae48a1a3b53aa4)), closes [#29303](https://github.com/bitnami/charts/issues/29303)
+
+## <small>21.3.14 (2024-09-09)</small>
+
+* [bitnami/elasticsearch] Use containerSecurityContext on the copy-tls-verificates initContainer (#291 ([cbcd9ae](https://github.com/bitnami/charts/commit/cbcd9ae580b30a6060861bb4f2170d3d0ba55f36)), closes [#29193](https://github.com/bitnami/charts/issues/29193) [#29179](https://github.com/bitnami/charts/issues/29179)
+
+## <small>21.3.13 (2024-09-07)</small>
+
+* [bitnami/elasticsearch] Release 21.3.13 (#29296) ([10d241e](https://github.com/bitnami/charts/commit/10d241e9e914849a78ccc5ab35e802ecce82a05e)), closes [#29296](https://github.com/bitnami/charts/issues/29296)
+
+## <small>21.3.12 (2024-09-05)</small>
+
+* [bitnami/elasticsearch] Release 21.3.12 (#29232) ([a27dd73](https://github.com/bitnami/charts/commit/a27dd73f9f15e476c66f67ec99de740bc73ead7b)), closes [#29232](https://github.com/bitnami/charts/issues/29232)
+
+## <small>21.3.11 (2024-09-04)</small>
+
+* [bitnami/elasticsearch:21.3.10] Unable to copy tls certificates when sysctlImage is disabled  (#2918 ([f3e72bb](https://github.com/bitnami/charts/commit/f3e72bbe4fd61a2c1507e3a1645dc2445943d5b8)), closes [#29189](https://github.com/bitnami/charts/issues/29189)
+
+## <small>21.3.10 (2024-08-29)</small>
+
+* [bitnami/elasticsearch]fix: Bump version (#29105) ([094744e](https://github.com/bitnami/charts/commit/094744eba59bb5340d219ee5015b4234f09dbdff)), closes [#29105](https://github.com/bitnami/charts/issues/29105)
+
+## <small>21.3.9 (2024-08-28)</small>
+
+* [bitnami/elasticsearch] fix: Remove hardcoded image for copy-tls-certificates (#29083) ([6814398](https://github.com/bitnami/charts/commit/6814398ed4408b68322d4cd5d292392a3173fbb2)), closes [#29083](https://github.com/bitnami/charts/issues/29083)
+
+## <small>21.3.8 (2024-08-13)</small>
+
+* [bitnami/elasticsearch] Release 21.3.8 (#28864) ([3f417b0](https://github.com/bitnami/charts/commit/3f417b0ef543904d9cb8b02aa6a899c6eb8a7343)), closes [#28864](https://github.com/bitnami/charts/issues/28864)
+
+## <small>21.3.7 (2024-08-13)</small>
+
+* [bitnami/elasticsearch] Release 21.3.7 (#28863) ([5d0202f](https://github.com/bitnami/charts/commit/5d0202fb38d904ff23f34c03bfca5438e212faf1)), closes [#28863](https://github.com/bitnami/charts/issues/28863)
+
+## <small>21.3.6 (2024-07-25)</small>
+
+* [bitnami/elasticsearch] Release 21.3.6 (#28412) ([6a680b1](https://github.com/bitnami/charts/commit/6a680b10675daddf6fe955a792e3eddabf6698b1)), closes [#28412](https://github.com/bitnami/charts/issues/28412)
+
+## <small>21.3.5 (2024-07-24)</small>
+
+* [bitnami/elasticsearch] Release 21.3.5 (#28288) ([f899c65](https://github.com/bitnami/charts/commit/f899c65084282e2e18a7dff3e4b52cf98163a9b0)), closes [#28288](https://github.com/bitnami/charts/issues/28288)
+
+## <small>21.3.4 (2024-07-23)</small>
+
+* [bitnami/elasticsearch] Release 21.3.4 (#28238) ([8c06742](https://github.com/bitnami/charts/commit/8c06742db35862ae3531880d57e758ab233afffc)), closes [#28238](https://github.com/bitnami/charts/issues/28238)
+
+## <small>21.3.3 (2024-07-23)</small>
+
+* [bitnami/elasticsearch] fix: Unable to run the image using the root user (#27491) ([5482b11](https://github.com/bitnami/charts/commit/5482b114975e9d120786515f2473cc339806b71a)), closes [#27491](https://github.com/bitnami/charts/issues/27491)
+
+## <small>21.3.2 (2024-07-18)</small>
+
+* [bitnami/elasticsearch] Global StorageClass as default value (#28015) ([5b0fd56](https://github.com/bitnami/charts/commit/5b0fd56ff9b697a0a4cba205df9c869fb2075fa9)), closes [#28015](https://github.com/bitnami/charts/issues/28015)
+
+## <small>21.3.1 (2024-07-11)</small>
+
+* [bitnami/elasticsearch] Release 21.3.1 (#27906) ([7a5c222](https://github.com/bitnami/charts/commit/7a5c222482334e274e8e21995a0e292407ba996e)), closes [#27906](https://github.com/bitnami/charts/issues/27906)
+
+## 21.3.0 (2024-07-11)
+
+* [bitnami/elasticsearch] add persistentVolumeClaimRetentionPolicy to statefulset for master and data  ([2c4b4f2](https://github.com/bitnami/charts/commit/2c4b4f22acb66a3bd6712935d713a2f0d84eee27)), closes [#27866](https://github.com/bitnami/charts/issues/27866)
+
+## <small>21.2.8 (2024-07-04)</small>
+
+* [bitnami/elasticsearch] Release 21.2.8 (#27801) ([65e86d5](https://github.com/bitnami/charts/commit/65e86d56be5f92775828354000a2195ad0431086)), closes [#27801](https://github.com/bitnami/charts/issues/27801)
+
+## <small>21.2.7 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/elasticsearch] Release 21.2.7 (#27688) ([95ad961](https://github.com/bitnami/charts/commit/95ad9610c1e1e633336e021123e81b86e9180aa9)), closes [#27688](https://github.com/bitnami/charts/issues/27688)
+
+## <small>21.2.6 (2024-06-24)</small>
+
+* [bitnami/elasticsearch] Fix ingress backend declaration name (#27149) ([a95a230](https://github.com/bitnami/charts/commit/a95a230e52a6c11803a7397c04209c55f0ff0417)), closes [#27149](https://github.com/bitnami/charts/issues/27149)
+
+## <small>21.2.5 (2024-06-18)</small>
+
+* [bitnami/elasticsearch] Release 21.2.5 (#27340) ([f1f3c46](https://github.com/bitnami/charts/commit/f1f3c46bc01faa198ecb624831a7a1aa8cf15bd4)), closes [#27340](https://github.com/bitnami/charts/issues/27340)
+
+## <small>21.2.4 (2024-06-17)</small>
+
+* [bitnami/elasticsearch] Release 21.2.4 (#27214) ([e0b70e8](https://github.com/bitnami/charts/commit/e0b70e835093d3bf8230f1974eb1bff4d2f1df3b)), closes [#27214](https://github.com/bitnami/charts/issues/27214)
+
+## <small>21.2.3 (2024-06-12)</small>
+
+* [bitnami/elasticsearch] Release 21.2.3 (#27133) ([9d5f6ea](https://github.com/bitnami/charts/commit/9d5f6ea656f3616f95decf058e46f6de393478f9)), closes [#27133](https://github.com/bitnami/charts/issues/27133)
 
 ## <small>21.2.2 (2024-06-12)</small>
 

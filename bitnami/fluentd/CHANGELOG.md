@@ -1,8 +1,50 @@
 # Changelog
 
-## 6.5.4 (2024-06-12)
+## 7.0.0 (2024-10-22)
 
-* [bitnami/fluentd] make initContainer fail if extra gems fail to install ([#27114](https://github.com/bitnami/charts/pull/27114))
+* [bitnami/fluentd] Major release 7.x.x ([#30031](https://github.com/bitnami/charts/pull/30031))
+
+## <small>6.5.13 (2024-09-26)</small>
+
+* [bitnami/fluentd] Release 6.5.13 (#29609) ([a2c9129](https://github.com/bitnami/charts/commit/a2c9129e34f88135b43534ce63066db9860f1872)), closes [#29609](https://github.com/bitnami/charts/issues/29609)
+
+## <small>6.5.12 (2024-08-19)</small>
+
+* [bitnami/fluentd] Release 6.5.12 (#28921) ([2387691](https://github.com/bitnami/charts/commit/2387691e2b09ebc2e19967123544255e9060ed6a)), closes [#28921](https://github.com/bitnami/charts/issues/28921)
+* docs: update README.md (#28797) ([82058a3](https://github.com/bitnami/charts/commit/82058a3792fb3ba078ebcaeb83b48b54a688489b)), closes [#28797](https://github.com/bitnami/charts/issues/28797)
+
+## <small>6.5.11 (2024-07-25)</small>
+
+* [bitnami/fluentd] Release 6.5.11 (#28407) ([faf110e](https://github.com/bitnami/charts/commit/faf110e259814f8c488df7dfea23dfad3371dfbc)), closes [#28407](https://github.com/bitnami/charts/issues/28407)
+
+## <small>6.5.10 (2024-07-24)</small>
+
+* [bitnami/fluentd] Release 6.5.10 (#28276) ([119de24](https://github.com/bitnami/charts/commit/119de24388e5e3b2d43ea07dbb6708c597b57253)), closes [#28276](https://github.com/bitnami/charts/issues/28276)
+
+## <small>6.5.9 (2024-07-24)</small>
+
+* [bitnami/fluentd] Release 6.5.9 (#28254) ([a263832](https://github.com/bitnami/charts/commit/a2638328cea667f5a53889b611705db551a77517)), closes [#28254](https://github.com/bitnami/charts/issues/28254)
+
+## <small>6.5.8 (2024-07-16)</small>
+
+* [bitnami/fluentd] Global StorageClass as default value (#28020) ([79df4a4](https://github.com/bitnami/charts/commit/79df4a43da2d9b1076c44cbd7fda282a683c00d6)), closes [#28020](https://github.com/bitnami/charts/issues/28020)
+
+## <small>6.5.7 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/fluentd] Release 6.5.7 (#27696) ([407cf4b](https://github.com/bitnami/charts/commit/407cf4b36770b3c4609043bca844c99af0292ed0)), closes [#27696](https://github.com/bitnami/charts/issues/27696)
+
+## <small>6.5.6 (2024-06-18)</small>
+
+* [bitnami/fluentd] Release 6.5.6 (#27345) ([0260981](https://github.com/bitnami/charts/commit/0260981a28117398b3485c6a711c6c0d4784be07)), closes [#27345](https://github.com/bitnami/charts/issues/27345)
+
+## <small>6.5.5 (2024-06-17)</small>
+
+* [bitnami/fluentd] Release 6.5.5 (#27219) ([e7b57b0](https://github.com/bitnami/charts/commit/e7b57b02d7e0f645bdb548190edd4577b83bd3a9)), closes [#27219](https://github.com/bitnami/charts/issues/27219)
+
+## <small>6.5.4 (2024-06-13)</small>
+
+* [bitnami/fluentd] make initContainer fail if extra gems fail to install (#27114) ([9b88f52](https://github.com/bitnami/charts/commit/9b88f527b1fcd478238daf26780c845acb94ce17)), closes [#27114](https://github.com/bitnami/charts/issues/27114)
 
 ## <small>6.5.3 (2024-06-06)</small>
 

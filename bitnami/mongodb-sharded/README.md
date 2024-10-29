@@ -14,7 +14,7 @@ Disclaimer: The respective trademarks mentioned in the offering are owned by the
 helm install my-release oci://registry-1.docker.io/bitnamicharts/mongodb-sharded
 ```
 
-Looking to use MongoDBreg; Sharded in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
+Looking to use MongoDBreg; Sharded in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## Introduction
 
@@ -55,7 +55,7 @@ Bitnami charts allow setting resource requests and limits for all containers ins
 
 To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcePreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
 
-### [Rolling VS Immutable tags](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-understand-rolling-tags-containers-index.html)
+### [Rolling VS Immutable tags](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html)
 
 It is strongly recommended to use immutable tags in a production environment. This ensures your deployment does not change automatically if the same tag is updated with a different image.
 
@@ -153,7 +153,8 @@ The Bitnami Kibana chart supports mounting extra volumes (either PVCs, secrets o
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`   |
 | `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`   |
-| `global.storageClass`                                 | Global storage class for dynamic provisioning                                                                                                                                                                                                                                                                                                                       | `""`   |
+| `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`   |
+| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`   |
 | `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto` |
 
 ### Common parameters
@@ -287,7 +288,9 @@ The Bitnami Kibana chart supports mounting extra volumes (either PVCs, secrets o
 | `configsvr.persistence.accessModes`                           | Use volume as ReadOnly or ReadWrite                                                                                                                                                                                                   | `["ReadWriteOnce"]`                                    |
 | `configsvr.persistence.size`                                  | PersistentVolumeClaim size                                                                                                                                                                                                            | `8Gi`                                                  |
 | `configsvr.persistence.annotations`                           | Persistent Volume annotations                                                                                                                                                                                                         | `{}`                                                   |
-| `configsvr.persistence.resourcePolicy`                        | Setting it to "keep" to avoid removing PVCs during a helm delete operation. Leaving it empty will delete PVCs after the chart deleted                                                                                                 | `""`                                                   |
+| `configsvr.persistentVolumeClaimRetentionPolicy.enabled`      | Enable Persistent volume retention policy for Config Server StatefulSet                                                                                                                                                               | `false`                                                |
+| `configsvr.persistentVolumeClaimRetentionPolicy.whenScaled`   | Volume retention behavior when the replica count of the StatefulSet is reduced                                                                                                                                                        | `Retain`                                               |
+| `configsvr.persistentVolumeClaimRetentionPolicy.whenDeleted`  | Volume retention behavior that applies when the StatefulSet is deleted                                                                                                                                                                | `Retain`                                               |
 | `configsvr.serviceAccount.create`                             | Specifies whether a ServiceAccount should be created for Config Server                                                                                                                                                                | `true`                                                 |
 | `configsvr.serviceAccount.name`                               | Name of a Service Account to be used by Config Server                                                                                                                                                                                 | `""`                                                   |
 | `configsvr.serviceAccount.annotations`                        | Additional Service Account annotations (evaluated as a template)                                                                                                                                                                      | `{}`                                                   |
@@ -517,16 +520,18 @@ The Bitnami Kibana chart supports mounting extra volumes (either PVCs, secrets o
 
 ### Shard configuration: Persistence parameters
 
-| Name                                  | Description                                                                                                                           | Value               |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| `shardsvr.persistence.enabled`        | Use a PVC to persist data                                                                                                             | `true`              |
-| `shardsvr.persistence.mountPath`      | The path the volume will be mounted at, useful when using different MongoDB&reg; images.                                              | `/bitnami/mongodb`  |
-| `shardsvr.persistence.subPath`        | Subdirectory of the volume to mount at (evaluated as a template)                                                                      | `""`                |
-| `shardsvr.persistence.storageClass`   | Storage class of backing PVC                                                                                                          | `""`                |
-| `shardsvr.persistence.accessModes`    | Use volume as ReadOnly or ReadWrite                                                                                                   | `["ReadWriteOnce"]` |
-| `shardsvr.persistence.size`           | PersistentVolumeClaim size                                                                                                            | `8Gi`               |
-| `shardsvr.persistence.annotations`    | Additional volume annotations                                                                                                         | `{}`                |
-| `shardsvr.persistence.resourcePolicy` | Setting it to "keep" to avoid removing PVCs during a helm delete operation. Leaving it empty will delete PVCs after the chart deleted | `""`                |
+| Name                                                        | Description                                                                              | Value               |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------- |
+| `shardsvr.persistence.enabled`                              | Use a PVC to persist data                                                                | `true`              |
+| `shardsvr.persistence.mountPath`                            | The path the volume will be mounted at, useful when using different MongoDB&reg; images. | `/bitnami/mongodb`  |
+| `shardsvr.persistence.subPath`                              | Subdirectory of the volume to mount at (evaluated as a template)                         | `""`                |
+| `shardsvr.persistence.storageClass`                         | Storage class of backing PVC                                                             | `""`                |
+| `shardsvr.persistence.accessModes`                          | Use volume as ReadOnly or ReadWrite                                                      | `["ReadWriteOnce"]` |
+| `shardsvr.persistence.size`                                 | PersistentVolumeClaim size                                                               | `8Gi`               |
+| `shardsvr.persistence.annotations`                          | Additional volume annotations                                                            | `{}`                |
+| `shardsvr.persistentVolumeClaimRetentionPolicy.enabled`     | Enable Persistent volume retention policy for Shard replicas StatefulSet                 | `false`             |
+| `shardsvr.persistentVolumeClaimRetentionPolicy.whenScaled`  | Volume retention behavior when the replica count of the StatefulSet is reduced           | `Retain`            |
+| `shardsvr.persistentVolumeClaimRetentionPolicy.whenDeleted` | Volume retention behavior that applies when the StatefulSet is deleted                   | `Retain`            |
 
 ### Shard configuration: Arbiter parameters
 
@@ -696,6 +701,10 @@ helm upgrade my-release oci://REGISTRY_NAME/REPOSITORY_NAME/mongodb-sharded --se
 > Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of Bitnami, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
 > Note: you need to substitute the placeholders [PASSWORD] and [auth.replicaSetKey] with the values obtained in the installation notes.
 
+### To 9.0.0
+
+To upgrade to MongoDB `8.0` from a `7.0` deployment, the `7.0` deployment must have `featureCompatibilityVersion` set to `7.0`. Please refer to the [official documentation](https://www.mongodb.com/docs/manual/release-notes/8.0/#upgrade-procedures).
+
 ### To 8.0.0
 
 This major bump changes the following security defaults:
@@ -760,7 +769,7 @@ This version introduces `bitnami/common`, a [library chart](https://helm.sh/docs
 
 #### Useful links
 
-- <https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-resolve-helm2-helm3-post-migration-issues-index.html>
+- <https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-resolve-helm2-helm3-post-migration-issues-index.html>
 - <https://helm.sh/docs/topics/v2_v3_migration/>
 - <https://helm.sh/blog/migrate-from-helm-v2-to-helm-v3/>
 

@@ -14,7 +14,7 @@ Trademarks: This software listing is packaged by Bitnami. The respective tradema
 helm install my-release oci://registry-1.docker.io/bitnamicharts/milvus
 ```
 
-Looking to use Milvus in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
+Looking to use Milvus in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## Introduction
 
@@ -52,7 +52,7 @@ Bitnami charts allow setting resource requests and limits for all containers ins
 
 To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcePreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
 
-### [Rolling VS Immutable tags](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-understand-rolling-tags-containers-index.html)
+### [Rolling VS Immutable tags](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html)
 
 It is strongly recommended to use immutable tags in a production environment. This ensures your deployment does not change automatically if the same tag is updated with a different image.
 
@@ -172,12 +172,12 @@ externalEtcd:
 
 ### External S3 support
 
-You may want to have mastodon connect to an external storage streaming rather than installing MiniIO(TM) inside your cluster. To achieve this, the chart allows you to specify credentials for an external storage streaming with the [`externalS3` parameter](#parameters). You should also disable the MinIO(TM) installation with the `minio.enabled` option. Here is an example:
+You may want to have Milvus connect to an external storage streaming rather than installing MiniIO(TM) inside your cluster. To achieve this, the chart allows you to specify credentials for an external storage streaming with the [`externalS3` parameter](#parameters). You should also disable the MinIO(TM) installation with the `minio.enabled` option. Here is an example:
 
 ```console
 minio.enabled=false
 externalS3.host=myexternalhost
-exterernalS3.accessKeyID=accesskey
+externalS3.accessKeyID=accesskey
 externalS3.accessKeySecret=secret
 ```
 
@@ -241,7 +241,7 @@ wrj2wDbCDCFmfqnSJ+dKI3vFLlEz44sAV8jX/kd4Y6ZTQhlLbYc=
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`   |
 | `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`   |
-| `global.storageClass`                                 | Global StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                        | `""`   |
+| `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`   |
 | `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto` |
 
 ### Common parameters
@@ -1725,20 +1725,22 @@ wrj2wDbCDCFmfqnSJ+dKI3vFLlEz44sAV8jX/kd4Y6ZTQhlLbYc=
 
 ### External S3 parameters
 
-| Name                                      | Description                                                        | Value           |
-| ----------------------------------------- | ------------------------------------------------------------------ | --------------- |
-| `externalS3.host`                         | External S3 host                                                   | `""`            |
-| `externalS3.port`                         | External S3 port number                                            | `443`           |
-| `externalS3.accessKeyID`                  | External S3 access key ID                                          | `""`            |
-| `externalS3.accessKeySecret`              | External S3 access key secret                                      | `""`            |
-| `externalS3.existingSecret`               | Name of an existing secret resource containing the S3 credentials  | `""`            |
-| `externalS3.existingSecretAccessKeyIDKey` | Name of an existing secret key containing the S3 access key ID     | `root-user`     |
-| `externalS3.existingSecretKeySecretKey`   | Name of an existing secret key containing the S3 access key secret | `root-password` |
-| `externalS3.protocol`                     | External S3 protocol                                               | `https`         |
-| `externalS3.bucket`                       | External S3 bucket                                                 | `milvus`        |
-| `externalS3.rootPath`                     | External S3 root path                                              | `file`          |
-| `externalS3.iamEndpoint`                  | External S3 IAM endpoint                                           | `""`            |
-| `externalS3.cloudProvider`                | External S3 cloud provider                                         | `""`            |
+| Name                                      | Description                                                                                       | Value           |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------- |
+| `externalS3.host`                         | External S3 host                                                                                  | `""`            |
+| `externalS3.port`                         | External S3 port number                                                                           | `443`           |
+| `externalS3.accessKeyID`                  | External S3 access key ID                                                                         | `""`            |
+| `externalS3.accessKeySecret`              | External S3 access key secret                                                                     | `""`            |
+| `externalS3.existingSecret`               | Name of an existing secret resource containing the S3 credentials                                 | `""`            |
+| `externalS3.existingSecretAccessKeyIDKey` | Name of an existing secret key containing the S3 access key ID                                    | `root-user`     |
+| `externalS3.existingSecretKeySecretKey`   | Name of an existing secret key containing the S3 access key secret                                | `root-password` |
+| `externalS3.bucket`                       | External S3 bucket                                                                                | `milvus`        |
+| `externalS3.rootPath`                     | External S3 root path                                                                             | `file`          |
+| `externalS3.iamEndpoint`                  | External S3 IAM endpoint                                                                          | `""`            |
+| `externalS3.cloudProvider`                | External S3 cloud provider                                                                        | `""`            |
+| `externalS3.tls.enabled`                  | Enable TLS for externalS3 client connections.                                                     | `false`         |
+| `externalS3.tls.existingSecret`           | Name of the existing secret containing the TLS certificates for externalS3 client communications. | `""`            |
+| `externalS3.tls.caCert`                   | The secret key from the existingSecret if 'caCert' key different from the default (ca.crt)        | `ca.crt`        |
 
 ### External Kafka parameters
 
@@ -1828,6 +1830,10 @@ helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/milvu
 Find more information about how to deal with common errors related to Bitnami's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
 
 ## Upgrading
+
+### To 9.0.0
+
+This major updates the Kafka subchart to its newest major, 30.0.0. For more information on this subchart's major, please refer to [Kafka upgrade notes](https://github.com/bitnami/charts/tree/main/bitnami/kafka#to-3000).
 
 ### To 8.0.0
 

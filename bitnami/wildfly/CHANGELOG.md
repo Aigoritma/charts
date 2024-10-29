@@ -1,8 +1,78 @@
 # Changelog
 
-## 20.2.5 (2024-06-10)
+## 22.0.1 (2024-10-26)
 
-* [bitnami/wildfly] Fix ingress annotations ([#25958](https://github.com/bitnami/charts/pull/25958))
+* [bitnami/wildfly] Release 22.0.1 ([#30093](https://github.com/bitnami/charts/pull/30093))
+
+## 22.0.0 (2024-10-24)
+
+* [bitnami/wildfly] Release 22.0.0 (#30071) ([e8c8adb](https://github.com/bitnami/charts/commit/e8c8adb0f5a3dc42e60fab1562cac3142bfc1a52)), closes [#30071](https://github.com/bitnami/charts/issues/30071)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>21.0.6 (2024-10-10)</small>
+
+* [bitnami/wildfly] fix annotations merging for management ingress (#29819) ([f8291f6](https://github.com/bitnami/charts/commit/f8291f6076a81d6950aa23a9b1490b8b442d2a81)), closes [#29819](https://github.com/bitnami/charts/issues/29819)
+
+## <small>21.0.5 (2024-09-17)</small>
+
+* [bitnami/wildfly] Release 21.0.5 (#29487) ([894aca0](https://github.com/bitnami/charts/commit/894aca0338ff3aa8f19f3ac5d9450d1973c70eb2)), closes [#29487](https://github.com/bitnami/charts/issues/29487)
+
+## <small>21.0.4 (2024-08-23)</small>
+
+* [bitnami/wildfly] Release 21.0.4 (#28986) ([54c40aa](https://github.com/bitnami/charts/commit/54c40aa2b3a1e62e6b3519b332d2fcd5b45bba1d)), closes [#28986](https://github.com/bitnami/charts/issues/28986)
+
+## <small>21.0.3 (2024-08-22)</small>
+
+* [bitnami/wildfly] Release 21.0.3 (#28983) ([9d7c1d1](https://github.com/bitnami/charts/commit/9d7c1d14ae6414e0567d336b0ccfb0b5b5b57335)), closes [#28983](https://github.com/bitnami/charts/issues/28983)
+
+## <small>21.0.2 (2024-08-09)</small>
+
+* [bitnami/wildfly] Release 21.0.2 (#28811) ([8eea5ed](https://github.com/bitnami/charts/commit/8eea5ed332b0e0c1c07d641acb337228acf9c6f4)), closes [#28811](https://github.com/bitnami/charts/issues/28811)
+
+## <small>21.0.1 (2024-08-07)</small>
+
+* [bitnami/wildfly] Release 21.0.1 (#28748) ([fae7b77](https://github.com/bitnami/charts/commit/fae7b773c31a84aa5876c40c04ffaafc38383207)), closes [#28748](https://github.com/bitnami/charts/issues/28748)
+
+## 21.0.0 (2024-08-06)
+
+* [bitnami/wildfly] Release 21.0.0 (#28696) ([afda09d](https://github.com/bitnami/charts/commit/afda09d6f76abbaaea5907e8b050adfb19f55cf0)), closes [#28696](https://github.com/bitnami/charts/issues/28696)
+
+## <small>20.2.13 (2024-07-25)</small>
+
+* [bitnami/wildfly] Release 20.2.13 (#28501) ([6f9863b](https://github.com/bitnami/charts/commit/6f9863b72e890951f6dac51ca5ba040a8cffa4a7)), closes [#28501](https://github.com/bitnami/charts/issues/28501)
+
+## <small>20.2.12 (2024-07-24)</small>
+
+* [bitnami/wildfly] Release 20.2.12 (#28383) ([4e885b1](https://github.com/bitnami/charts/commit/4e885b17c4738267aa5b16812c26d1de198e3094)), closes [#28383](https://github.com/bitnami/charts/issues/28383)
+
+## <small>20.2.11 (2024-07-17)</small>
+
+* [bitnami/wildfly] Release 20.2.11 (#28147) ([106681d](https://github.com/bitnami/charts/commit/106681da723acbe5d1ed850ed5e327aa1545a57b)), closes [#28147](https://github.com/bitnami/charts/issues/28147)
+
+## <small>20.2.10 (2024-07-17)</small>
+
+* [bitnami/wildfly] Release 20.2.10 (#28144) ([4351edb](https://github.com/bitnami/charts/commit/4351edb6e7fc8e55eb8ae4c2aa19d69b2189d38c)), closes [#28144](https://github.com/bitnami/charts/issues/28144)
+
+## <small>20.2.9 (2024-07-16)</small>
+
+* [bitnami/wildfly] Global StorageClass as default value (#28109) ([e16eb2e](https://github.com/bitnami/charts/commit/e16eb2e59072f78e10c18284fc2c87f02714ce3d)), closes [#28109](https://github.com/bitnami/charts/issues/28109)
+
+## <small>20.2.8 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/wildfly] Release 20.2.8 (#27726) ([17a30c5](https://github.com/bitnami/charts/commit/17a30c59552838abdb0b2d9862cb4b582f164d7b)), closes [#27726](https://github.com/bitnami/charts/issues/27726)
+
+## <small>20.2.7 (2024-06-18)</small>
+
+* [bitnami/wildfly] Release 20.2.7 (#27429) ([c302a62](https://github.com/bitnami/charts/commit/c302a62369223ff0b3e7e1e7b59667ae7e7d2823)), closes [#27429](https://github.com/bitnami/charts/issues/27429)
+
+## <small>20.2.6 (2024-06-17)</small>
+
+* [bitnami/wildfly] Release 20.2.6 (#27299) ([0f41f6c](https://github.com/bitnami/charts/commit/0f41f6cce112d02e557b25ba17da637ae03a5127)), closes [#27299](https://github.com/bitnami/charts/issues/27299)
+
+## <small>20.2.5 (2024-06-10)</small>
+
+* [bitnami/wildfly] Fix ingress annotations (#25958) ([87a5fcc](https://github.com/bitnami/charts/commit/87a5fcccafff14a82f58a06d6e37a5f9f5d2e43b)), closes [#25958](https://github.com/bitnami/charts/issues/25958)
 
 ## <small>20.2.4 (2024-06-06)</small>
 

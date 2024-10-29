@@ -14,7 +14,7 @@ Trademarks: This software listing is packaged by Bitnami. The respective tradema
 helm install my-release oci://registry-1.docker.io/bitnamicharts/nginx-ingress-controller
 ```
 
-Looking to use NGINX Ingress Controller in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
+Looking to use NGINX Ingress Controller in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## Introduction
 
@@ -51,7 +51,7 @@ Bitnami charts allow setting resource requests and limits for all containers ins
 
 To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcePreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
 
-### [Rolling VS Immutable tags](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-understand-rolling-tags-containers-index.html)
+### [Rolling VS Immutable tags](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html)
 
 It is strongly recommended to use immutable tags in a production environment. This ensures your deployment does not change automatically if the same tag is updated with a different image.
 
@@ -158,6 +158,7 @@ As an alternative, you can use of the preset configurations for pod affinity, po
 | `dhParam`                              | A base64ed Diffie-Hellman parameter                                                                                                                | `""`                                       |
 | `tcp`                                  | TCP service key:value pairs                                                                                                                        | `{}`                                       |
 | `udp`                                  | UDP service key:value pairs                                                                                                                        | `{}`                                       |
+| `svcPortNamesPrefix`                   | Prefix for TCP and UDP ports names in ingress controller service                                                                                   | `""`                                       |
 | `command`                              | Override default container command (useful when using custom images)                                                                               | `[]`                                       |
 | `args`                                 | Override default container args (useful when using custom images)                                                                                  | `[]`                                       |
 | `lifecycleHooks`                       | for the %%MAIN_CONTAINER_NAME%% container(s) to automate configuration before or after startup                                                     | `{}`                                       |
@@ -345,6 +346,7 @@ As an alternative, you can use of the preset configurations for pod affinity, po
 | `service.externalIPs`                   | Controller Service external IP addresses                                                                                               | `[]`           |
 | `service.ipFamilyPolicy`                | Controller Service ipFamilyPolicy (optional, cloud specific)                                                                           | `""`           |
 | `service.ipFamilies`                    | Controller Service ipFamilies (optional, cloud specific)                                                                               | `[]`           |
+| `service.loadBalancerClass`             | Load balancer class if service type is `LoadBalancer`                                                                                  | `""`           |
 | `service.loadBalancerIP`                | Kubernetes LoadBalancerIP to request for Controller (optional, cloud specific)                                                         | `""`           |
 | `service.loadBalancerSourceRanges`      | List of IP CIDRs allowed access to load balancer (if supported)                                                                        | `[]`           |
 | `service.extraPorts`                    | Extra ports to expose (normally used with the `sidecar` value)                                                                         | `[]`           |
@@ -502,7 +504,7 @@ Consequences:
 
 #### Useful links**
 
-- <https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-resolve-helm2-helm3-post-migration-issues-index.html>
+- <https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-resolve-helm2-helm3-post-migration-issues-index.html>
 - <https://helm.sh/docs/topics/v2_v3_migration/>
 - <https://helm.sh/blog/migrate-from-helm-v2-to-helm-v3/>
 

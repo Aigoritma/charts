@@ -14,7 +14,7 @@ Trademarks: This software listing is packaged by Bitnami. The respective tradema
 helm install my-release oci://registry-1.docker.io/bitnamicharts/mlflow
 ```
 
-Looking to use MLflow in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
+Looking to use MLflow in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## Introduction
 
@@ -53,7 +53,8 @@ The command deploys mlflow on the Kubernetes cluster in the default configuratio
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`   |
 | `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`   |
-| `global.storageClass`                                 | Global StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                        | `""`   |
+| `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`   |
+| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`   |
 | `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto` |
 
 ### Common parameters
@@ -116,7 +117,7 @@ The command deploys mlflow on the Kubernetes cluster in the default configuratio
 | `tracking.customLivenessProbe`                               | Custom livenessProbe that overrides the default one                                                                                                                                                                                 | `{}`             |
 | `tracking.customReadinessProbe`                              | Custom readinessProbe that overrides the default one                                                                                                                                                                                | `{}`             |
 | `tracking.customStartupProbe`                                | Custom startupProbe that overrides the default one                                                                                                                                                                                  | `{}`             |
-| `tracking.resourcesPreset`                                   | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if tracking.resources is set (tracking.resources is recommended for production). | `small`          |
+| `tracking.resourcesPreset`                                   | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if tracking.resources is set (tracking.resources is recommended for production). | `medium`         |
 | `tracking.resources`                                         | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                                   | `{}`             |
 | `tracking.podSecurityContext.enabled`                        | Enabled mlflow pods' Security Context                                                                                                                                                                                               | `true`           |
 | `tracking.podSecurityContext.fsGroupChangePolicy`            | Set filesystem group change policy                                                                                                                                                                                                  | `Always`         |
@@ -129,7 +130,7 @@ The command deploys mlflow on the Kubernetes cluster in the default configuratio
 | `tracking.containerSecurityContext.runAsGroup`               | Set containers' Security Context runAsGroup                                                                                                                                                                                         | `1001`           |
 | `tracking.containerSecurityContext.privileged`               | Set containers' Security Context privileged                                                                                                                                                                                         | `false`          |
 | `tracking.containerSecurityContext.runAsNonRoot`             | Set containers' Security Context runAsNonRoot                                                                                                                                                                                       | `true`           |
-| `tracking.containerSecurityContext.readOnlyRootFilesystem`   | Set containers' Security Context runAsNonRoot                                                                                                                                                                                       | `true`           |
+| `tracking.containerSecurityContext.readOnlyRootFilesystem`   | Set containers' Security Context readOnlyRootFilesystem                                                                                                                                                                             | `true`           |
 | `tracking.containerSecurityContext.allowPrivilegeEscalation` | Set container's privilege escalation                                                                                                                                                                                                | `false`          |
 | `tracking.containerSecurityContext.capabilities.drop`        | Set container's Security Context runAsNonRoot                                                                                                                                                                                       | `["ALL"]`        |
 | `tracking.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                                                                                                                                                    | `RuntimeDefault` |
@@ -445,19 +446,30 @@ The command deploys mlflow on the Kubernetes cluster in the default configuratio
 
 ### External S3 parameters
 
-| Name                                      | Description                                                        | Value           |
-| ----------------------------------------- | ------------------------------------------------------------------ | --------------- |
-| `externalS3.host`                         | External S3 host                                                   | `""`            |
-| `externalS3.port`                         | External S3 port number                                            | `443`           |
-| `externalS3.useCredentialsInSecret`       | Whether to use a secret to store the S3 credentials                | `true`          |
-| `externalS3.accessKeyID`                  | External S3 access key ID                                          | `""`            |
-| `externalS3.accessKeySecret`              | External S3 access key secret                                      | `""`            |
-| `externalS3.existingSecret`               | Name of an existing secret resource containing the S3 credentials  | `""`            |
-| `externalS3.existingSecretAccessKeyIDKey` | Name of an existing secret key containing the S3 access key ID     | `root-user`     |
-| `externalS3.existingSecretKeySecretKey`   | Name of an existing secret key containing the S3 access key secret | `root-password` |
-| `externalS3.protocol`                     | External S3 protocol                                               | `https`         |
-| `externalS3.bucket`                       | External S3 bucket                                                 | `mlflow`        |
-| `externalS3.serveArtifacts`               | Whether artifact serving is enabled                                | `true`          |
+| Name                                      | Description                                                                                                                                                                 | Value           |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| `externalS3.host`                         | External S3 host. When using AWS S3, include appropriate [regional code](https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_region), e.g. "eu-central-1.amazonaws.com | `""`            |
+| `externalS3.port`                         | External S3 port number                                                                                                                                                     | `443`           |
+| `externalS3.useCredentialsInSecret`       | Whether to use a secret to store the S3 credentials                                                                                                                         | `true`          |
+| `externalS3.accessKeyID`                  | External S3 access key ID                                                                                                                                                   | `""`            |
+| `externalS3.accessKeySecret`              | External S3 access key secret                                                                                                                                               | `""`            |
+| `externalS3.existingSecret`               | Name of an existing secret resource containing the S3 credentials                                                                                                           | `""`            |
+| `externalS3.existingSecretAccessKeyIDKey` | Name of an existing secret key containing the S3 access key ID                                                                                                              | `root-user`     |
+| `externalS3.existingSecretKeySecretKey`   | Name of an existing secret key containing the S3 access key secret                                                                                                          | `root-password` |
+| `externalS3.protocol`                     | External S3 protocol                                                                                                                                                        | `https`         |
+| `externalS3.bucket`                       | External S3 bucket                                                                                                                                                          | `mlflow`        |
+| `externalS3.serveArtifacts`               | Whether artifact serving is enabled                                                                                                                                         | `true`          |
+
+### External Google Cloud Storage parameters
+
+| Name                                 | Description                                                                                                               | Value   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------- |
+| `externalGCS.bucket`                 | GCS bucket name. Activate gcs artifact storage if set                                                                     | `""`    |
+| `externalGCS.googleCloudProject`     | Google Cloud Project to use (optional, needed when using "default application credentials")                               | `""`    |
+| `externalGCS.useCredentialsInSecret` | Whether to read the GCS application credentials from a secret                                                             | `false` |
+| `externalGCS.existingSecret`         | Name of an existing secret key containing the application credentials file (required when useCredentialsInSecret is true) | `""`    |
+| `externalGCS.existingSecretKey`      | Key in the existing secret containing the application credentials (required when useCredentialsInSecret is true)          | `""`    |
+| `externalGCS.serveArtifacts`         | Whether artifact serving is enabled                                                                                       | `true`  |
 
 The MLflow chart supports three different ways to load your files in the `run` deployment. In order of priority, they are:
 
@@ -484,6 +496,10 @@ run.source.git.revision=master
 Find more information about how to deal with common errors related to Bitnami's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
 
 ## Upgrading
+
+### To 2.0.0
+
+This major updates the PostgreSQL subchart to its newest major, 16.0.0, which uses PostgreSQL 17.x.  Follow the [official instructions](https://www.postgresql.org/docs/17/upgrading.html) to upgrade to 17.x.
 
 ### To 1.0.0
 

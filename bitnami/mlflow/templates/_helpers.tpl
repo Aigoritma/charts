@@ -503,7 +503,7 @@ Retrieve key of the PostgreSQL secret
 Retrieve the URI of the database
 */}}
 {{- define "mlflow.v0.database.uri" -}}
-{{- printf "postgresql://%s:$(MLFLOW_DATABASE_PASSWORD)@%s:%v/%s" (include "mlflow.v0.database.user" .) (include "mlflow.v0.database.host" .) (include "mlflow.v0.database.port" .) (include "mlflow.v0.database.name" .) -}}
+{{- printf "%s://%s:$(MLFLOW_DATABASE_PASSWORD)@%s:%v/%s" (include "mlflow.v0.database.dialectDriver" .) (include "mlflow.v0.database.user" .) (include "mlflow.v0.database.host" .) (include "mlflow.v0.database.port" .) (include "mlflow.v0.database.name" .) -}}
 {{- end -}}
 
 {{/*
@@ -544,12 +544,18 @@ Return the volume-permissions init container
       mountPath: /tmp
 {{- end -}}
 
+
+{{/*
+Deal with external artifact storage
+*/}}
+
 {{/*
 Return MinIO(TM) fullname
 */}}
 {{- define "mlflow.v0.minio.fullname" -}}
 {{- include "common.names.dependency.fullname" (dict "chartName" "minio" "chartValues" .Values.minio "context" $) -}}
 {{- end -}}
+
 
 {{/*
 Return whether S3 is enabled
@@ -645,6 +651,15 @@ Return the S3 secret access key inside the secret
         {{- print "root-password"  -}}
     {{- else -}}
         {{- print .Values.externalS3.existingSecretKeySecretKey -}}
+    {{- end -}}
+{{- end -}}
+
+{{/*
+Return whether GCS is enabled
+*/}}
+{{- define "mlflow.v0.gcs.enabled" -}}
+    {{- if and (not .Values.minio.enabled) (not .Values.externalS3.host) .Values.externalGCS.bucket -}}
+        {{- true }}
     {{- end -}}
 {{- end -}}
 

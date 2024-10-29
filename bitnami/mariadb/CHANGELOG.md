@@ -1,8 +1,62 @@
 # Changelog
 
-## 18.2.2 (2024-06-06)
+## 19.1.0 (2024-10-10)
 
-* [bitnami/mariadb] Release 18.2.2 ([#26977](https://github.com/bitnami/charts/pull/26977))
+* [bitnami/mariadb] add default binlog expiry configuration of 30 days ([#29841](https://github.com/bitnami/charts/pull/29841))
+
+## <small>19.0.7 (2024-09-23)</small>
+
+* [bitnami/mariadb] Release 19.0.7 (#29571) ([a64fadf](https://github.com/bitnami/charts/commit/a64fadf42cc82f7468245ff87c61aa50356fbb47)), closes [#29571](https://github.com/bitnami/charts/issues/29571)
+
+## <small>19.0.6 (2024-09-17)</small>
+
+* [bitnami/mariadb] test: :white_check_mark: Improve reliability of ginkgo tests (#29467) ([c6cae80](https://github.com/bitnami/charts/commit/c6cae80e8a0cf7f3b0faad5782d13e75765daaf2)), closes [#29467](https://github.com/bitnami/charts/issues/29467)
+* Update README.md (typo fix) (#29334) ([2b03ac4](https://github.com/bitnami/charts/commit/2b03ac4952c06ae7001e89dcacca0cfdf81bc684)), closes [#29334](https://github.com/bitnami/charts/issues/29334)
+
+## <small>19.0.5 (2024-08-27)</small>
+
+* [bitnami/mariadb] Fix deprecation warnings in checks (#29021) ([213786f](https://github.com/bitnami/charts/commit/213786f3f87836b41e2e70fcedd007f08a4a012f)), closes [#29021](https://github.com/bitnami/charts/issues/29021)
+
+## <small>19.0.4 (2024-08-14)</small>
+
+* [bitnami/mariadb] Release 19.0.4 (#28874) ([0f767f1](https://github.com/bitnami/charts/commit/0f767f1e215d103c10fa8e1661f023f807382036)), closes [#28874](https://github.com/bitnami/charts/issues/28874)
+
+## <small>19.0.3 (2024-07-25)</small>
+
+* [bitnami/mariadb] Release 19.0.3 (#28455) ([3c84a4f](https://github.com/bitnami/charts/commit/3c84a4fdf417cedde724beca82fa5123281769ed)), closes [#28455](https://github.com/bitnami/charts/issues/28455)
+
+## <small>19.0.2 (2024-07-24)</small>
+
+* [bitnami/mariadb] Release 19.0.2 (#28317) ([978ae2c](https://github.com/bitnami/charts/commit/978ae2c01d792aa43d216aaafb741ee29648d093)), closes [#28317](https://github.com/bitnami/charts/issues/28317)
+
+## <small>19.0.1 (2024-07-18)</small>
+
+* [bitnami/mariadb] Global StorageClass as default value (#28050) ([7319c20](https://github.com/bitnami/charts/commit/7319c20e742e282f4517823f6cca054fa7322f0e)), closes [#28050](https://github.com/bitnami/charts/issues/28050)
+
+## 19.0.0 (2024-07-11)
+
+* [bitnami/mariadb] Release 19.0.0 (#27901) ([48377c3](https://github.com/bitnami/charts/commit/48377c3de20aa481943ab187419dc3b18afac3d9)), closes [#27901](https://github.com/bitnami/charts/issues/27901)
+
+## <small>18.2.6 (2024-07-02)</small>
+
+* [bitnami/mariadb] Release 18.2.6 (#27638) ([9822f43](https://github.com/bitnami/charts/commit/9822f43757bbf85d48db29c9e0c39ae4825e436b)), closes [#27638](https://github.com/bitnami/charts/issues/27638)
+
+## <small>18.2.5 (2024-07-01)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/mariadb] Release 18.2.5 (#27619) ([41836cc](https://github.com/bitnami/charts/commit/41836ccc60bd99a45185b0e33e2ca5970867e886)), closes [#27619](https://github.com/bitnami/charts/issues/27619)
+
+## <small>18.2.4 (2024-06-18)</small>
+
+* [bitnami/mariadb] Release 18.2.4 (#27375) ([fcac2b3](https://github.com/bitnami/charts/commit/fcac2b33f4bb90c19932b4eec6636fc4b3c10cdc)), closes [#27375](https://github.com/bitnami/charts/issues/27375)
+
+## <small>18.2.3 (2024-06-17)</small>
+
+* [bitnami/mariadb] Release 18.2.3 (#27243) ([605363c](https://github.com/bitnami/charts/commit/605363caa20e787ea3782928ae95faea07b9b08a)), closes [#27243](https://github.com/bitnami/charts/issues/27243)
+
+## <small>18.2.2 (2024-06-06)</small>
+
+* [bitnami/mariadb] Release 18.2.2 (#26977) ([e79cf8c](https://github.com/bitnami/charts/commit/e79cf8c2aa2aba398f4464d119605afe11534b08)), closes [#26977](https://github.com/bitnami/charts/issues/26977)
 
 ## <small>18.2.1 (2024-06-04)</small>
 

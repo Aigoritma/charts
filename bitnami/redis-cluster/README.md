@@ -14,7 +14,7 @@ Disclaimer: Redis is a registered trademark of Redis Ltd. Any rights therein are
 helm install my-release oci://registry-1.docker.io/bitnamicharts/redis-cluster
 ```
 
-Looking to use Redisreg; Cluster in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
+Looking to use Redisreg; Cluster in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## Introduction
 
@@ -69,7 +69,7 @@ Bitnami charts allow setting resource requests and limits for all containers ins
 
 To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcePreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
 
-### [Rolling VS Immutable tags](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-understand-rolling-tags-containers-index.html)
+### [Rolling VS Immutable tags](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html)
 
 It is strongly recommended to use immutable tags in a production environment. This ensures your deployment does not change automatically if the same tag is updated with a different image.
 
@@ -308,7 +308,7 @@ These are the steps you will usually follow to back up and restore your Redis Cl
 - Use Velero to restore the backed-up PVs on the destination cluster.
 - Create a new deployment on the destination cluster with the same chart, deployment name, credentials and other parameters as the original. This new deployment will use the restored PVs and hence the original data.
 
-Refer to our detailed [tutorial on backing up and restoring Redis Cluster deployments on Kubernetes](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-backup-restore-data-redis-cluster-kubernetes-index.html) for more information.
+Refer to our detailed [tutorial on backing up and restoring Redis Cluster deployments on Kubernetes](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-backup-restore-data-redis-cluster-kubernetes-index.html) for more information.
 
 ### NetworkPolicy
 
@@ -377,7 +377,8 @@ See [#15075](https://github.com/bitnami/charts/issues/15075)
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`   |
 | `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`   |
-| `global.storageClass`                                 | Global StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                        | `""`   |
+| `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`   |
+| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`   |
 | `global.redis.password`                               | Redis&reg; password (overrides `password`)                                                                                                                                                                                                                                                                                                                          | `""`   |
 | `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto` |
 
@@ -649,6 +650,7 @@ See [#15075](https://github.com/bitnami/charts/issues/15075)
 | `metrics.service.annotations`                               | Annotations for the services to monitor.                                                                                                                                                                                          | `{}`                             |
 | `metrics.service.labels`                                    | Additional labels for the metrics service                                                                                                                                                                                         | `{}`                             |
 | `metrics.service.ports.http`                                | Metrics HTTP service port                                                                                                                                                                                                         | `9121`                           |
+| `metrics.service.ports.appProtocol`                         | Metrics service appProtocol                                                                                                                                                                                                       | `""`                             |
 | `metrics.service.clusterIP`                                 | Service Cluster IP                                                                                                                                                                                                                | `""`                             |
 
 ### Sysctl Image parameters
@@ -759,7 +761,7 @@ This major version updates the Redis&reg; docker image version used from `6.0` t
 
 #### Useful links
 
-- <https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-resolve-helm2-helm3-post-migration-issues-index.html>
+- <https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-resolve-helm2-helm3-post-migration-issues-index.html>
 - <https://helm.sh/docs/topics/v2_v3_migration/>
 - <https://helm.sh/blog/migrate-from-helm-v2-to-helm-v3/>
 

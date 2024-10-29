@@ -1,8 +1,65 @@
 # Changelog
 
-## 7.2.5 (2024-06-06)
+## 8.0.0 (2024-10-02)
 
-* [bitnami/jupyterhub] Release 7.2.5 ([#26965](https://github.com/bitnami/charts/pull/26965))
+* [bitnami/jupyterhub] feat!: :arrow_up: :boom: Bump PostgreSQL to 17.x ([#29734](https://github.com/bitnami/charts/pull/29734))
+
+## <small>7.2.18 (2024-09-30)</small>
+
+* [bitnami/jupyterhub] Release 7.2.18 (#29655) ([f7d0390](https://github.com/bitnami/charts/commit/f7d0390059a17e17d6d0e5b0d9fc2f2d6aa4f2c2)), closes [#29655](https://github.com/bitnami/charts/issues/29655)
+
+## <small>7.2.17 (2024-08-28)</small>
+
+* [bitnami/jupyterhub] Fix indents of singleuser extra volumes & mounts for #24458 (#29032) ([0592bba](https://github.com/bitnami/charts/commit/0592bbaa59bc68adbd322d4cc3101249d582fde9)), closes [#24458](https://github.com/bitnami/charts/issues/24458) [#29032](https://github.com/bitnami/charts/issues/29032)
+
+## <small>7.2.16 (2024-08-24)</small>
+
+* [bitnami/jupyterhub] Release 7.2.16 (#29014) ([eaa5262](https://github.com/bitnami/charts/commit/eaa526250ca6eafe1ed19f78c81a5544c46ba1c8)), closes [#29014](https://github.com/bitnami/charts/issues/29014)
+
+## <small>7.2.15 (2024-08-23)</small>
+
+* [bitnami/juypterhub] postgres image missing when postgres is disabled (fluxCD/argoCD) (#28841) ([079ff70](https://github.com/bitnami/charts/commit/079ff70f37743a8711ad750eac6b0b9f5dab1e10)), closes [#28841](https://github.com/bitnami/charts/issues/28841)
+
+## <small>7.2.14 (2024-07-31)</small>
+
+* [bitnami/jupyterhub] Release 7.2.14 (#28600) ([b6af234](https://github.com/bitnami/charts/commit/b6af23429e898606e2ec2a2fd0bdfc2c26cb1bb7)), closes [#28600](https://github.com/bitnami/charts/issues/28600)
+
+## <small>7.2.13 (2024-07-25)</small>
+
+* [bitnami/jupyterhub] Release 7.2.13 (#28424) ([6f40a5e](https://github.com/bitnami/charts/commit/6f40a5e2e7cad17e69198f28c7ca55b02e9d9cec)), closes [#28424](https://github.com/bitnami/charts/issues/28424)
+
+## <small>7.2.12 (2024-07-24)</small>
+
+* [bitnami/jupyterhub] Release 7.2.12 (#28303) ([121ee25](https://github.com/bitnami/charts/commit/121ee2543a1f4ccc3f7f08f13f4e5dcc04a985bb)), closes [#28303](https://github.com/bitnami/charts/issues/28303)
+
+## <small>7.2.11 (2024-07-24)</small>
+
+* [bitnami/jupyterhub] Release 7.2.11 (#28265) ([ea7930c](https://github.com/bitnami/charts/commit/ea7930c34512e665b9633fd23a0b37a61e680fde)), closes [#28265](https://github.com/bitnami/charts/issues/28265)
+
+## <small>7.2.10 (2024-07-16)</small>
+
+* [bitnami/jupyterhub] Fix for jupyterhub.storage.class helper (#28120) ([16e6f01](https://github.com/bitnami/charts/commit/16e6f01507f1aef5f5a575e4b550e0734a238045)), closes [#28120](https://github.com/bitnami/charts/issues/28120)
+
+## <small>7.2.9 (2024-07-16)</small>
+
+* [bitnami/jupyterhub] Global StorageClass as default value (#28037) ([ca95359](https://github.com/bitnami/charts/commit/ca95359cf47bd71df8e091049bce8d5c55ab990d)), closes [#28037](https://github.com/bitnami/charts/issues/28037)
+
+## <small>7.2.8 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/jupyterhub] Release 7.2.8 (#27699) ([9263ae2](https://github.com/bitnami/charts/commit/9263ae265214c69b4581035cd70890b9d07153fc)), closes [#27699](https://github.com/bitnami/charts/issues/27699)
+
+## <small>7.2.7 (2024-06-18)</small>
+
+* [bitnami/jupyterhub] Release 7.2.7 (#27363) ([bca9d98](https://github.com/bitnami/charts/commit/bca9d9877d0d09eeffada7d07e922c2bf7408f24)), closes [#27363](https://github.com/bitnami/charts/issues/27363)
+
+## <small>7.2.6 (2024-06-17)</small>
+
+* [bitnami/jupyterhub] Release 7.2.6 (#27234) ([1cb4208](https://github.com/bitnami/charts/commit/1cb42089cda7ec0957084e352563e601be0acd2f)), closes [#27234](https://github.com/bitnami/charts/issues/27234)
+
+## <small>7.2.5 (2024-06-06)</small>
+
+* [bitnami/jupyterhub] Release 7.2.5 (#26965) ([dcc65d1](https://github.com/bitnami/charts/commit/dcc65d1616b839e0cb2affc759c14c03905aaf14)), closes [#26965](https://github.com/bitnami/charts/issues/26965)
 
 ## <small>7.2.4 (2024-06-06)</small>
 

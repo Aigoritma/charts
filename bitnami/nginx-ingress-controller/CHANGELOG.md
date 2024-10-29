@@ -1,8 +1,102 @@
 # Changelog
 
-## 11.3.6 (2024-06-10)
+## 11.5.1 (2024-10-22)
 
-* [bitnami/nginx-ingress-controller] Release 11.3.6 ([#27084](https://github.com/bitnami/charts/pull/27084))
+* [bitnami/nginx-ingress-controller] Release 11.5.1 ([#30042](https://github.com/bitnami/charts/pull/30042))
+
+## 11.5.0 (2024-10-21)
+
+* [bitnami/nginx-ingress-controller] Add TCP/UDP ports name prefix param (#29993) ([d231122](https://github.com/bitnami/charts/commit/d23112299b4283a768d575d2c0416781186c48dc)), closes [#29993](https://github.com/bitnami/charts/issues/29993)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>11.4.4 (2024-10-09)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.4.4 (#29844) ([fb4ef79](https://github.com/bitnami/charts/commit/fb4ef7908ee64092532219995ab184f209b799e4)), closes [#29844](https://github.com/bitnami/charts/issues/29844)
+
+## <small>11.4.3 (2024-10-02)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.4.3 (#29711) ([b933d9b](https://github.com/bitnami/charts/commit/b933d9bf5bbb71dfadffea23e38cb91222b81592)), closes [#29711](https://github.com/bitnami/charts/issues/29711)
+
+## <small>11.4.2 (2024-10-01)</small>
+
+* [bitnami/nginx-ingress-controller] Specify resources for nginx ingress controller deployment init co ([c50cfde](https://github.com/bitnami/charts/commit/c50cfdea2973632c3ec37b27c5890d7fe315a61d)), closes [#29621](https://github.com/bitnami/charts/issues/29621)
+
+## <small>11.4.1 (2024-09-06)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.4.1 (#29265) ([60bb42d](https://github.com/bitnami/charts/commit/60bb42da0b5a962161fe1b127a2fa5c141060d34)), closes [#29265](https://github.com/bitnami/charts/issues/29265)
+
+## 11.4.0 (2024-08-23)
+
+* [bitnami/nginx-ingress-controller] Allow loadBalancerClass to be customized for the nginx-ingress-co ([29e7033](https://github.com/bitnami/charts/commit/29e703372504ea619d099011c42e7de228320e03)), closes [#28919](https://github.com/bitnami/charts/issues/28919)
+
+## <small>11.3.22 (2024-08-21)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.22 (#28962) ([3376076](https://github.com/bitnami/charts/commit/3376076deecc99442a77de6abd5b77cd9049ccab)), closes [#28962](https://github.com/bitnami/charts/issues/28962)
+
+## <small>11.3.21 (2024-08-21)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.21 (#28961) ([33627b8](https://github.com/bitnami/charts/commit/33627b8324cc91f1e76df1bf0253d89a2b4a3e1f)), closes [#28961](https://github.com/bitnami/charts/issues/28961)
+
+## <small>11.3.20 (2024-08-16)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.20 (#28899) ([2db9c4a](https://github.com/bitnami/charts/commit/2db9c4aa82da7ecef9995237ca4a0d24f0d1a95e)), closes [#28899](https://github.com/bitnami/charts/issues/28899)
+
+## <small>11.3.19 (2024-08-07)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.19 (#28735) ([7fdfcd7](https://github.com/bitnami/charts/commit/7fdfcd79796d829a0ee7e2bfd2767df13131d8b6)), closes [#28735](https://github.com/bitnami/charts/issues/28735)
+
+## <small>11.3.18 (2024-07-25)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.18 (#28447) ([eceedfa](https://github.com/bitnami/charts/commit/eceedfad96b49f493602a43bf96d397a7d364249)), closes [#28447](https://github.com/bitnami/charts/issues/28447)
+
+## <small>11.3.17 (2024-07-24)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.17 (#28360) ([2b76d8a](https://github.com/bitnami/charts/commit/2b76d8afbbd880dd8bd5730fae0a53156704ea99)), closes [#28360](https://github.com/bitnami/charts/issues/28360)
+
+## <small>11.3.16 (2024-07-23)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.16 (#28207) ([601fcba](https://github.com/bitnami/charts/commit/601fcbaf62212084acaa40dbfcd9e438875d90bd)), closes [#28207](https://github.com/bitnami/charts/issues/28207)
+
+## <small>11.3.15 (2024-07-20)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.15 (#28181) ([5469e8a](https://github.com/bitnami/charts/commit/5469e8ad557dc0e0b0faaffafb902ff2697f11cf)), closes [#28181](https://github.com/bitnami/charts/issues/28181)
+
+## <small>11.3.14 (2024-07-19)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.14 (#28167) ([e9c11ca](https://github.com/bitnami/charts/commit/e9c11ca3595877765e2891b9f287580716534209)), closes [#28167](https://github.com/bitnami/charts/issues/28167)
+
+## <small>11.3.13 (2024-07-15)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.13 (#27971) ([1f18a07](https://github.com/bitnami/charts/commit/1f18a07c2c8e31a3aa2bcf331e9b0561046d6371)), closes [#27971](https://github.com/bitnami/charts/issues/27971)
+
+## <small>11.3.12 (2024-07-08)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.12 (#27849) ([53c7686](https://github.com/bitnami/charts/commit/53c76867f15601cdb1d83587613f730807fb2a95)), closes [#27849](https://github.com/bitnami/charts/issues/27849)
+
+## <small>11.3.11 (2024-07-08)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.11 (#27847) ([47ce8fe](https://github.com/bitnami/charts/commit/47ce8febdfd8cf4cede12824688a65edab50fecc)), closes [#27847](https://github.com/bitnami/charts/issues/27847)
+
+## <small>11.3.10 (2024-07-04)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.10 (#27778) ([b299e9b](https://github.com/bitnami/charts/commit/b299e9b446f2b303b6dbb1dade49db1f454a2839)), closes [#27778](https://github.com/bitnami/charts/issues/27778)
+
+## <small>11.3.9 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/nginx-ingress-controller] Release 11.3.9 (#27669) ([1faf3d7](https://github.com/bitnami/charts/commit/1faf3d75ee985a7e4ea655fa828cbcfb2d7d26d1)), closes [#27669](https://github.com/bitnami/charts/issues/27669)
+
+## <small>11.3.8 (2024-06-18)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.8 (#27389) ([510a855](https://github.com/bitnami/charts/commit/510a855bcadb6350dafd7b876a5db10cd25435ac)), closes [#27389](https://github.com/bitnami/charts/issues/27389)
+
+## <small>11.3.7 (2024-06-17)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.7 (#27287) ([0794cea](https://github.com/bitnami/charts/commit/0794ceabe03bedf971d4774550bbfd0952955c8b)), closes [#27287](https://github.com/bitnami/charts/issues/27287)
+
+## <small>11.3.6 (2024-06-10)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.3.6 (#27084) ([8f02774](https://github.com/bitnami/charts/commit/8f027748350583332910b29ce46dda647b815bb0)), closes [#27084](https://github.com/bitnami/charts/issues/27084)
 
 ## <small>11.3.5 (2024-06-06)</small>
 
@@ -19,6 +113,9 @@
 ## <small>11.3.2 (2024-06-04)</small>
 
 * [bitnami/nginx-ingress-controller] Bump chart version (#26656) ([3f5d0b1](https://github.com/bitnami/charts/commit/3f5d0b1ae2e757ae0072e950d3c28a0f3ea3742b)), closes [#26656](https://github.com/bitnami/charts/issues/26656)
+
+## <small>11.3.1 (2024-05-24)</small>
+
 * [bitnami/nginx-ingress-controller] Use different liveness/readiness pending probe (#26412) ([8f502b0](https://github.com/bitnami/charts/commit/8f502b0671981ee3bfdf9c000c5154868b079beb)), closes [#26412](https://github.com/bitnami/charts/issues/26412)
 
 ## 11.3.0 (2024-05-24)

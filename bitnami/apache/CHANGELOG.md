@@ -1,8 +1,81 @@
 # Changelog
 
-## 11.2.3 (2024-06-11)
+## 11.2.21 (2024-10-16)
 
-* [bitnami/apache] Release 11.2.3 ([#27102](https://github.com/bitnami/charts/pull/27102))
+* [bitnami/apache] Remove wrong entries from image verification ([#29911](https://github.com/bitnami/charts/pull/29911))
+
+## <small>11.2.20 (2024-09-19)</small>
+
+* [bitnami/apache] Release 11.2.20 (#29501) ([efd2c8f](https://github.com/bitnami/charts/commit/efd2c8f6e18240f7cde27a915627d5cf4f77189c)), closes [#29501](https://github.com/bitnami/charts/issues/29501)
+
+## <small>11.2.19 (2024-09-18)</small>
+
+* [bitnami/apache] Update templates to have conditionals for HPA (#29489) ([6882c22](https://github.com/bitnami/charts/commit/6882c22cc7e2831fd9a0c2adb412ecb5ade160bb)), closes [#29489](https://github.com/bitnami/charts/issues/29489)
+
+## <small>11.2.18 (2024-09-15)</small>
+
+* [bitnami/apache] Release 11.2.18 (#29418) ([665ff2b](https://github.com/bitnami/charts/commit/665ff2be8f372b4cf2a75c4d4c7e7c8bcd647310)), closes [#29418](https://github.com/bitnami/charts/issues/29418)
+
+## <small>11.2.17 (2024-09-03)</small>
+
+* [bitnami/apache] Release 11.2.17 (#29183) ([aa557a2](https://github.com/bitnami/charts/commit/aa557a2263807f74e02390739adaf1316771f6c2)), closes [#29183](https://github.com/bitnami/charts/issues/29183)
+
+## <small>11.2.16 (2024-08-28)</small>
+
+* [bitnami/apache] Release 11.2.16 (#29081) ([48ab080](https://github.com/bitnami/charts/commit/48ab080c5caf58fd4f5434967be9af43cd55d336)), closes [#29081](https://github.com/bitnami/charts/issues/29081)
+
+## <small>11.2.15 (2024-08-26)</small>
+
+* [bitnami/apache] Release 11.2.15 (#29023) ([a74db14](https://github.com/bitnami/charts/commit/a74db142e71c2569864bb4de7d6cb5438e3ae288)), closes [#29023](https://github.com/bitnami/charts/issues/29023)
+
+## <small>11.2.14 (2024-08-16)</small>
+
+* [bitnami/apache] fix CrashLoopBackOff when using cloneHtdocsFromGit (#28868) ([b535fa4](https://github.com/bitnami/charts/commit/b535fa4d875858dee6b5f5be35b76be9e3bd897e)), closes [#28868](https://github.com/bitnami/charts/issues/28868)
+
+## <small>11.2.13 (2024-07-25)</small>
+
+* [bitnami/apache] Release 11.2.13 (#28398) ([08be0e2](https://github.com/bitnami/charts/commit/08be0e271998c1046f66d815ac5c411b46e3af29)), closes [#28398](https://github.com/bitnami/charts/issues/28398)
+
+## <small>11.2.12 (2024-07-24)</small>
+
+* [bitnami/apache] Release 11.2.12 (#28269) ([92f1fd0](https://github.com/bitnami/charts/commit/92f1fd048e936f2561d3348befb5a4e7825c6423)), closes [#28269](https://github.com/bitnami/charts/issues/28269)
+
+## <small>11.2.11 (2024-07-23)</small>
+
+* [bitnami/apache] Release 11.2.11 (#28226) ([1bcb4d1](https://github.com/bitnami/charts/commit/1bcb4d1d11f347d263982fc179a776a8ed59310a)), closes [#28226](https://github.com/bitnami/charts/issues/28226)
+
+## <small>11.2.10 (2024-07-18)</small>
+
+* [bitnami/apache] Global StorageClass as default value (#27996) ([0109c64](https://github.com/bitnami/charts/commit/0109c64c17987ade8dd8c178f1080febf2f83a15)), closes [#27996](https://github.com/bitnami/charts/issues/27996)
+
+## <small>11.2.9 (2024-07-17)</small>
+
+* [bitnami/apache] Release 11.2.9 (#28146) ([3c9fb46](https://github.com/bitnami/charts/commit/3c9fb4673ab387b1fa1636259d557da19c82e26c)), closes [#28146](https://github.com/bitnami/charts/issues/28146)
+
+## <small>11.2.8 (2024-07-05)</small>
+
+* [bitnami/apache] Uses `common.compatibility.renderSecurityContext` template to render `containerSecu ([28b8f9f](https://github.com/bitnami/charts/commit/28b8f9f5053ba1ac43c63d0a796dd1acb6e8b34c)), closes [#27748](https://github.com/bitnami/charts/issues/27748) [#27633](https://github.com/bitnami/charts/issues/27633)
+
+## <small>11.2.7 (2024-07-03)</small>
+
+* [bitnami/apache] Release 11.2.7 (#27740) ([06bc29e](https://github.com/bitnami/charts/commit/06bc29e845408e9b9825660981af83bde4f488b6)), closes [#27740](https://github.com/bitnami/charts/issues/27740)
+
+## <small>11.2.6 (2024-07-01)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/apache] Release 11.2.6 (#27618) ([c9763df](https://github.com/bitnami/charts/commit/c9763df0112bdec4859a74280bde03160267a949)), closes [#27618](https://github.com/bitnami/charts/issues/27618)
+
+## <small>11.2.5 (2024-06-18)</small>
+
+* [bitnami/apache] Release 11.2.5 (#27325) ([112164d](https://github.com/bitnami/charts/commit/112164d62fb8696d3849422caaeca2f07e210cdc)), closes [#27325](https://github.com/bitnami/charts/issues/27325)
+
+## <small>11.2.4 (2024-06-17)</small>
+
+* [bitnami/apache] Release 11.2.4 (#27201) ([7b8f1fb](https://github.com/bitnami/charts/commit/7b8f1fb7b7f54691070ed358f20d957e420cb675)), closes [#27201](https://github.com/bitnami/charts/issues/27201)
+
+## <small>11.2.3 (2024-06-11)</small>
+
+* [bitnami/apache] Release 11.2.3 (#27102) ([63932e3](https://github.com/bitnami/charts/commit/63932e38a72c800c386c9b55e7a24f0e0681c159)), closes [#27102](https://github.com/bitnami/charts/issues/27102)
 
 ## <small>11.2.2 (2024-06-06)</small>
 

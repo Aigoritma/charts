@@ -1,8 +1,65 @@
 # Changelog
 
-## 4.2.5 (2024-06-12)
+## 4.2.19 (2024-10-16)
 
-* [bitnami/pytorch] Release 4.2.5 ([#27123](https://github.com/bitnami/charts/pull/27123))
+* [bitnami/pytorch] Remove wrong entries from image verification ([#29916](https://github.com/bitnami/charts/pull/29916))
+
+## <small>4.2.18 (2024-09-19)</small>
+
+* [bitnami/pytorch] Release 4.2.18 (#29516) ([6d40617](https://github.com/bitnami/charts/commit/6d4061783e317fd6bdb13116bb694f3d200684f2)), closes [#29516](https://github.com/bitnami/charts/issues/29516)
+
+## <small>4.2.17 (2024-09-15)</small>
+
+* [bitnami/pytorch] Release 4.2.17 (#29426) ([5450664](https://github.com/bitnami/charts/commit/54506646c21bf39541a3eb6af8fdf74ffc71689d)), closes [#29426](https://github.com/bitnami/charts/issues/29426)
+
+## <small>4.2.16 (2024-09-11)</small>
+
+* [bitnami/pytorch] fix: add apiVersion and kind to volumeClaimTemplates (#29359) ([8b9888e](https://github.com/bitnami/charts/commit/8b9888e143016cec0fa028ac42b1c98696181c29)), closes [#29359](https://github.com/bitnami/charts/issues/29359)
+
+## <small>4.2.15 (2024-09-06)</small>
+
+* [bitnami/pytorch] Release 4.2.15 (#29271) ([9749d0c](https://github.com/bitnami/charts/commit/9749d0c7529d79c1e4fb264672c76626ad329e80)), closes [#29271](https://github.com/bitnami/charts/issues/29271)
+
+## <small>4.2.14 (2024-08-24)</small>
+
+* [bitnami/pytorch] Release 4.2.14 (#29013) ([e075c08](https://github.com/bitnami/charts/commit/e075c0899c20e0bb4709a318e24f7d02673bd37c)), closes [#29013](https://github.com/bitnami/charts/issues/29013)
+
+## <small>4.2.13 (2024-07-25)</small>
+
+* [bitnami/pytorch] Release 4.2.13 (#28510) ([e9d407c](https://github.com/bitnami/charts/commit/e9d407ce90216f5324e6be1a6175fdfef264753d)), closes [#28510](https://github.com/bitnami/charts/issues/28510)
+
+## <small>4.2.12 (2024-07-25)</small>
+
+* [bitnami/pytorch] Release 4.2.12 (#28394) ([fab3548](https://github.com/bitnami/charts/commit/fab35480e16f6e4110685e5f33630e7072f9def0)), closes [#28394](https://github.com/bitnami/charts/issues/28394)
+
+## <small>4.2.11 (2024-07-24)</small>
+
+* [bitnami/pytorch] Release 4.2.11 (#28364) ([0a51218](https://github.com/bitnami/charts/commit/0a512183a38fa5e7b5889f0e60b33ad76bae149c)), closes [#28364](https://github.com/bitnami/charts/issues/28364)
+
+## <small>4.2.10 (2024-07-16)</small>
+
+* [bitnami/pytorch] Global StorageClass as default value (#28086) ([313aba5](https://github.com/bitnami/charts/commit/313aba59c958232a5062c86c2423b07047336d5c)), closes [#28086](https://github.com/bitnami/charts/issues/28086)
+
+## <small>4.2.9 (2024-07-03)</small>
+
+* [bitnami/pytorch] Release 4.2.9 (#27741) ([0ed50b3](https://github.com/bitnami/charts/commit/0ed50b36fb22d77f8f6c1ce7715d479ff3d1191e)), closes [#27741](https://github.com/bitnami/charts/issues/27741)
+
+## <small>4.2.8 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/pytorch] Release 4.2.8 (#27708) ([f5fafe0](https://github.com/bitnami/charts/commit/f5fafe0482dc2dac6c5af083a159963cf2b937f7)), closes [#27708](https://github.com/bitnami/charts/issues/27708)
+
+## <small>4.2.7 (2024-06-18)</small>
+
+* [bitnami/pytorch] Release 4.2.7 (#27407) ([f3eb17e](https://github.com/bitnami/charts/commit/f3eb17ecdbfdfbd17723f80c3066f08bbba33bb7)), closes [#27407](https://github.com/bitnami/charts/issues/27407)
+
+## <small>4.2.6 (2024-06-17)</small>
+
+* [bitnami/pytorch] Release 4.2.6 (#27273) ([281f3dd](https://github.com/bitnami/charts/commit/281f3dd46bac4d089feab12fc6a47acdbd0d2616)), closes [#27273](https://github.com/bitnami/charts/issues/27273)
+
+## <small>4.2.5 (2024-06-12)</small>
+
+* [bitnami/pytorch] Release 4.2.5 (#27123) ([44fd8bb](https://github.com/bitnami/charts/commit/44fd8bb63d5eea0252649499b7b47602ab6306ac)), closes [#27123](https://github.com/bitnami/charts/issues/27123)
 
 ## <small>4.2.4 (2024-06-06)</small>
 

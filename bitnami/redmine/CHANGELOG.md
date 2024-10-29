@@ -1,8 +1,53 @@
 # Changelog
 
-## 28.2.4 (2024-06-12)
+## 30.0.0 (2024-10-02)
 
-* [bitnami/redmine] Release 28.2.4 ([#27107](https://github.com/bitnami/charts/pull/27107))
+* [bitnami/redmine] feat!: :arrow_up: :boom: Bump PostgreSQL to 17.x ([#29743](https://github.com/bitnami/charts/pull/29743))
+
+## <small>29.0.6 (2024-09-19)</small>
+
+* [bitnami/redmine] Release 29.0.6 (#29526) ([6af9c32](https://github.com/bitnami/charts/commit/6af9c3276a58da6f825461e32f21cfd54c459f85)), closes [#29526](https://github.com/bitnami/charts/issues/29526)
+
+## <small>29.0.5 (2024-09-16)</small>
+
+* [bitnami/redmine] Release 29.0.5 (#29436) ([462c294](https://github.com/bitnami/charts/commit/462c294bef1d2bc1047627532ebe80b9ea849cf2)), closes [#29436](https://github.com/bitnami/charts/issues/29436)
+
+## <small>29.0.4 (2024-08-22)</small>
+
+* [bitnami/redmine] Release 29.0.4 (#28967) ([27be3a8](https://github.com/bitnami/charts/commit/27be3a846b785cfa87b302acd98293f06405f9ff)), closes [#28967](https://github.com/bitnami/charts/issues/28967)
+
+## <small>29.0.3 (2024-07-25)</small>
+
+* [bitnami/redmine] Release 29.0.3 (#28485) ([8d5be0a](https://github.com/bitnami/charts/commit/8d5be0a078765d30054532eeb76de7909fe5fdc9)), closes [#28485](https://github.com/bitnami/charts/issues/28485)
+
+## <small>29.0.2 (2024-07-24)</small>
+
+* [bitnami/redmine] Release 29.0.2 (#28366) ([b7d9417](https://github.com/bitnami/charts/commit/b7d94172494debfab9061aaa355d39783e240dfe)), closes [#28366](https://github.com/bitnami/charts/issues/28366)
+
+## <small>29.0.1 (2024-07-18)</small>
+
+* [bitnami/redmine] Global StorageClass as default value (#28091) ([2771982](https://github.com/bitnami/charts/commit/2771982ba09c709df3fe0029b33d4823b3f2048d)), closes [#28091](https://github.com/bitnami/charts/issues/28091)
+
+## 29.0.0 (2024-07-13)
+
+* [bitnami/redmine] chore!: :arrow_up: :boom: Update mariadb to 11.4 (#27936) ([82701c8](https://github.com/bitnami/charts/commit/82701c851f09497545d061ec73d5f07ac332e719)), closes [#27936](https://github.com/bitnami/charts/issues/27936)
+
+## <small>28.2.7 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/redmine] Release 28.2.7 (#27717) ([34ba5f5](https://github.com/bitnami/charts/commit/34ba5f51aa4e678fc5511103d67987fd691dbf7b)), closes [#27717](https://github.com/bitnami/charts/issues/27717)
+
+## <small>28.2.6 (2024-06-18)</small>
+
+* [bitnami/redmine] Release 28.2.6 (#27412) ([9d24214](https://github.com/bitnami/charts/commit/9d242140b7a4bd51f3bd3a136b52cf9209351e5e)), closes [#27412](https://github.com/bitnami/charts/issues/27412)
+
+## <small>28.2.5 (2024-06-17)</small>
+
+* [bitnami/redmine] Release 28.2.5 (#27278) ([ee9bd13](https://github.com/bitnami/charts/commit/ee9bd132bd5b3ecd2929ce1721d5eb6ffe20ef43)), closes [#27278](https://github.com/bitnami/charts/issues/27278)
+
+## <small>28.2.4 (2024-06-12)</small>
+
+* [bitnami/redmine] Release 28.2.4 (#27107) ([ea7b2f5](https://github.com/bitnami/charts/commit/ea7b2f5847c1cc7b2693e471e2b13712c1979752)), closes [#27107](https://github.com/bitnami/charts/issues/27107)
 
 ## <small>28.2.3 (2024-06-06)</small>
 

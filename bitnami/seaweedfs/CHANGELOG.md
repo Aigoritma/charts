@@ -1,8 +1,122 @@
 # Changelog
 
+## 3.0.4 (2024-10-28)
+
+* [bitnami/seaweedfs] Release 3.0.4 ([#30097](https://github.com/bitnami/charts/pull/30097))
+
+## <small>3.0.3 (2024-10-16)</small>
+
+* [bitnami/seaweedfs] Release 3.0.3 (#29944) ([1dea08b](https://github.com/bitnami/charts/commit/1dea08b301bf082f6a32cf98332ebde411bb9f2b)), closes [#29944](https://github.com/bitnami/charts/issues/29944)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>3.0.2 (2024-10-07)</small>
+
+* [bitnami/seaweedfs] Release 3.0.2 (#29792) ([fb96676](https://github.com/bitnami/charts/commit/fb9667635ba7b4dea74d1f9df7ba2b30c1c0ee83)), closes [#29792](https://github.com/bitnami/charts/issues/29792)
+
+## <small>3.0.1 (2024-10-03)</small>
+
+* [bitnami/seaweedfs] Release 3.0.1 (#29767) ([47ffa78](https://github.com/bitnami/charts/commit/47ffa783266d4633b4a8f749fc7291e84b9d176b)), closes [#29767](https://github.com/bitnami/charts/issues/29767)
+
+## 3.0.0 (2024-10-03)
+
+* [bitnami/seaweedfs] feat!: :arrow_up: :boom: Bump PostgreSQL to 17.x (#29744) ([024f9e6](https://github.com/bitnami/charts/commit/024f9e6d9faad1a6616ea0145b9bf64a10232c40)), closes [#29744](https://github.com/bitnami/charts/issues/29744)
+
+## <small>2.0.4 (2024-10-02)</small>
+
+* [bitnami/seaweedfs] Release 2.0.4 (#29719) ([36de636](https://github.com/bitnami/charts/commit/36de636d89b745738f1426126f67bfc7f5cca0e9)), closes [#29719](https://github.com/bitnami/charts/issues/29719)
+
+## <small>2.0.3 (2024-09-30)</small>
+
+* [bitnami/seaweedfs] Release 2.0.3 (#29675) ([c077c83](https://github.com/bitnami/charts/commit/c077c839da01b34acd5ffb7b370f542b50fecf20)), closes [#29675](https://github.com/bitnami/charts/issues/29675)
+
+## <small>2.0.2 (2024-09-19)</small>
+
+* [bitnami/seaweedfs] Release 2.0.2 (#29537) ([2c05061](https://github.com/bitnami/charts/commit/2c050617c8d43da601117f7c8fd1945e00962da0)), closes [#29537](https://github.com/bitnami/charts/issues/29537)
+
+## <small>2.0.1 (2024-09-17)</small>
+
+* [bitnami/seaweedfs] test: :white_check_mark: Improve reliability of ginkgo tests (#29473) ([ef52e0d](https://github.com/bitnami/charts/commit/ef52e0d1992e16bed6d9726028b81b917c52bc41)), closes [#29473](https://github.com/bitnami/charts/issues/29473)
+
+## 2.0.0 (2024-09-16)
+
+* [bitnami/seaweedfs] Add support for PostgreSQL as alternative db (#29400) ([c43d3ba](https://github.com/bitnami/charts/commit/c43d3bac08541808d8b0d4f0e86f7870ed7a5411)), closes [#29400](https://github.com/bitnami/charts/issues/29400)
+
+## <small>1.1.2 (2024-09-13)</small>
+
+* [bitnami/seaweedfs] Release 1.1.2 (#29392) ([7df7650](https://github.com/bitnami/charts/commit/7df7650db97c60e5f447e5f18efc06764629d351)), closes [#29392](https://github.com/bitnami/charts/issues/29392)
+
+## <small>1.1.1 (2024-09-12)</small>
+
+* [bitnami/seaweedfs] fix: add apiVersion and kind to volumeClaimTemplates (#29357) ([ed8879b](https://github.com/bitnami/charts/commit/ed8879b066c604f95bde4c08f13d7eb8dc6f2d3f)), closes [#29357](https://github.com/bitnami/charts/issues/29357)
+
+## 1.1.0 (2024-09-10)
+
+* bitnami/seaweedfs external postgres database support (#29216) ([dc9b740](https://github.com/bitnami/charts/commit/dc9b7402d1ea788f806e42b7fc7e5c025e003e2a)), closes [#29216](https://github.com/bitnami/charts/issues/29216)
+
+## <small>1.0.9 (2024-08-19)</small>
+
+* [bitnami/seaweedfs] Release 1.0.9 (#28920) ([28916ca](https://github.com/bitnami/charts/commit/28916ca487e16f1626580f21c2ae8acb443a2e39)), closes [#28920](https://github.com/bitnami/charts/issues/28920)
+
+## <small>1.0.8 (2024-08-07)</small>
+
+* [bitnami/seaweedfs] Release 1.0.8 (#28750) ([c4ee2ee](https://github.com/bitnami/charts/commit/c4ee2ee425e92559b05a554fdae3fd0191614fb0)), closes [#28750](https://github.com/bitnami/charts/issues/28750)
+
+## <small>1.0.7 (2024-07-31)</small>
+
+* [bitnami/seaweedfs] Fix mounting the S3 auth config.json from secret (#28583) ([40d557a](https://github.com/bitnami/charts/commit/40d557addf28bc8c253fb99f3060220e43499632)), closes [#28583](https://github.com/bitnami/charts/issues/28583)
+
+## <small>1.0.6 (2024-07-30)</small>
+
+* [bitnami/seaweedfs] Fix tests (#28572) ([ef36337](https://github.com/bitnami/charts/commit/ef36337c5ffeedf577bb6fcadabbb3a92cf5d8e6)), closes [#28572](https://github.com/bitnami/charts/issues/28572)
+
+## <small>1.0.5 (2024-07-25)</small>
+
+* [bitnami/seaweedfs] Release 1.0.5 (#28483) ([f8b7481](https://github.com/bitnami/charts/commit/f8b7481b1c4b5cb35adf6c82e78f132592fe3335)), closes [#28483](https://github.com/bitnami/charts/issues/28483)
+
+## <small>1.0.4 (2024-07-24)</small>
+
+* [bitnami/seaweedfs] Release 1.0.4 (#28373) ([0aba72d](https://github.com/bitnami/charts/commit/0aba72d38fd247366717c98540c33b7306f3cc4d)), closes [#28373](https://github.com/bitnami/charts/issues/28373)
+
+## <small>1.0.3 (2024-07-23)</small>
+
+* [bitnami/seaweedfs] Release 1.0.3 (#28217) ([4746541](https://github.com/bitnami/charts/commit/4746541360d52a6a2f4c7742b922035326f30a27)), closes [#28217](https://github.com/bitnami/charts/issues/28217)
+
+## <small>1.0.2 (2024-07-22)</small>
+
+* [bitnami/seaweedfs] Release 1.0.2 (#28194) ([f1e0b37](https://github.com/bitnami/charts/commit/f1e0b37ed9860efa6ecc05dcda4ab501b0d7e505)), closes [#28194](https://github.com/bitnami/charts/issues/28194)
+
+## <small>1.0.1 (2024-07-18)</small>
+
+* [bitnami/seaweedfs] Global StorageClass as default value (#28095) ([638cb6e](https://github.com/bitnami/charts/commit/638cb6e030714132cd0e68976a0684b886a96eb1)), closes [#28095](https://github.com/bitnami/charts/issues/28095)
+
+## 1.0.0 (2024-07-13)
+
+* [bitnami/seaweedfs] chore!: :arrow_up: :boom: Update mariadb to 11.4 (#27937) ([4fcc6c6](https://github.com/bitnami/charts/commit/4fcc6c6b05c0f02242ae0a6109077f2048633a4e)), closes [#27937](https://github.com/bitnami/charts/issues/27937)
+
+## <small>0.4.5 (2024-07-04)</small>
+
+* [bitnami/seaweedfs] Release 0.4.5 (#27793) ([f38eab0](https://github.com/bitnami/charts/commit/f38eab0be837bead6abc9e75085241ac0eeb4b23)), closes [#27793](https://github.com/bitnami/charts/issues/27793)
+
+## <small>0.4.4 (2024-07-03)</small>
+
+* [bitnami/seaweedfs] Release 0.4.4 (#27679) ([8725e03](https://github.com/bitnami/charts/commit/8725e032abd5597575c61674a7566889dcd1848f)), closes [#27679](https://github.com/bitnami/charts/issues/27679)
+
+## <small>0.4.3 (2024-07-01)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/seaweedfs] Release 0.4.3 (#27611) ([7b9cebf](https://github.com/bitnami/charts/commit/7b9cebf6f0adac95e2ef99e589f8c492a5ebbf6b)), closes [#27611](https://github.com/bitnami/charts/issues/27611)
+
+## <small>0.4.2 (2024-06-18)</small>
+
+* [bitnami/seaweedfs] Release 0.4.2 (#27415) ([d78148f](https://github.com/bitnami/charts/commit/d78148f0fa81232fe7cb847b8bfe3d3a500a79e0)), closes [#27415](https://github.com/bitnami/charts/issues/27415)
+
+## <small>0.4.1 (2024-06-17)</small>
+
+* [bitnami/seaweedfs] Release 0.4.1 (#27281) ([a02d8b8](https://github.com/bitnami/charts/commit/a02d8b8682525e62d5173aa64e239c56268d12cd)), closes [#27281](https://github.com/bitnami/charts/issues/27281)
+
 ## 0.4.0 (2024-06-11)
 
-* [bitnami/seaweedfs] Make Mariadb optional ([#26366](https://github.com/bitnami/charts/pull/26366))
+* [bitnami/seaweedfs] Make Mariadb optional (#26366) ([36ec406](https://github.com/bitnami/charts/commit/36ec406782e32e6eeea34f13ec61f2734e430f6d)), closes [#26366](https://github.com/bitnami/charts/issues/26366)
 
 ## <small>0.3.6 (2024-06-10)</small>
 

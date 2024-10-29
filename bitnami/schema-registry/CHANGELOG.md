@@ -1,8 +1,62 @@
 # Changelog
 
-## 19.1.4 (2024-06-12)
+## 21.0.2 (2024-09-25)
 
-* [bitnami/schema-registry] Render imagePullSecrets ([#27129](https://github.com/bitnami/charts/pull/27129))
+* [bitnami/schema-registry] Release 21.0.2 ([#29596](https://github.com/bitnami/charts/pull/29596))
+
+## <small>21.0.1 (2024-09-12)</small>
+
+* [bitnami/schema-registry] Release 21.0.1 (#29370) ([6d9c981](https://github.com/bitnami/charts/commit/6d9c981f179c3c383d699b7291b616ee1fb0cb92)), closes [#29370](https://github.com/bitnami/charts/issues/29370)
+* [schema-registry] Fix typo in README: envVars -> extraEnvVars (#27564) ([46cae1c](https://github.com/bitnami/charts/commit/46cae1c851d1df12dcc98662c6304699663d2908)), closes [#27564](https://github.com/bitnami/charts/issues/27564)
+
+## 21.0.0 (2024-08-05)
+
+* [bitnami/schema-registry] Update chart dependency (kafka) (#28672) ([ff628f6](https://github.com/bitnami/charts/commit/ff628f683cd67d664d6bcea2d4c8c90daf353087)), closes [#28672](https://github.com/bitnami/charts/issues/28672)
+
+## 20.0.0 (2024-08-02)
+
+* [bitnami/schema-registry] Release 20.0.0 (#28641) ([b6f2246](https://github.com/bitnami/charts/commit/b6f22465529a3990027ff4de3f72e589c394ed20)), closes [#28641](https://github.com/bitnami/charts/issues/28641)
+
+## <small>19.2.5 (2024-07-25)</small>
+
+* [bitnami/schema-registry] Release 19.2.5 (#28488) ([faf51a1](https://github.com/bitnami/charts/commit/faf51a11ab03c961a30f0379ebd9551a047035aa)), closes [#28488](https://github.com/bitnami/charts/issues/28488)
+
+## <small>19.2.4 (2024-07-24)</small>
+
+* [bitnami/schema-registry] Release 19.2.4 (#28371) ([8586f2a](https://github.com/bitnami/charts/commit/8586f2ac394d32d147aa50a074296ddb3e5f5770)), closes [#28371](https://github.com/bitnami/charts/issues/28371)
+
+## <small>19.2.3 (2024-07-17)</small>
+
+* [bitnami/schema-registry] Release 19.2.3 (#28148) ([ef37a2d](https://github.com/bitnami/charts/commit/ef37a2d3e7bc6d5ed84d9d49a1ef231b728c6c13)), closes [#28148](https://github.com/bitnami/charts/issues/28148)
+
+## <small>19.2.2 (2024-07-16)</small>
+
+* [bitnami/schema-registry] Global StorageClass as default value (#28092) ([1b0c2c6](https://github.com/bitnami/charts/commit/1b0c2c6cbdbf602d74965110225359f5cf2eb446)), closes [#28092](https://github.com/bitnami/charts/issues/28092)
+
+## <small>19.2.1 (2024-07-03)</small>
+
+* [bitnami/schema-registry] Release 19.2.1 (#27716) ([793f73b](https://github.com/bitnami/charts/commit/793f73b2410013bacc67069306a5d792b6360b8c)), closes [#27716](https://github.com/bitnami/charts/issues/27716)
+
+## 19.2.0 (2024-06-28)
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/schema-registry] Add labels to service (#27528) ([638dc9e](https://github.com/bitnami/charts/commit/638dc9e45a55ada309f759368de3677b54da69ed)), closes [#27528](https://github.com/bitnami/charts/issues/27528)
+
+## <small>19.1.7 (2024-06-21)</small>
+
+* [bitnami/schema-registry] Release 19.1.7 (#27414) ([bbeca45](https://github.com/bitnami/charts/commit/bbeca45e5660f575ee0ca3c57992d11dde7beca0)), closes [#27414](https://github.com/bitnami/charts/issues/27414)
+
+## <small>19.1.6 (2024-06-17)</small>
+
+* [bitnami/schema-registry] Release 19.1.6 (#27302) ([d681090](https://github.com/bitnami/charts/commit/d681090fe4e5c8197ac700aa3847b74e18c94064)), closes [#27302](https://github.com/bitnami/charts/issues/27302)
+
+## <small>19.1.5 (2024-06-14)</small>
+
+* [bitnami/schema-registry] Release 19.1.5 (#27169) ([d1fc70f](https://github.com/bitnami/charts/commit/d1fc70f5a2b6b02de8e161e5642f63df5d525f24)), closes [#27169](https://github.com/bitnami/charts/issues/27169)
+
+## <small>19.1.4 (2024-06-13)</small>
+
+* [bitnami/schema-registry] Render imagePullSecrets (#27129) ([155d842](https://github.com/bitnami/charts/commit/155d842a9517619077f82e2589d0104027a4a004)), closes [#27129](https://github.com/bitnami/charts/issues/27129)
 
 ## <small>19.1.3 (2024-06-06)</small>
 

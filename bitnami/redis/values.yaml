@@ -9,7 +9,8 @@
 
 ## @param global.imageRegistry Global Docker image registry
 ## @param global.imagePullSecrets Global Docker registry secret names as an array
-## @param global.storageClass Global StorageClass for Persistent Volume(s)
+## @param global.defaultStorageClass Global default StorageClass for Persistent Volume(s)
+## @param global.storageClass DEPRECATED: use global.defaultStorageClass instead
 ## @param global.redis.password Global Redis&reg; password (overrides `auth.password`)
 ##
 global:
@@ -19,6 +20,7 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
+  defaultStorageClass: ""
   storageClass: ""
   redis:
     password: ""
@@ -100,10 +102,9 @@ diagnosticMode:
 image:
   registry: docker.io
   repository: bitnami/redis
-  tag: 7.2.5-debian-12-r0
+  tag: 7.4.1-debian-12-r0
   digest: ""
   ## Specify a imagePullPolicy
-  ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
   ##
   pullPolicy: IfNotPresent
@@ -170,6 +171,9 @@ master:
   ## @param master.count Number of Redis&reg; master instances to deploy (experimental, requires additional configuration)
   ##
   count: 1
+  ## @param master.revisionHistoryLimit The number of old history to retain to allow rollback
+  ## NOTE: Explicitly setting this field to 0, will result in cleaning up all the history, breaking ability to rollback
+  revisionHistoryLimit: 10
   ## @param master.configuration Configuration for Redis&reg; master nodes
   ## ref: https://redis.io/topics/config
   ##
@@ -628,6 +632,9 @@ master:
     create: true
     minAvailable: ""
     maxUnavailable: ""
+  ## @param master.extraPodSpec Optionally specify extra PodSpec for the Redis&reg; master pod(s)
+  ##
+  extraPodSpec: {}
 ## @section Redis&reg; replicas configuration parameters
 ##
 replica:
@@ -638,6 +645,9 @@ replica:
   ## @param replica.replicaCount Number of Redis&reg; replicas to deploy
   ##
   replicaCount: 3
+  ## @param replica.revisionHistoryLimit The number of old history to retain to allow rollback
+  ## NOTE: Explicitly setting this field to 0, will result in cleaning up all the history, breaking ability to rollback
+  revisionHistoryLimit: 10
   ## @param replica.configuration Configuration for Redis&reg; replicas nodes
   ## ref: https://redis.io/topics/config
   ##
@@ -1110,6 +1120,9 @@ replica:
     create: true
     minAvailable: ""
     maxUnavailable: ""
+  ## @param replica.extraPodSpec Optionally specify extra PodSpec for the Redis&reg; replicas pod(s)
+  ##
+  extraPodSpec: {}
 ## @section Redis&reg; Sentinel configuration parameters
 ##
 
@@ -1132,10 +1145,9 @@ sentinel:
   image:
     registry: docker.io
     repository: bitnami/redis-sentinel
-    tag: 7.2.5-debian-12-r0
+    tag: 7.4.1-debian-12-r0
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -1512,6 +1524,9 @@ sentinel:
   ## @param sentinel.terminationGracePeriodSeconds Integer setting the termination grace period for the redis-node pods
   ##
   terminationGracePeriodSeconds: 30
+  ## @param sentinel.extraPodSpec Optionally specify extra PodSpec for the Redis&reg; Sentinel pod(s)
+  ##
+  extraPodSpec: {}
 ## @section Other Parameters
 ##
 
@@ -1683,7 +1698,7 @@ metrics:
   image:
     registry: docker.io
     repository: bitnami/redis-exporter
-    tag: 1.60.0-debian-12-r1
+    tag: 1.63.0-debian-12-r1
     digest: ""
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.
@@ -1920,7 +1935,7 @@ metrics:
     # add metricRelabelings with label like app=redis to main redis pod-monitor port
     # - interval: "30s"
     #   path: "/scrape"
-    #   port: "metrics"
+    #   port: "http-metrics"
     #   params:
     #     target: ["localhost:26379"]
     #   metricRelabelings:
@@ -2055,7 +2070,7 @@ volumePermissions:
   image:
     registry: docker.io
     repository: bitnami/os-shell
-    tag: 12-debian-12-r22
+    tag: 12-debian-12-r30
     digest: ""
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.
@@ -2095,6 +2110,14 @@ volumePermissions:
     seLinuxOptions: {}
     runAsUser: 0
 
+  ## @param volumePermissions.extraEnvVars Array with extra environment variables to add to volume permissions init container.
+  ## e.g:
+  ## extraEnvVars:
+  ##   - name: FOO
+  ##     value: "bar"
+  ##
+  extraEnvVars: []
+
 ## Kubectl InitContainer
 ## used by Sentinel to update the isMaster label on the Redis(TM) pods
 ##
@@ -2111,10 +2134,9 @@ kubectl:
   image:
     registry: docker.io
     repository: bitnami/kubectl
-    tag: 1.30.1-debian-12-r1
+    tag: 1.31.1-debian-12-r3
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -2181,7 +2203,7 @@ sysctl:
   image:
     registry: docker.io
     repository: bitnami/os-shell
-    tag: 12-debian-12-r22
+    tag: 12-debian-12-r30
     digest: ""
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.

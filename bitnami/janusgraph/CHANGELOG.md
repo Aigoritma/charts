@@ -1,8 +1,70 @@
 # Changelog
 
-## 0.3.8 (2024-06-10)
+## 0.3.23 (2024-10-18)
 
-* [bitnami/janusgraph] Fix storage password secretName helper function ([#27074](https://github.com/bitnami/charts/pull/27074))
+* [bitnami/janusgraph] Remove wrong entries from image verification ([#29914](https://github.com/bitnami/charts/pull/29914))
+
+## <small>0.3.22 (2024-10-16)</small>
+
+* [bitnami/janusgraph] Release 0.3.22 (#29951) ([275a6d4](https://github.com/bitnami/charts/commit/275a6d435eeba33f4e4240d7c2c3f6f8829124ba)), closes [#29951](https://github.com/bitnami/charts/issues/29951)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>0.3.21 (2024-09-13)</small>
+
+* [bitnami/janusgraph] Release 0.3.21 (#29395) ([37fcbce](https://github.com/bitnami/charts/commit/37fcbce879573fad85c8661011c20015bd90f311)), closes [#29395](https://github.com/bitnami/charts/issues/29395)
+
+## <small>0.3.20 (2024-09-13)</small>
+
+* [bitnami/janusgraph] Update version of Cassandra's chart (#29383) ([b3e66e2](https://github.com/bitnami/charts/commit/b3e66e27181bde01f3778b584cb03f68c05e95b2)), closes [#29383](https://github.com/bitnami/charts/issues/29383)
+
+## <small>0.3.19 (2024-08-30)</small>
+
+* [bitnami/janusgraph] Release 0.3.19 (#29135) ([8062bfb](https://github.com/bitnami/charts/commit/8062bfb2dd29374c5c4384cd27aec41f6361fd90)), closes [#29135](https://github.com/bitnami/charts/issues/29135)
+
+## <small>0.3.18 (2024-07-25)</small>
+
+* [bitnami/janusgraph] Release 0.3.18 (#28441) ([cd40414](https://github.com/bitnami/charts/commit/cd40414c99f23f50260d4edf175a684ca09fa7d8)), closes [#28441](https://github.com/bitnami/charts/issues/28441)
+
+## <small>0.3.17 (2024-07-24)</small>
+
+* [bitnami/janusgraph] Release 0.3.17 (#28297) ([3714673](https://github.com/bitnami/charts/commit/371467338b1b7a8e0248e9259d7eb81d2873e6c6)), closes [#28297](https://github.com/bitnami/charts/issues/28297)
+
+## <small>0.3.16 (2024-07-24)</small>
+
+* [bitnami/janusgraph] Release 0.3.16 (#28256) ([911c81e](https://github.com/bitnami/charts/commit/911c81e8749f3c24078fb849cf8ce670464f150f)), closes [#28256](https://github.com/bitnami/charts/issues/28256)
+
+## <small>0.3.15 (2024-07-18)</small>
+
+* [bitnami/janusgraph] Global StorageClass as default value (#28033) ([227a2ce](https://github.com/bitnami/charts/commit/227a2ce1da9ccb452635061bd57ca57e737e203d)), closes [#28033](https://github.com/bitnami/charts/issues/28033)
+
+## <small>0.3.14 (2024-07-05)</small>
+
+* [bitnami/janusgraph] Release 0.3.14 (#27812) ([aa66dd1](https://github.com/bitnami/charts/commit/aa66dd1abf1e766bb54cac5d151e816accedc197)), closes [#27812](https://github.com/bitnami/charts/issues/27812)
+
+## <small>0.3.13 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/janusgraph] Release 0.3.13 (#27697) ([b06ce3d](https://github.com/bitnami/charts/commit/b06ce3d9cba0f89a4eeae4852cb4e710349fc72a)), closes [#27697](https://github.com/bitnami/charts/issues/27697)
+
+## <small>0.3.12 (2024-06-21)</small>
+
+* [bitnami/janusgraph] Fix fullname resolution for cassandra subchart (#27151) ([6773447](https://github.com/bitnami/charts/commit/677344797f3ff1a1342c8237182db17f6c09b675)), closes [#27151](https://github.com/bitnami/charts/issues/27151)
+
+## <small>0.3.11 (2024-06-18)</small>
+
+* [bitnami/janusgraph] Release 0.3.11 (#27358) ([da2f1b0](https://github.com/bitnami/charts/commit/da2f1b06d8cb23a1668f1a1a6b848eddfa502fcb)), closes [#27358](https://github.com/bitnami/charts/issues/27358)
+
+## <small>0.3.10 (2024-06-17)</small>
+
+* [bitnami/janusgraph] Release 0.3.10 (#27235) ([b446901](https://github.com/bitnami/charts/commit/b44690149f00ce2915debf8e060ccfe598ba5383)), closes [#27235](https://github.com/bitnami/charts/issues/27235)
+
+## <small>0.3.9 (2024-06-14)</small>
+
+* [bitnami/janusgraph] Release 0.3.9 (#27170) ([38b4c59](https://github.com/bitnami/charts/commit/38b4c598b430d95d1fe5513490321ffcfcbe1721)), closes [#27170](https://github.com/bitnami/charts/issues/27170)
+
+## <small>0.3.8 (2024-06-12)</small>
+
+* [bitnami/janusgraph] Fix storage password secretName helper function (#27074) ([049dc02](https://github.com/bitnami/charts/commit/049dc029ebcb909073aef82189e29aba73746fc9)), closes [#27074](https://github.com/bitnami/charts/issues/27074)
 
 ## <small>0.3.7 (2024-06-06)</small>
 

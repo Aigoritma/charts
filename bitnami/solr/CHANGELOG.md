@@ -1,8 +1,65 @@
 # Changelog
 
-## 9.3.3 (2024-06-06)
+## 9.4.6 (2024-10-20)
 
-* [bitnami/solr] Release 9.3.3 ([#27018](https://github.com/bitnami/charts/pull/27018))
+* [bitnami/solr] Release 9.4.6 ([#30001](https://github.com/bitnami/charts/pull/30001))
+
+## <small>9.4.5 (2024-09-17)</small>
+
+* [bitnami/solr] test: :white_check_mark: Improve reliability of ginkgo tests (#29463) ([1e01d4e](https://github.com/bitnami/charts/commit/1e01d4e63c18c978e9db4bbafa44dbbf5a89695b)), closes [#29463](https://github.com/bitnami/charts/issues/29463)
+
+## <small>9.4.4 (2024-09-16)</small>
+
+* [bitnami/solr] Use common password manager to handle password (#29430) ([3ecd8bd](https://github.com/bitnami/charts/commit/3ecd8bd03ceb15b03d06744989dc6aafab51c34d)), closes [#29430](https://github.com/bitnami/charts/issues/29430)
+
+## <small>9.4.3 (2024-09-11)</small>
+
+* [bitnami/solr] fix: add apiVersion and kind to volumeClaimTemplates (#29356) ([1e10d96](https://github.com/bitnami/charts/commit/1e10d964f28584ac5f9d4de6dc9118ca504e49ba)), closes [#29356](https://github.com/bitnami/charts/issues/29356)
+
+## <small>9.4.2 (2024-09-10)</small>
+
+* [bitnami/solr] Release 9.4.2 (#29317) ([18066e1](https://github.com/bitnami/charts/commit/18066e1687f1dafd53b1fce35ae0a9351a006f13)), closes [#29317](https://github.com/bitnami/charts/issues/29317)
+
+## <small>9.4.1 (2024-09-03)</small>
+
+* [bitnami/solr] Release 9.4.1 (#29171) ([e16f252](https://github.com/bitnami/charts/commit/e16f2527ebe36c8773f9c9a87c37a3e2a9d517cf)), closes [#29171](https://github.com/bitnami/charts/issues/29171)
+
+## 9.4.0 (2024-08-08)
+
+* [bitnami/solr] Add revisionHistoryLimit variable for metrics-deployment (#28137) ([e0efe5b](https://github.com/bitnami/charts/commit/e0efe5b38e0fd8e7a2636ef50fed474b886cc84a)), closes [#28137](https://github.com/bitnami/charts/issues/28137)
+
+## <small>9.3.10 (2024-07-25)</small>
+
+* [bitnami/solr] Release 9.3.10 (#28511) ([1bd973f](https://github.com/bitnami/charts/commit/1bd973fafea0e2e802bd48cbdf353b0da0f6a06b)), closes [#28511](https://github.com/bitnami/charts/issues/28511)
+
+## <small>9.3.9 (2024-07-24)</small>
+
+* [bitnami/solr] Release 9.3.9 (#28374) ([1a45149](https://github.com/bitnami/charts/commit/1a45149d8dfe4f0a4ad0a62f87d202fdebe33079)), closes [#28374](https://github.com/bitnami/charts/issues/28374)
+
+## <small>9.3.8 (2024-07-23)</small>
+
+* [bitnami/solr] Change permissions of the Solr data directory (#28189) ([1590355](https://github.com/bitnami/charts/commit/159035583e70a5ded7d1b7aea22978e022c79660)), closes [#28189](https://github.com/bitnami/charts/issues/28189)
+
+## <small>9.3.7 (2024-07-18)</small>
+
+* [bitnami/solr] Global StorageClass as default value (#28096) ([6897cfa](https://github.com/bitnami/charts/commit/6897cfa75b4e26fc94e211c4984f6d9e713212ec)), closes [#28096](https://github.com/bitnami/charts/issues/28096)
+
+## <small>9.3.6 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/solr] Release 9.3.6 (#27720) ([9624189](https://github.com/bitnami/charts/commit/9624189a95b49082ca553c021c1d7ca749c776a1)), closes [#27720](https://github.com/bitnami/charts/issues/27720)
+
+## <small>9.3.5 (2024-06-18)</small>
+
+* [bitnami/solr] Release 9.3.5 (#27417) ([5ea1326](https://github.com/bitnami/charts/commit/5ea13267930734b27e99bf62bc38c175b4daaa94)), closes [#27417](https://github.com/bitnami/charts/issues/27417)
+
+## <small>9.3.4 (2024-06-17)</small>
+
+* [bitnami/solr] Release 9.3.4 (#27289) ([876f64b](https://github.com/bitnami/charts/commit/876f64b612160ea67d6d2dbfdb32399379cffc0b)), closes [#27289](https://github.com/bitnami/charts/issues/27289)
+
+## <small>9.3.3 (2024-06-06)</small>
+
+* [bitnami/solr] Release 9.3.3 (#27018) ([c09a0bb](https://github.com/bitnami/charts/commit/c09a0bb43ab9526405787a2522c672bd795e8c3e)), closes [#27018](https://github.com/bitnami/charts/issues/27018)
 
 ## <small>9.3.2 (2024-06-05)</small>
 

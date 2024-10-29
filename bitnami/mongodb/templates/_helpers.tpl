@@ -47,6 +47,17 @@ Create a default mongo arbiter service name which can be overridden.
 {{- end }}
 
 {{/*
+Create a default mongo hidden service name which can be overridden.
+*/}}
+{{- define "mongodb.hidden.service.nameOverride" -}}
+    {{- if and .Values.hidden.service .Values.hidden.service.nameOverride -}}
+        {{- print .Values.hidden.service.nameOverride -}}
+    {{- else -}}
+        {{- printf "%s-hidden-headless" (include "mongodb.fullname" .) -}}
+    {{- end }}
+{{- end }}
+
+{{/*
 Return the proper MongoDB&reg; image name
 */}}
 {{- define "mongodb.image" -}}
@@ -232,7 +243,7 @@ Get the initialization scripts ConfigMap name.
 Get initial primary host to configure MongoDB cluster.
 */}}
 {{- define "mongodb.initialPrimaryHost" -}}
-{{ ternary ( printf "%s-0.$(K8S_SERVICE_NAME).$(MY_POD_NAMESPACE).svc.%s" (include "mongodb.fullname" .) .Values.clusterDomain ) ( first .Values.externalAccess.service.publicNames ) ( empty .Values.externalAccess.service.publicNames ) }}
+{{ ternary ( printf "%s-0.%s.$(MY_POD_NAMESPACE).svc.%s" (include "mongodb.fullname" .) (include "mongodb.service.nameOverride" .) .Values.clusterDomain ) ( first .Values.externalAccess.service.publicNames ) ( empty .Values.externalAccess.service.publicNames ) }}
 {{- end -}}
 
 {{/*
@@ -269,6 +280,33 @@ Init container definition to change/establish volume permissions.
 {{- end -}}
 
 {{/*
+Init container definition to recover log dir.
+*/}}
+{{- define "mongodb.initContainer.prepareLogDir" }}
+- name: log-dir
+  image: {{ include "mongodb.image" . }}
+  imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+  command:
+    - /bin/bash
+  args:
+    - -ec
+    - |
+      ln -sf /dev/stdout "/opt/bitnami/mongodb/logs/mongodb.log"
+  {{- if .Values.containerSecurityContext.enabled }}
+  securityContext: {{- include "common.compatibility.renderSecurityContext" (dict "secContext" .Values.containerSecurityContext "context" $) | nindent 12 }}
+  {{- end }}
+  {{- if .Values.resources }}
+  resources: {{- toYaml .Values.resources | nindent 12 }}
+  {{- else if ne .Values.resourcesPreset "none" }}
+  resources: {{- include "common.resources.preset" (dict "type" .Values.resourcesPreset) | nindent 12 }}
+  {{- end }}
+  volumeMounts:
+    - name: empty-dir
+      mountPath: /opt/bitnami/mongodb/logs
+      subPath: app-logs-dir
+{{- end -}}
+
+{{/*
 Init container definition to get external IP addresses.
 */}}
 {{- define "mongodb.initContainers.autoDiscovery" -}}
@@ -276,7 +314,6 @@ Init container definition to get external IP addresses.
   image: {{ include "mongodb.externalAccess.autoDiscovery.image" . }}
   imagePullPolicy: {{ .Values.externalAccess.autoDiscovery.image.pullPolicy | quote }}
   # We need the service account token for contacting the k8s API
-  automountServiceAccountToken: true
   command:
     - /scripts/auto-discovery.sh
   env:
@@ -318,6 +355,9 @@ Init container definition to wait external DNS names.
       while ! (getent ahosts "{{ include "mongodb.initialPrimaryHost" . }}" | grep STREAM); do
         sleep 10
       done
+  {{- if .Values.containerSecurityContext.enabled }}
+  securityContext: {{- include "common.compatibility.renderSecurityContext" (dict "secContext" .Values.containerSecurityContext "context" $) | nindent 12 }}
+  {{- end }}
   {{- if .Values.externalAccess.dnsCheck.resources }}
   resources: {{- toYaml .Values.externalAccess.dnsCheck.resources | nindent 12 }}
   {{- else if ne .Values.externalAccess.dnsCheck.resourcesPreset "none" }}

@@ -1,8 +1,119 @@
 # Changelog
 
-## 15.6.6 (2024-06-10)
+## 16.2.0 (2024-10-28)
 
-* [bitnami/mongodb] Add securityContext to generate-tls in replicaset ([#26606](https://github.com/bitnami/charts/pull/26606))
+* [bitnami/mongodb] fix: initial primary host variable for arbiter and hidden replicas ([#29584](https://github.com/bitnami/charts/pull/29584))
+
+## <small>16.1.1 (2024-10-25)</small>
+
+* [bitnami/mongodb] Release 16.1.1 (#30084) ([24f6cde](https://github.com/bitnami/charts/commit/24f6cde58746cdc617a672d63add5bfd8b7e6b6d)), closes [#30084](https://github.com/bitnami/charts/issues/30084)
+
+## 16.1.0 (2024-10-23)
+
+* [bitnami/mongodb] Add resources for backup cronjob (#30021) ([4836089](https://github.com/bitnami/charts/commit/48360898aedcdb853fb8f967ed64bfdc72399ba8)), closes [#30021](https://github.com/bitnami/charts/issues/30021)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>16.0.3 (2024-10-10)</small>
+
+* [bitnami/mongodb] Fixed awk script to extract  in order to be more st… (#29824) ([86745de](https://github.com/bitnami/charts/commit/86745de16a329beadf4277bc602a12224a93e84a)), closes [#29824](https://github.com/bitnami/charts/issues/29824)
+
+## <small>16.0.2 (2024-10-09)</small>
+
+* [bitnami/mongodb] Release 16.0.2 (#29855) ([7fec11a](https://github.com/bitnami/charts/commit/7fec11aa57b1c66cea587219b86081fde3ac0b97)), closes [#29855](https://github.com/bitnami/charts/issues/29855)
+
+## <small>16.0.1 (2024-10-08)</small>
+
+* [bitnami/mongodb] Release 16.0.1 (#29830) ([6360c47](https://github.com/bitnami/charts/commit/6360c478136e8c0d58b7bb50e7f507308afc25f6)), closes [#29830](https://github.com/bitnami/charts/issues/29830)
+* [bitnami/mongodb] Update README (#29812) ([6f8a1bf](https://github.com/bitnami/charts/commit/6f8a1bf241a0032a3e44a2ea47f9574f6786d436)), closes [#29812](https://github.com/bitnami/charts/issues/29812)
+
+## 16.0.0 (2024-10-07)
+
+* [bitnami/mongodb] Release 16.0.0 (#29801) ([5973e5c](https://github.com/bitnami/charts/commit/5973e5c8e6aa766997000d6a49b9be7936298c30)), closes [#29801](https://github.com/bitnami/charts/issues/29801)
+
+## <small>15.6.26 (2024-09-23)</small>
+
+* [bitnami/mongodb] Fixed arbiter anti affinity rules to prevent it from running on the same node of a ([ded7e1f](https://github.com/bitnami/charts/commit/ded7e1f62ddcaba8fdeaf29a485aaf199295ccfc)), closes [#29565](https://github.com/bitnami/charts/issues/29565)
+
+## <small>15.6.25 (2024-09-19)</small>
+
+* [bitnami/mongodb] Release 15.6.25 (#29529) ([8091ced](https://github.com/bitnami/charts/commit/8091ced2fc72072724265e78a09ad490e4711c6a)), closes [#29529](https://github.com/bitnami/charts/issues/29529)
+
+## <small>15.6.24 (2024-09-14)</small>
+
+* [bitnami/mongodb] Release 15.6.24 (#29414) ([dd49bc9](https://github.com/bitnami/charts/commit/dd49bc9b8e14aef99705e0c9eba76ac01de93d5f)), closes [#29414](https://github.com/bitnami/charts/issues/29414)
+
+## <small>15.6.23 (2024-09-11)</small>
+
+* [bitnami/mongodb] Allow rendering resources values (#29346) ([2fbc081](https://github.com/bitnami/charts/commit/2fbc081c5441b904df0b142e5ae42f77f9357385)), closes [#29346](https://github.com/bitnami/charts/issues/29346)
+
+## <small>15.6.22 (2024-08-29)</small>
+
+* [bitnami/mongodb] add securityContext via helper to initContainter dns-check (#29038) ([56299fe](https://github.com/bitnami/charts/commit/56299fe14d54ac685fb55da7d23c6b91c15f8e3e)), closes [#29038](https://github.com/bitnami/charts/issues/29038)
+
+## <small>15.6.21 (2024-08-26)</small>
+
+* [bitnami/mongodb] Release 15.6.21 (#29035) ([21acb97](https://github.com/bitnami/charts/commit/21acb974bf8edca0550bccb71a1df126a277d59b)), closes [#29035](https://github.com/bitnami/charts/issues/29035)
+
+## <small>15.6.20 (2024-08-20)</small>
+
+* [bitnami/mongodb] Fix logic to add custom annotations to external-access service (#28883) ([785e59b](https://github.com/bitnami/charts/commit/785e59bccf87c5ecae2b472901e7f6e7fbf2c196)), closes [#28883](https://github.com/bitnami/charts/issues/28883)
+
+## <small>15.6.19 (2024-08-14)</small>
+
+* [bitnami/mongodb] Release 15.6.19 (#28889) ([8b3cb57](https://github.com/bitnami/charts/commit/8b3cb57c221f0f035e020cecc70b44e26cfd8040)), closes [#28889](https://github.com/bitnami/charts/issues/28889)
+
+## <small>15.6.18 (2024-08-07)</small>
+
+* [bitnami/mongodb] fix(NOTES.txt): Missing messages (#28685) ([7e31f12](https://github.com/bitnami/charts/commit/7e31f12208a7ae11060d3eaa68c09f74cbc4a6a4)), closes [#28685](https://github.com/bitnami/charts/issues/28685)
+
+## <small>15.6.17 (2024-08-06)</small>
+
+* [bitnami/mongodb] Release 15.6.17 (#28697) ([b6d6a24](https://github.com/bitnami/charts/commit/b6d6a2449195d87387cce9aec88cc6215763c569)), closes [#28697](https://github.com/bitnami/charts/issues/28697)
+
+## <small>15.6.16 (2024-07-25)</small>
+
+* [bitnami/mongodb] Release 15.6.16 (#28453) ([86d3ac8](https://github.com/bitnami/charts/commit/86d3ac8763d831263d8436ce890cd54ef62a9a17)), closes [#28453](https://github.com/bitnami/charts/issues/28453)
+
+## <small>15.6.15 (2024-07-24)</small>
+
+* [bitnami/mongodb] Release 15.6.15 (#28332) ([e107031](https://github.com/bitnami/charts/commit/e107031d3833f020d47d5fddcc24c7f43859443e)), closes [#28332](https://github.com/bitnami/charts/issues/28332)
+
+## <small>15.6.14 (2024-07-18)</small>
+
+* [bitnami/mongodb] Global StorageClass as default value (#28061) ([0661fba](https://github.com/bitnami/charts/commit/0661fbaf3436de16452d82cbf244a616c5892e64)), closes [#28061](https://github.com/bitnami/charts/issues/28061)
+
+## <small>15.6.13 (2024-07-16)</small>
+
+* [bitnami/mongodb] Fix autoDiscovery initContainer template (#27953) ([c3955b0](https://github.com/bitnami/charts/commit/c3955b0e2c0cd7fc287f3acc36990b8c0a8c09ac)), closes [#27953](https://github.com/bitnami/charts/issues/27953)
+
+## <small>15.6.12 (2024-07-01)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/mongodb] Release 15.6.12 (#27590) ([97d0ec8](https://github.com/bitnami/charts/commit/97d0ec8a20365d93a4121dd7df98352eac8e69a7)), closes [#27590](https://github.com/bitnami/charts/issues/27590)
+
+## <small>15.6.11 (2024-06-25)</small>
+
+* [bitnami/mongodb] Recover logging to stdout (#27510) ([33bbddd](https://github.com/bitnami/charts/commit/33bbddd532d0debbe775a13a1b0c31e59ccd3c35)), closes [#27510](https://github.com/bitnami/charts/issues/27510)
+
+## <small>15.6.10 (2024-06-20)</small>
+
+* [bitnami/mongodb] add space back so script works again (#27183) ([e880657](https://github.com/bitnami/charts/commit/e880657e7744f7871d04c55283f34fad9d04598a)), closes [#27183](https://github.com/bitnami/charts/issues/27183)
+
+## <small>15.6.9 (2024-06-18)</small>
+
+* [bitnami/mongodb] Release 15.6.9 (#27382) ([d59a4b1](https://github.com/bitnami/charts/commit/d59a4b1346d607d82a68d59c6c162197b2305858)), closes [#27382](https://github.com/bitnami/charts/issues/27382)
+
+## <small>15.6.8 (2024-06-17)</small>
+
+* [bitnami/mongodb] Release 15.6.8 (#27317) ([71d3b7e](https://github.com/bitnami/charts/commit/71d3b7efac8585b90018d0cda9099104bb6a8ae4)), closes [#27317](https://github.com/bitnami/charts/issues/27317)
+
+## <small>15.6.7 (2024-06-17)</small>
+
+* [bitnami/mongodb] Release 15.6.7 (#27254) ([33a8fd2](https://github.com/bitnami/charts/commit/33a8fd21116b9ee49238ab13553010b859149bc1)), closes [#27254](https://github.com/bitnami/charts/issues/27254)
+
+## <small>15.6.6 (2024-06-10)</small>
+
+* [bitnami/mongodb] Add securityContext to generate-tls in replicaset (#26606) ([34ff09b](https://github.com/bitnami/charts/commit/34ff09b6e8f797163172059c194250961869e034)), closes [#26606](https://github.com/bitnami/charts/issues/26606)
 
 ## <small>15.6.5 (2024-06-06)</small>
 

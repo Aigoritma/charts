@@ -14,7 +14,7 @@ Trademarks: This software listing is packaged by Bitnami. The respective tradema
 helm install my-release oci://registry-1.docker.io/bitnamicharts/postgresql
 ```
 
-Looking to use PostgreSQL in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of Bitnami Application Catalog.
+Looking to use PostgreSQL in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
 ## Introduction
 
@@ -52,7 +52,7 @@ Bitnami charts allow setting resource requests and limits for all containers ins
 
 To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcePreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
 
-### [Rolling VS Immutable tags](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-understand-rolling-tags-containers-index.html)
+### [Rolling VS Immutable tags](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html)
 
 It is strongly recommended to use immutable tags in a production environment. This ensures your deployment does not change automatically if the same tag is updated with a different image.
 
@@ -231,7 +231,7 @@ These are the steps you will usually follow to back up and restore your PostgreS
 - Use Velero to restore the backed-up PVs on the destination cluster.
 - Create a new deployment on the destination cluster with the same chart, deployment name, credentials and other parameters as the original. This new deployment will use the restored PVs and hence the original data.
 
-Refer to our detailed [tutorial on backing up and restoring PostgreSQL deployments on Kubernetes](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-migrate-data-tac-velero-index.html) for more information.
+Refer to our detailed [tutorial on backing up and restoring PostgreSQL deployments on Kubernetes](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-migrate-data-tac-velero-index.html) for more information.
 
 ### NetworkPolicy
 
@@ -279,7 +279,8 @@ If you already have data in it, you will fail to sync to standby nodes for all c
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | `global.imageRegistry`                                     | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`   |
 | `global.imagePullSecrets`                                  | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`   |
-| `global.storageClass`                                      | Global StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                        | `""`   |
+| `global.defaultStorageClass`                               | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`   |
+| `global.storageClass`                                      | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`   |
 | `global.postgresql.auth.postgresPassword`                  | Password for the "postgres" admin user (overrides `auth.postgresPassword`)                                                                                                                                                                                                                                                                                          | `""`   |
 | `global.postgresql.auth.username`                          | Name for a custom user to create (overrides `auth.username`)                                                                                                                                                                                                                                                                                                        | `""`   |
 | `global.postgresql.auth.password`                          | Password for the custom user to create (overrides `auth.password`)                                                                                                                                                                                                                                                                                                  | `""`   |
@@ -384,6 +385,9 @@ If you already have data in it, you will fail to sync to standby nodes for all c
 | `primary.initdb.scriptsSecret`                              | Secret with scripts to be run at first boot (in case it contains sensitive information)                                                                                                                                           | `""`                  |
 | `primary.initdb.user`                                       | Specify the PostgreSQL username to execute the initdb scripts                                                                                                                                                                     | `""`                  |
 | `primary.initdb.password`                                   | Specify the PostgreSQL password to execute the initdb scripts                                                                                                                                                                     | `""`                  |
+| `primary.preInitDb.scripts`                                 | Dictionary of pre-init scripts                                                                                                                                                                                                    | `{}`                  |
+| `primary.preInitDb.scriptsConfigMap`                        | ConfigMap with pre-init scripts to be run                                                                                                                                                                                         | `""`                  |
+| `primary.preInitDb.scriptsSecret`                           | Secret with pre-init scripts to be run                                                                                                                                                                                            | `""`                  |
 | `primary.standby.enabled`                                   | Whether to enable current cluster's primary as standby server of another cluster or not                                                                                                                                           | `false`               |
 | `primary.standby.primaryHost`                               | The Host of replication primary in the other cluster                                                                                                                                                                              | `""`                  |
 | `primary.standby.primaryPort`                               | The Port of replication primary in the other cluster                                                                                                                                                                              | `""`                  |
@@ -906,7 +910,7 @@ postgresql 08:10:14.72 INFO  ==> ** Starting PostgreSQL **
 
 #### Useful links
 
-- [Bitnami Tutorial](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-resolve-helm2-helm3-post-migration-issues-index.html)
+- [Bitnami Tutorial](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-resolve-helm2-helm3-post-migration-issues-index.html)
 - [Helm docs](https://helm.sh/docs/topics/v2_v3_migration)
 - [Helm Blog](https://helm.sh/blog/migrate-from-helm-v2-to-helm-v3)
 

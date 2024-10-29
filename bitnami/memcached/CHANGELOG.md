@@ -1,8 +1,66 @@
 # Changelog
 
-## 7.4.5 (2024-06-06)
+## 7.5.2 (2024-10-21)
 
-* [bitnami/memcached] Release 7.4.5 ([#26981](https://github.com/bitnami/charts/pull/26981))
+* [bitnami/memcached] Release 7.5.2 ([#30004](https://github.com/bitnami/charts/pull/30004))
+
+## <small>7.5.1 (2024-10-17)</small>
+
+* [bitnami/memcached] Release 7.5.1 (#29974) ([93ab813](https://github.com/bitnami/charts/commit/93ab8137138d45890625478410b7fd08d721f720)), closes [#29974](https://github.com/bitnami/charts/issues/29974)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## 7.5.0 (2024-09-30)
+
+* [bitnami/memcached] Add optional emptyDir medium configuration (#29570) ([86d010b](https://github.com/bitnami/charts/commit/86d010b1e9ad189e2b30bb14fd4fce0fc457d082)), closes [#29570](https://github.com/bitnami/charts/issues/29570)
+
+## <small>7.4.16 (2024-09-11)</small>
+
+* [bitnami/memcached] Allow rendering resources values (#29345) ([69b2b1d](https://github.com/bitnami/charts/commit/69b2b1d49fffa5dddf0df18315e2fc8ba1daf14c)), closes [#29345](https://github.com/bitnami/charts/issues/29345)
+
+## <small>7.4.15 (2024-09-07)</small>
+
+* [bitnami/memcached] Release 7.4.15 (#29299) ([7feed29](https://github.com/bitnami/charts/commit/7feed294b11d97bfc85d376a7f106d830bdfb339)), closes [#29299](https://github.com/bitnami/charts/issues/29299)
+
+## <small>7.4.14 (2024-09-06)</small>
+
+* [bitnami/memcached] Release 7.4.14 (#29248) ([aff3554](https://github.com/bitnami/charts/commit/aff3554b6b16eee1d49977aaefba40c5d26d2a2d)), closes [#29248](https://github.com/bitnami/charts/issues/29248)
+
+## <small>7.4.13 (2024-09-03)</small>
+
+* [bitnami/memcached] Release 7.4.13 (#29162) ([b978860](https://github.com/bitnami/charts/commit/b9788608b4c18644ab58cb2132ca3435584ea131)), closes [#29162](https://github.com/bitnami/charts/issues/29162)
+
+## <small>7.4.12 (2024-08-28)</small>
+
+* Enable publishNotReadyAddresses on memcached service (#29045) ([f6bd12f](https://github.com/bitnami/charts/commit/f6bd12f542c20e330919cbcbdac47504f9186cb7)), closes [#29045](https://github.com/bitnami/charts/issues/29045)
+
+## <small>7.4.11 (2024-07-25)</small>
+
+* [bitnami/memcached] Release 7.4.11 (#28434) ([3ed3327](https://github.com/bitnami/charts/commit/3ed33274e68fef3404eac7e3ad4732de10ab9ac3)), closes [#28434](https://github.com/bitnami/charts/issues/28434)
+
+## <small>7.4.10 (2024-07-24)</small>
+
+* [bitnami/memcached] Release 7.4.10 (#28321) ([21df996](https://github.com/bitnami/charts/commit/21df996c7dc8521febae5d3ac286db0e79dac8c4)), closes [#28321](https://github.com/bitnami/charts/issues/28321)
+
+## <small>7.4.9 (2024-07-17)</small>
+
+* [bitnami/memcached] Global StorageClass as default value (#28055) ([d11158b](https://github.com/bitnami/charts/commit/d11158babda56185a8821f51e6c22b193cdcab3b)), closes [#28055](https://github.com/bitnami/charts/issues/28055)
+
+## <small>7.4.8 (2024-06-29)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/memcached] Release 7.4.8 (#27592) ([4c4db1d](https://github.com/bitnami/charts/commit/4c4db1d960a2bb26ed2ae38ae9aea5700b4b4439)), closes [#27592](https://github.com/bitnami/charts/issues/27592)
+
+## <small>7.4.7 (2024-06-18)</small>
+
+* [bitnami/memcached] Release 7.4.7 (#27378) ([8d936ea](https://github.com/bitnami/charts/commit/8d936ea16901f70a55bcbb0624f91191abbe5242)), closes [#27378](https://github.com/bitnami/charts/issues/27378)
+
+## <small>7.4.6 (2024-06-17)</small>
+
+* [bitnami/memcached] Release 7.4.6 (#27245) ([ed69bf2](https://github.com/bitnami/charts/commit/ed69bf299f647c67b34d4e7994b77495b3b1867a)), closes [#27245](https://github.com/bitnami/charts/issues/27245)
+
+## <small>7.4.5 (2024-06-06)</small>
+
+* [bitnami/memcached] Release 7.4.5 (#26981) ([2368223](https://github.com/bitnami/charts/commit/2368223b5c78de347156e1a5c466a1f685d19638)), closes [#26981](https://github.com/bitnami/charts/issues/26981)
 
 ## <small>7.4.4 (2024-06-06)</small>
 
