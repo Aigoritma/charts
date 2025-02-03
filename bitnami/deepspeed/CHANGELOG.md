@@ -1,8 +1,40 @@
 # Changelog
 
-## 2.2.24 (2024-10-29)
+## 2.3.2 (2025-01-23)
 
-* [bitnami/deepspeed] chore: increase client memory ([#30126](https://github.com/bitnami/charts/pull/30126))
+* [bitnami/deepspeed] Release 2.3.2 ([#31532](https://github.com/bitnami/charts/pull/31532))
+
+## <small>2.3.1 (2024-12-19)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/deepspeed] Release 2.3.1 (#31101) ([65c6de3](https://github.com/bitnami/charts/commit/65c6de3cb3602526a79e90b86f25cad32e71a3b9)), closes [#31101](https://github.com/bitnami/charts/issues/31101)
+
+## 2.3.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/deepspeed] Detect non-standard images (#30875) ([8351a22](https://github.com/bitnami/charts/commit/8351a22821c7cbd601eaf4f578dfb7a07df985fa)), closes [#30875](https://github.com/bitnami/charts/issues/30875)
+
+## <small>2.2.28 (2024-12-06)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/deepspeed] Release 2.2.28 (#30813) ([c1702df](https://github.com/bitnami/charts/commit/c1702df266af754d4334c49caaac69100516a526)), closes [#30813](https://github.com/bitnami/charts/issues/30813)
+
+## <small>2.2.27 (2024-11-26)</small>
+
+* [bitnami/deepspeed] Release 2.2.27 (#30623) ([12adcdd](https://github.com/bitnami/charts/commit/12adcdd608b9c2e4f0eef9a33bdd2957f3139b21)), closes [#30623](https://github.com/bitnami/charts/issues/30623)
+
+## <small>2.2.26 (2024-11-15)</small>
+
+* [bitnami/deepspeed] Release 2.2.26 (#30480) ([f116400](https://github.com/bitnami/charts/commit/f116400c1d900e691f8760f8ae29abeb812fe2b0)), closes [#30480](https://github.com/bitnami/charts/issues/30480)
+
+## <small>2.2.25 (2024-11-10)</small>
+
+* [bitnami/deepspeed] Release 2.2.25 (#30385) ([f08566c](https://github.com/bitnami/charts/commit/f08566c38dfd988cc6e87c4e925e43d21f381b95)), closes [#30385](https://github.com/bitnami/charts/issues/30385)
+
+## <small>2.2.24 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/deepspeed] chore: increase client memory (#30126) ([36caa83](https://github.com/bitnami/charts/commit/36caa831851b7e49b77831fe80863078caba2e9c)), closes [#30126](https://github.com/bitnami/charts/issues/30126)
 
 ## <small>2.2.23 (2024-10-23)</small>
 

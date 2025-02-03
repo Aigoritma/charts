@@ -50,13 +50,20 @@ The command deploys Mastodon on the Kubernetes cluster in the default configurat
 
 Bitnami charts allow setting resource requests and limits for all containers inside the chart deployment. These are inside the `resources` value (check parameter table). Setting requests is essential for production workloads and these should be adapted to your specific use case.
 
-To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcePreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
+To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcesPreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
 
 ### [Rolling VS Immutable tags](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html)
 
 It is strongly recommended to use immutable tags in a production environment. This ensures your deployment does not change automatically if the same tag is updated with a different image.
 
 Bitnami will release a new chart updating its containers if a new version of the main container, significant changes, or critical vulnerabilities exist.
+
+### Update credentials
+
+Bitnami charts configure credentials at first boot. Any further change in the secrets or credentials require manual intervention. Follow these instructions:
+
+- Update the user password following [the upstream documentation](https://docs.joinmastodon.org/user/contacts/)
+- Run `helm upgrade` setting the `adminPassword` or `existingSecret` values.
 
 ### External database support
 
@@ -84,7 +91,7 @@ externalRedis.port=6379
 
 ### External elasticsearch support
 
-You may want to have mastodon connect to an external elasticsearch rather than installing one inside your cluster. Typical reasons for this are to use a managed elasticsearch service, or to share a common elasticsearch server for all your applications. To achieve this, the chart allows you to specify credentials for an external elasticsearch with the [`externalElasticsearch` parameter](#parameters). You should also disable the Redis installation with the `elasticsearch.enabled` option. Here is an example:
+You may want to have mastodon connect to an external elasticsearch rather than installing one inside your cluster. Typical reasons for this are to use a managed elasticsearch service, or to share a common elasticsearch server for all your applications. To achieve this, the chart allows you to specify credentials for an external elasticsearch with the [`externalElasticsearch` parameter](#parameters). You should also disable the Elasticsearch installation with the `elasticsearch.enabled` option. Here is an example:
 
 ```console
 elasticsearch.enabled=false
@@ -118,7 +125,7 @@ Adding the TLS parameter (where available) will cause the chart to generate HTTP
 
 [Learn more about Ingress controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/).
 
-### TLS secrets
+### Securing traffic using TLS
 
 This chart facilitates the creation of TLS secrets for use with the Ingress controller (although this is not mandatory). There are several common use cases:
 
@@ -215,6 +222,10 @@ This chart allows you to set your custom affinity using the `affinity` parameter
 
 As an alternative, use one of the preset configurations for pod affinity, pod anti-affinity, and node affinity available at the [bitnami/common](https://github.com/bitnami/charts/tree/main/bitnami/common#affinities) chart. To do so, set the `podAffinityPreset`, `podAntiAffinityPreset`, or `nodeAffinityPreset` parameters inside the `web`, `streaming` and `sidekiq` sections.
 
+### Backup and restore
+
+To back up and restore Helm chart deployments on Kubernetes, you need to back up the persistent volumes from the source deployment and attach them to a new deployment using [Velero](https://velero.io/), a Kubernetes backup/restore tool. Find the instructions for using Velero in [this guide](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-backup-restore-deployments-velero-index.html).
+
 ## Persistence
 
 The [Bitnami mastodon](https://github.com/bitnami/containers/tree/main/bitnami/mastodon) image stores the mastodon data and configurations at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
@@ -223,13 +234,14 @@ The [Bitnami mastodon](https://github.com/bitnami/containers/tree/main/bitnami/m
 
 ### Global parameters
 
-| Name                                                  | Description                                                                                                                                                                                                                                                                                                                                                         | Value  |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`   |
-| `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`   |
-| `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`   |
-| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`   |
-| `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto` |
+| Name                                                  | Description                                                                                                                                                                                                                                                                                                                                                         | Value   |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`    |
+| `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`    |
+| `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`    |
+| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`    |
+| `global.security.allowInsecureImages`                 | Allows skipping image verification                                                                                                                                                                                                                                                                                                                                  | `false` |
+| `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto`  |
 
 ### Common parameters
 
@@ -336,7 +348,7 @@ The [Bitnami mastodon](https://github.com/bitnami/containers/tree/main/bitnami/m
 | `web.podSecurityContext.supplementalGroups`             | Set filesystem extra groups                                                                                                                                                                                               | `[]`             |
 | `web.podSecurityContext.fsGroup`                        | Set Mastodon web pod's Security Context fsGroup                                                                                                                                                                           | `1001`           |
 | `web.containerSecurityContext.enabled`                  | Enabled containers' Security Context                                                                                                                                                                                      | `true`           |
-| `web.containerSecurityContext.seLinuxOptions`           | Set SELinux options in container                                                                                                                                                                                          | `nil`            |
+| `web.containerSecurityContext.seLinuxOptions`           | Set SELinux options in container                                                                                                                                                                                          | `{}`             |
 | `web.containerSecurityContext.runAsUser`                | Set containers' Security Context runAsUser                                                                                                                                                                                | `1001`           |
 | `web.containerSecurityContext.runAsGroup`               | Set containers' Security Context runAsGroup                                                                                                                                                                               | `1001`           |
 | `web.containerSecurityContext.runAsNonRoot`             | Set container's Security Context runAsNonRoot                                                                                                                                                                             | `true`           |
@@ -433,7 +445,7 @@ The [Bitnami mastodon](https://github.com/bitnami/containers/tree/main/bitnami/m
 | `sidekiq.podSecurityContext.supplementalGroups`             | Set filesystem extra groups                                                                                                                                                                                                       | `[]`             |
 | `sidekiq.podSecurityContext.fsGroup`                        | Set Mastodon sidekiq pod's Security Context fsGroup                                                                                                                                                                               | `1001`           |
 | `sidekiq.containerSecurityContext.enabled`                  | Enabled containers' Security Context                                                                                                                                                                                              | `true`           |
-| `sidekiq.containerSecurityContext.seLinuxOptions`           | Set SELinux options in container                                                                                                                                                                                                  | `nil`            |
+| `sidekiq.containerSecurityContext.seLinuxOptions`           | Set SELinux options in container                                                                                                                                                                                                  | `{}`             |
 | `sidekiq.containerSecurityContext.runAsUser`                | Set containers' Security Context runAsUser                                                                                                                                                                                        | `1001`           |
 | `sidekiq.containerSecurityContext.runAsGroup`               | Set containers' Security Context runAsGroup                                                                                                                                                                                       | `1001`           |
 | `sidekiq.containerSecurityContext.runAsNonRoot`             | Set container's Security Context runAsNonRoot                                                                                                                                                                                     | `true`           |
@@ -515,7 +527,7 @@ The [Bitnami mastodon](https://github.com/bitnami/containers/tree/main/bitnami/m
 | `streaming.podSecurityContext.supplementalGroups`             | Set filesystem extra groups                                                                                                                                                                                                           | `[]`             |
 | `streaming.podSecurityContext.fsGroup`                        | Set Mastodon streaming pod's Security Context fsGroup                                                                                                                                                                                 | `1001`           |
 | `streaming.containerSecurityContext.enabled`                  | Enabled containers' Security Context                                                                                                                                                                                                  | `true`           |
-| `streaming.containerSecurityContext.seLinuxOptions`           | Set SELinux options in container                                                                                                                                                                                                      | `nil`            |
+| `streaming.containerSecurityContext.seLinuxOptions`           | Set SELinux options in container                                                                                                                                                                                                      | `{}`             |
 | `streaming.containerSecurityContext.runAsUser`                | Set containers' Security Context runAsUser                                                                                                                                                                                            | `1001`           |
 | `streaming.containerSecurityContext.runAsGroup`               | Set containers' Security Context runAsGroup                                                                                                                                                                                           | `1001`           |
 | `streaming.containerSecurityContext.runAsNonRoot`             | Set container's Security Context runAsNonRoot                                                                                                                                                                                         | `true`           |
@@ -618,7 +630,7 @@ The [Bitnami mastodon](https://github.com/bitnami/containers/tree/main/bitnami/m
 | `initJob.precompileAssets.resourcesPreset`                                        | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if initJob.resources is set (initJob.resources is recommended for production). | `large`          |
 | `initJob.precompileAssets.resources`                                              | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                                 | `{}`             |
 | `initJob.precompileAssets.containerSecurityContext.enabled`                       | Enabled containers' Security Context                                                                                                                                                                                              | `true`           |
-| `initJob.precompileAssets.containerSecurityContext.seLinuxOptions`                | Set SELinux options in container                                                                                                                                                                                                  | `nil`            |
+| `initJob.precompileAssets.containerSecurityContext.seLinuxOptions`                | Set SELinux options in container                                                                                                                                                                                                  | `{}`             |
 | `initJob.precompileAssets.containerSecurityContext.runAsUser`                     | Set containers' Security Context runAsUser                                                                                                                                                                                        | `1001`           |
 | `initJob.precompileAssets.containerSecurityContext.runAsGroup`                    | Set containers' Security Context runAsGroup                                                                                                                                                                                       | `1001`           |
 | `initJob.precompileAssets.containerSecurityContext.runAsNonRoot`                  | Set container's Security Context runAsNonRoot                                                                                                                                                                                     | `true`           |
@@ -638,7 +650,7 @@ The [Bitnami mastodon](https://github.com/bitnami/containers/tree/main/bitnami/m
 | `initJob.migrateAndCreateAdmin.resourcesPreset`                                   | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if initJob.resources is set (initJob.resources is recommended for production). | `small`          |
 | `initJob.migrateAndCreateAdmin.resources`                                         | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                                 | `{}`             |
 | `initJob.migrateAndCreateAdmin.containerSecurityContext.enabled`                  | Enabled containers' Security Context                                                                                                                                                                                              | `true`           |
-| `initJob.migrateAndCreateAdmin.containerSecurityContext.seLinuxOptions`           | Set SELinux options in container                                                                                                                                                                                                  | `nil`            |
+| `initJob.migrateAndCreateAdmin.containerSecurityContext.seLinuxOptions`           | Set SELinux options in container                                                                                                                                                                                                  | `{}`             |
 | `initJob.migrateAndCreateAdmin.containerSecurityContext.runAsUser`                | Set containers' Security Context runAsUser                                                                                                                                                                                        | `1001`           |
 | `initJob.migrateAndCreateAdmin.containerSecurityContext.runAsGroup`               | Set containers' Security Context runAsGroup                                                                                                                                                                                       | `1001`           |
 | `initJob.migrateAndCreateAdmin.containerSecurityContext.runAsNonRoot`             | Set container's Security Context runAsNonRoot                                                                                                                                                                                     | `true`           |
@@ -719,7 +731,7 @@ The [Bitnami mastodon](https://github.com/bitnami/containers/tree/main/bitnami/m
 | `defaultInitContainers.volumePermissions.image.pullSecrets`                               | OS Shell + Utility image pull secrets                                                                                                                                                                                                                 | `[]`                       |
 | `defaultInitContainers.volumePermissions.resourcesPreset`                                 | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production). | `nano`                     |
 | `defaultInitContainers.volumePermissions.resources`                                       | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                                                     | `{}`                       |
-| `defaultInitContainers.volumePermissions.containerSecurityContext.seLinuxOptions`         | Set SELinux options in container                                                                                                                                                                                                                      | `nil`                      |
+| `defaultInitContainers.volumePermissions.containerSecurityContext.seLinuxOptions`         | Set SELinux options in container                                                                                                                                                                                                                      | `{}`                       |
 | `defaultInitContainers.volumePermissions.containerSecurityContext.runAsUser`              | Set init container's Security Context runAsUser                                                                                                                                                                                                       | `0`                        |
 
 ### Other Parameters
@@ -874,6 +886,10 @@ Find more information about how to deal with common errors related to Bitnami's 
 
 ## Upgrading
 
+### To 9.1.0
+
+This version introduces image verification for security purposes. To disable it, set `global.security.allowInsecureImages` to `true`. More details at [GitHub issue](https://github.com/bitnami/charts/issues/30850).
+
 ### To 9.0.0
 
 This major updates Mastodon to version 4.3. This version requires setting new secret env vars like `ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY`, `ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY` and `ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT`. These values are set automatically during the upgrade when not using the `existingSecret` value. When using an external secret make sure that these three values above are set.
@@ -925,7 +941,7 @@ This major updates the MinIO&reg; subchart to its newest major, 12.0.0. This sub
 
 ## License
 
-Copyright &copy; 2024 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
+Copyright &copy; 2025 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

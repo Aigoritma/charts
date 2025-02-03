@@ -1,8 +1,57 @@
 # Changelog
 
-## 11.5.2 (2024-11-04)
+## 11.6.7 (2025-01-28)
 
-* [bitnami/nginx-ingress-controller] Release 11.5.2 ([#30202](https://github.com/bitnami/charts/pull/30202))
+* [bitnami/nginx-ingress-controller] Add --enable-metrics command line argument ([#31605](https://github.com/bitnami/charts/pull/31605))
+
+## <small>11.6.6 (2025-01-24)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.6.6 (#31576) ([e107d55](https://github.com/bitnami/charts/commit/e107d55a9114bc30359e4c2805cd17b4eb6b78c2)), closes [#31576](https://github.com/bitnami/charts/issues/31576)
+
+## <small>11.6.5 (2025-01-17)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.6.5 (#31437) ([94ca4e6](https://github.com/bitnami/charts/commit/94ca4e6c730d99c34d2a52d9c7bcfd12f5a25e1b)), closes [#31437](https://github.com/bitnami/charts/issues/31437)
+
+## <small>11.6.4 (2025-01-10)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.6.4 (#31300) ([dafa15f](https://github.com/bitnami/charts/commit/dafa15f8e54bd49618a0c8e64ca630307c6aab32)), closes [#31300](https://github.com/bitnami/charts/issues/31300)
+
+## <small>11.6.3 (2025-01-08)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.6.3 (#31266) ([99d2e46](https://github.com/bitnami/charts/commit/99d2e4646714a801a0576d0bbc3307793aed780a)), closes [#31266](https://github.com/bitnami/charts/issues/31266)
+
+## <small>11.6.2 (2025-01-08)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.6.2 (#31250) ([04b60b7](https://github.com/bitnami/charts/commit/04b60b7c47f7df12d5712c698d659b925041df5e)), closes [#31250](https://github.com/bitnami/charts/issues/31250)
+
+## <small>11.6.1 (2024-12-31)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/nginx-ingress-controller] Release 11.6.1 (#31188) ([cf402b9](https://github.com/bitnami/charts/commit/cf402b9b53fe6aa48a1d10e1cbd57a5145ef4479)), closes [#31188](https://github.com/bitnami/charts/issues/31188)
+
+## 11.6.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/nginx-ingress-controller] Detect non-standard images (#30961) ([705a15e](https://github.com/bitnami/charts/commit/705a15efcb568567837cb5e53df6b1f5391231c8)), closes [#30961](https://github.com/bitnami/charts/issues/30961)
+
+## <small>11.5.5 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 5) (#30674) ([ed2a546](https://github.com/bitnami/charts/commit/ed2a54617faf763169e6b01a89100b9db32e1000)), closes [#30674](https://github.com/bitnami/charts/issues/30674)
+* [bitnami/nginx-ingress-controller] Release 11.5.5 (#30768) ([4ad3036](https://github.com/bitnami/charts/commit/4ad3036671889e830f1c12e4b9e7697332412fe9)), closes [#30768](https://github.com/bitnami/charts/issues/30768)
+
+## <small>11.5.4 (2024-11-08)</small>
+
+* [bitnami/nginx-ingress-controller] Unify seLinuxOptions default value (#30338) ([ca6b0cb](https://github.com/bitnami/charts/commit/ca6b0cb98a493d8a3b9ffc8b5cbd77b83a13ecac)), closes [#30338](https://github.com/bitnami/charts/issues/30338)
+
+## <small>11.5.3 (2024-11-07)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.5.3 (#30286) ([1f4f361](https://github.com/bitnami/charts/commit/1f4f36140e04270e6633209574f52f647441ab78)), closes [#30286](https://github.com/bitnami/charts/issues/30286)
+
+## <small>11.5.2 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/nginx-ingress-controller] Release 11.5.2 (#30202) ([e775a70](https://github.com/bitnami/charts/commit/e775a70c8338b3bf3f521cf13654ea9453e75dad)), closes [#30202](https://github.com/bitnami/charts/issues/30202)
 
 ## <small>11.5.1 (2024-10-22)</small>
 

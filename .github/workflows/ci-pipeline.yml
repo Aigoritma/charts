@@ -42,7 +42,7 @@ jobs:
           charts_dirs_changed="$(echo "$files_changed" | xargs dirname | grep -o "bitnami/[^/]*" | sort | uniq || true)"
           # Using grep -c as a better alternative to wc -l when dealing with empty strings."
           num_charts_changed="$(echo "$charts_dirs_changed" | grep -c "bitnami" || true)"
-          num_version_bumps="$(echo "$files_changed_data" | jq -r '[.[] | select(.filename|endswith("Chart.yaml")) | select(.patch|contains("+version")) ] | length' )"
+          num_version_bumps="$(echo "$files_changed_data" | jq -r '[.[] | select(.filename|match("bitnami/[^/]+/Chart.yaml")) | select(.patch|contains("+version")) ] | length' )"
           non_readme_files=$(echo "$files_changed" | grep -vc "\.md" || true)
 
           if [[ $(curl -Lks "${PULL_REQUEST_URL}" | jq '.state | index("closed")') != *null* ]]; then
@@ -111,7 +111,7 @@ jobs:
             if [[ -n "$image" && $image != {{*}} ]]; then
               hardcoded_images+=("${image}")
             fi
-          done <<< "$(grep -REoh "\s*image:\s+[\"']*.+[\"']*\s*$" "charts/bitnami/${CHART}/templates" | sed "s/image: [\"']*//" | sed "s/[\"']*$//")"
+          done <<< "$(grep --exclude "NOTES.txt" -REoh "\s*image:\s+[\"']*.+[\"']*\s*$" "charts/bitnami/${CHART}/templates" | sed "s/image: [\"']*//" | sed "s/[\"']*$//")"
 
           echo "${hardcoded_images[@]}"
           if [[ ${#hardcoded_images[@]} -gt 0 ]] ; then
@@ -285,9 +285,9 @@ jobs:
         env:
           CHART: ${{ needs.get-chart.outputs.chart }}
         run: |
-          # Updating CRDs stored at 'bitnami/$CHART/crds' and 'bitnami/$CHART/templates/crds'
+          # Updating CRDs stored at 'bitnami/$CHART/crds', 'bitnami/$CHART/templates/crds', and "bitnami/${CHART}/charts/${CHART}-crds/crds"
           cd $GITHUB_WORKSPACE/charts
-          mapfile -t crd_files < <(find "bitnami/${CHART}/crds" "bitnami/${CHART}/templates/crds" -name "*.yaml" -o -name "*.yml" 2>/dev/null || true)
+          mapfile -t crd_files < <(find "bitnami/${CHART}/crds" "bitnami/${CHART}/templates/crds" "bitnami/${CHART}/charts/${CHART}-crds/crds" -name "*.yaml" -o -name "*.yml" 2>/dev/null || true)
           for file in "${crd_files[@]}"; do
             # Automatically update CRDs that use the '# Source' header
             source_url_tpl="$(head -n 1 $file | grep -E "^# ?Source: ?" | sed -E 's|^# ?Source: ?||' || true)"
@@ -509,6 +509,10 @@ jobs:
           VIB_ENV_ALTERNATIVE_TARGET_PLATFORM: ${{ secrets.VIB_ENV_ALTERNATIVE_TARGET_PLATFORM }}
           # Set kubescape score threshold
           VIB_ENV_KUBESCAPE_SCORE_THRESHOLD: ${{ needs.chart-score.outputs.threshold }}
+          # Set docker credentials
+          VIB_ENV_CHARTS_REGISTRY: oci://registry-1.docker.io/bitnamicharts
+          VIB_ENV_CHARTS_REGISTRY_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          VIB_ENV_CHARTS_REGISTRY_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
   auto-pr-review:
     runs-on: ubuntu-latest
     needs: vib-verify

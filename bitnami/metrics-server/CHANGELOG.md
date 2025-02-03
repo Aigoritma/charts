@@ -1,8 +1,37 @@
 # Changelog
 
-## 7.2.15 (2024-10-02)
+## 7.3.3 (2025-01-24)
 
-* [bitnami/metrics-server] Release 7.2.15 ([#29705](https://github.com/bitnami/charts/pull/29705))
+* [bitnami/metrics-server] Release 7.3.3 ([#31569](https://github.com/bitnami/charts/pull/31569))
+
+## <small>7.3.2 (2025-01-17)</small>
+
+* [bitnami/metrics-server] Release 7.3.2 (#31436) ([1d5b8eb](https://github.com/bitnami/charts/commit/1d5b8eb46dc1021d067f0ee3e423ba9282ffe8a5)), closes [#31436](https://github.com/bitnami/charts/issues/31436)
+
+## <small>7.3.1 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/metrics-server] Release 7.3.1 (#31321) ([cec8fd1](https://github.com/bitnami/charts/commit/cec8fd1493fc794eabf71d84ab09b867e7456176)), closes [#31321](https://github.com/bitnami/charts/issues/31321)
+
+## 7.3.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/metrics-server] Detect non-standard images (#30958) ([fcea029](https://github.com/bitnami/charts/commit/fcea0290ba2cae36820967e5123ccd7e267e6fb8)), closes [#30958](https://github.com/bitnami/charts/issues/30958)
+
+## <small>7.2.17 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/metrics-server] Release 7.2.17 (#30764) ([d516181](https://github.com/bitnami/charts/commit/d516181b9aa4c3e7d2cd9126f28cab97e4f3ec89)), closes [#30764](https://github.com/bitnami/charts/issues/30764)
+
+## <small>7.2.16 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/metrics-server] Release 7.2.16 (#30281) ([5a9502a](https://github.com/bitnami/charts/commit/5a9502a778c63391b73632d618fbb5c30f93171d)), closes [#30281](https://github.com/bitnami/charts/issues/30281)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>7.2.15 (2024-10-02)</small>
+
+* [bitnami/metrics-server] Release 7.2.15 (#29705) ([1401a20](https://github.com/bitnami/charts/commit/1401a20a249384cf8605f800e89f57011732abf9)), closes [#29705](https://github.com/bitnami/charts/issues/29705)
 
 ## <small>7.2.14 (2024-09-06)</small>
 

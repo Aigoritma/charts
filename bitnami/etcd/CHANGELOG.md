@@ -1,8 +1,78 @@
 # Changelog
 
-## 10.4.2 (2024-10-28)
+## 11.0.5 (2025-01-31)
 
-* [bitnami/etcd] Fixing defrag etcd for authenticated and tls clusters ([#30096](https://github.com/bitnami/charts/pull/30096))
+* [bitnami/etcd] Fix: issue with preupgrade job during scale down ([#31539](https://github.com/bitnami/charts/pull/31539))
+
+## <small>11.0.4 (2025-01-24)</small>
+
+* [bitnami/etcd] Release 11.0.4 (#31591) ([b342ec8](https://github.com/bitnami/charts/commit/b342ec844c9106fb724ec952fa4abbe7f26844d1)), closes [#31591](https://github.com/bitnami/charts/issues/31591)
+
+## <small>11.0.3 (2025-01-24)</small>
+
+* [bitnami/etcd] Release 11.0.3 (#31549) ([a3b65e5](https://github.com/bitnami/charts/commit/a3b65e57e2030811813cfcd132c94efa45f57eb5)), closes [#31549](https://github.com/bitnami/charts/issues/31549)
+
+## <small>11.0.2 (2025-01-23)</small>
+
+* [bitnami/etcd] fix for PreUpgrade Job Issue (#31524) ([3bf5de8](https://github.com/bitnami/charts/commit/3bf5de8c881d945a4542784a3628fd8fd7c2f668)), closes [#31524](https://github.com/bitnami/charts/issues/31524)
+
+## <small>11.0.1 (2025-01-20)</small>
+
+* [bitnami/etcd] fixed tls enable handling and v3 environment variable support for defrag cronjob (#31 ([c3c3e43](https://github.com/bitnami/charts/commit/c3c3e4327129db9fa1a88ee7a79227647404d63f)), closes [#31270](https://github.com/bitnami/charts/issues/31270)
+
+## 11.0.0 (2025-01-20)
+
+* [bitnami/etcd] Add pre-upgrade hook (#31161) ([38be6c5](https://github.com/bitnami/charts/commit/38be6c5dcd4ed7bff0c830d8eefe98962310c54d)), closes [#31161](https://github.com/bitnami/charts/issues/31161)
+
+## <small>10.7.3 (2025-01-17)</small>
+
+* [bitnami/etcd] Release 10.7.3 (#31419) ([7ef8d56](https://github.com/bitnami/charts/commit/7ef8d562ec9953460d675b02cfbce336ab66bceb)), closes [#31419](https://github.com/bitnami/charts/issues/31419)
+
+## <small>10.7.2 (2025-01-12)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/etcd] Release 10.7.2 (#31312) ([0e47c54](https://github.com/bitnami/charts/commit/0e47c5464e650b9149a87fbeac84f5a497012f36)), closes [#31312](https://github.com/bitnami/charts/issues/31312)
+
+## <small>10.7.1 (2024-12-11)</small>
+
+* [bitnami/etcd] keep snapshot-pvc (#30815) ([2a63958](https://github.com/bitnami/charts/commit/2a639583f613184bb1e05346ba25169d872db3cf)), closes [#30815](https://github.com/bitnami/charts/issues/30815)
+
+## 10.7.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/etcd] Detect non-standard images (#30895) ([3e2009f](https://github.com/bitnami/charts/commit/3e2009f4310e4c3402df62e5dcc73d911fa4d0b7)), closes [#30895](https://github.com/bitnami/charts/issues/30895)
+
+## <small>10.6.1 (2024-12-04)</small>
+
+* [bitnami/etcd] Release 10.6.1 (#30746) ([9d81d81](https://github.com/bitnami/charts/commit/9d81d81ddbf73b9453468972a8c1501879888d32)), closes [#30746](https://github.com/bitnami/charts/issues/30746)
+
+## 10.6.0 (2024-12-02)
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 2) (#30662) ([50e0570](https://github.com/bitnami/charts/commit/50e0570f98ab15308af7910b405baa4480e5fe3f)), closes [#30662](https://github.com/bitnami/charts/issues/30662)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 1) (#30685) ([be6aa1d](https://github.com/bitnami/charts/commit/be6aa1df0bd4479173a78400fef7295de15b408d)), closes [#30685](https://github.com/bitnami/charts/issues/30685)
+* [bitnami/etcd] Add loadBalancerClass for Etcd chart (#30697) ([7ee741a](https://github.com/bitnami/charts/commit/7ee741ab42e6d1f22c7f3dca386542d7be801dac)), closes [#30697](https://github.com/bitnami/charts/issues/30697)
+
+## <small>10.5.3 (2024-11-12)</small>
+
+* [bitnami/etcd] Release 10.5.3 (#30432) ([5f6b173](https://github.com/bitnami/charts/commit/5f6b173360444a3d78b365f7346c373338db5a90)), closes [#30432](https://github.com/bitnami/charts/issues/30432)
+
+## <small>10.5.2 (2024-11-07)</small>
+
+* [bitnami/etcd] Release 10.5.2 (#30261) ([6944f1e](https://github.com/bitnami/charts/commit/6944f1e3dc10cfaba00e5fd7845a7ed8ae3ad9a5)), closes [#30261](https://github.com/bitnami/charts/issues/30261)
+
+## <small>10.5.1 (2024-11-06)</small>
+
+* [bitnami/etcd]: Fix volume indentation for defrag cronjob (#30192) ([5ef34f9](https://github.com/bitnami/charts/commit/5ef34f968b33e72a065ac6ad1249a1828a5744fd)), closes [#30192](https://github.com/bitnami/charts/issues/30192)
+
+## 10.5.0 (2024-11-05)
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/etcd]: Fix Defrag "bug" and prevent CronJob templates ambiguity (#30077) ([15e3fea](https://github.com/bitnami/charts/commit/15e3feae76b32ac9c6af4588c7b12a14cb76c3b2)), closes [#30077](https://github.com/bitnami/charts/issues/30077) [#30053](https://github.com/bitnami/charts/issues/30053) [#30053](https://github.com/bitnami/charts/issues/30053)
+
+## <small>10.4.2 (2024-10-28)</small>
+
+* [bitnami/etcd] Fixing defrag etcd for authenticated and tls clusters (#30096) ([558e971](https://github.com/bitnami/charts/commit/558e971fd3951ea349cb14739920d3c948f84edb)), closes [#30096](https://github.com/bitnami/charts/issues/30096)
 
 ## <small>10.4.1 (2024-10-24)</small>
 

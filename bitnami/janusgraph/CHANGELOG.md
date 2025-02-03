@@ -1,8 +1,52 @@
 # Changelog
 
-## 0.3.23 (2024-10-18)
+## 1.2.3 (2025-01-28)
 
-* [bitnami/janusgraph] Remove wrong entries from image verification ([#29914](https://github.com/bitnami/charts/pull/29914))
+* [bitnami/janusgraph] Release 1.2.3 ([#31623](https://github.com/bitnami/charts/pull/31623))
+
+## <small>1.2.2 (2025-01-28)</small>
+
+* [bitnami/janusgraph] Release 1.2.2 (#31611) ([f3ff98f](https://github.com/bitnami/charts/commit/f3ff98f6008da6920a12a8946b2f10fcfec4fcbe)), closes [#31611](https://github.com/bitnami/charts/issues/31611)
+
+## <small>1.2.1 (2024-12-19)</small>
+
+* [bitnami/janusgraph] Release 1.2.1 (#31098) ([06badcc](https://github.com/bitnami/charts/commit/06badcc25f8b22afec9026f49f4b187cda7d97fe)), closes [#31098](https://github.com/bitnami/charts/issues/31098)
+
+## 1.2.0 (2024-12-18)
+
+* [birtnami/janusgraph] chore(jmx-exporter): Upgrade image and change args (#31090) ([1c6465d](https://github.com/bitnami/charts/commit/1c6465d5502b8298898896c38302e4500bcae4a4)), closes [#31090](https://github.com/bitnami/charts/issues/31090)
+
+## 1.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/janusgraph] Detect non-standard images (#30906) ([d4d178a](https://github.com/bitnami/charts/commit/d4d178aaad7845199be64ae58b96c73219c072be)), closes [#30906](https://github.com/bitnami/charts/issues/30906)
+
+## <small>1.0.1 (2024-11-29)</small>
+
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 3) (#30666) ([82fc7e2](https://github.com/bitnami/charts/commit/82fc7e2fc12e2648ed22069942203c02bf5d4cc6)), closes [#30666](https://github.com/bitnami/charts/issues/30666)
+* [bitnami/janusgraph] chore: :bulb: :memo: :rotating_light: Rename prometheus "@section" to avoid lin ([5afb864](https://github.com/bitnami/charts/commit/5afb864a77fdf1069d28bd498e52e36b45c17e1b)), closes [#30684](https://github.com/bitnami/charts/issues/30684)
+
+## 1.0.0 (2024-11-22)
+
+* [bitnami/janusgraph] Remove subchart image from values.yaml (#30590) ([01871b7](https://github.com/bitnami/charts/commit/01871b7fa6479528609a785189a09af0186744a4)), closes [#30590](https://github.com/bitnami/charts/issues/30590)
+
+## <small>0.3.26 (2024-11-09)</small>
+
+* [bitnami/janusgraph] Release 0.3.26 (#30371) ([08aa903](https://github.com/bitnami/charts/commit/08aa90318373c7f80c7c3da009b93bbe5d1728fb)), closes [#30371](https://github.com/bitnami/charts/issues/30371)
+
+## <small>0.3.25 (2024-11-08)</small>
+
+* [bitnami/janusgraph] Release 0.3.25 (#30362) ([f68a5da](https://github.com/bitnami/charts/commit/f68a5da959de807b537f653f42bd1132c59d6bf7)), closes [#30362](https://github.com/bitnami/charts/issues/30362)
+
+## <small>0.3.24 (2024-11-08)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/janusgraph] Unify seLinuxOptions default value (#30342) ([756e580](https://github.com/bitnami/charts/commit/756e580b2ae6e14fe59774583e3e8e87d1984684)), closes [#30342](https://github.com/bitnami/charts/issues/30342)
+
+## <small>0.3.23 (2024-10-18)</small>
+
+* [bitnami/janusgraph] Remove wrong entries from image verification (#29914) ([be16cbf](https://github.com/bitnami/charts/commit/be16cbf0564756887e50ad9a54ceb408a672460f)), closes [#29914](https://github.com/bitnami/charts/issues/29914)
 
 ## <small>0.3.22 (2024-10-16)</small>
 

@@ -1,8 +1,35 @@
 # Changelog
 
-## 4.2.21 (2024-10-31)
+## 4.3.3 (2025-01-30)
 
-* [bitnami/pytorch] Release 4.2.21 ([#30158](https://github.com/bitnami/charts/pull/30158))
+* [bitnami/pytorch] Release 4.3.3 ([#31670](https://github.com/bitnami/charts/pull/31670))
+
+## <small>4.3.2 (2025-01-09)</small>
+
+* [bitnami/pytorch] Release 4.3.2 (#31240) ([16d06c1](https://github.com/bitnami/charts/commit/16d06c10fc21e75802c8d40a41a6e009215a7c10)), closes [#31240](https://github.com/bitnami/charts/issues/31240)
+
+## <small>4.3.1 (2025-01-07)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/pytorch] Release 4.3.1 (#31236) ([bf8598c](https://github.com/bitnami/charts/commit/bf8598c47ffa6e86e7031e9a00a1e961528dca8d)), closes [#31236](https://github.com/bitnami/charts/issues/31236)
+
+## 4.3.0 (2024-12-10)
+
+* [bitnami/pytorch] Detect non-standard images (#30939) ([e492f64](https://github.com/bitnami/charts/commit/e492f6436f48e2e93b0eb69456339dc0aa7ec073)), closes [#30939](https://github.com/bitnami/charts/issues/30939)
+
+## <small>4.2.23 (2024-12-10)</small>
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/pytorch] Release 4.2.23 (#30859) ([d5fbf33](https://github.com/bitnami/charts/commit/d5fbf33084bb513868174b99340c16d49957b19a)), closes [#30859](https://github.com/bitnami/charts/issues/30859)
+
+## <small>4.2.22 (2024-11-08)</small>
+
+* [bitnami/pytorch] Unify seLinuxOptions default value (#30331) ([0d5f923](https://github.com/bitnami/charts/commit/0d5f923906477e309181330ff4976e6cd1dc0cf5)), closes [#30331](https://github.com/bitnami/charts/issues/30331)
+
+## <small>4.2.21 (2024-10-31)</small>
+
+* [bitnami/pytorch] Release 4.2.21 (#30158) ([68b3f32](https://github.com/bitnami/charts/commit/68b3f324b6b96947cf232b9f127677dbbb264c07)), closes [#30158](https://github.com/bitnami/charts/issues/30158)
 
 ## <small>4.2.20 (2024-10-29)</small>
 

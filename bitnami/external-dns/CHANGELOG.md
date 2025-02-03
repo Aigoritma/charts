@@ -1,8 +1,48 @@
 # Changelog
 
-## 8.3.12 (2024-10-29)
+## 8.7.3 (2025-01-24)
 
-* [bitnami/external-dns] Allow rfc2136-zone to specify multiple zones ([#28681](https://github.com/bitnami/charts/pull/28681))
+* [bitnami/external-dns] Release 8.7.3 ([#31550](https://github.com/bitnami/charts/pull/31550))
+
+## <small>8.7.2 (2025-01-17)</small>
+
+* [bitnami/external-dns] Release 8.7.2 (#31420) ([57f64e1](https://github.com/bitnami/charts/commit/57f64e192b5ac0d34a05a9af6663df9d7cb64544)), closes [#31420](https://github.com/bitnami/charts/issues/31420)
+
+## <small>8.7.1 (2024-12-19)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/external-dns] Release 8.7.1 (#31120) ([d463e38](https://github.com/bitnami/charts/commit/d463e389493f7f518df70b239336d8d13f02cb2d)), closes [#31120](https://github.com/bitnami/charts/issues/31120)
+
+## 8.7.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/external-dns] Detect non-standard images (#30894) ([e963f07](https://github.com/bitnami/charts/commit/e963f07135a2c6875c96c66080476004275dc9ae)), closes [#30894](https://github.com/bitnami/charts/issues/30894)
+
+## <small>8.6.1 (2024-12-03)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 2) (#30662) ([50e0570](https://github.com/bitnami/charts/commit/50e0570f98ab15308af7910b405baa4480e5fe3f)), closes [#30662](https://github.com/bitnami/charts/issues/30662)
+* [bitnami/external-dns] Release 8.6.1 (#30747) ([a0583f2](https://github.com/bitnami/charts/commit/a0583f223636dcaa284afd5b5068dffec7231f06)), closes [#30747](https://github.com/bitnami/charts/issues/30747)
+
+## 8.6.0 (2024-11-19)
+
+* [bitnami/external-dns] feat: add support to namespaceOverride and simplify name helpers (#30515) ([09a4572](https://github.com/bitnami/charts/commit/09a457226009bd1962710456a9f919052337e8b4)), closes [#30515](https://github.com/bitnami/charts/issues/30515)
+
+## <small>8.5.1 (2024-11-07)</small>
+
+* [bitnami/external-dns] Release 8.5.1 (#30262) ([d21d425](https://github.com/bitnami/charts/commit/d21d425d121adeb175e925898bc9342f296dbd3f)), closes [#30262](https://github.com/bitnami/charts/issues/30262)
+
+## 8.5.0 (2024-11-05)
+
+* [bitnami/external-dns] Add targetLabels option to ServiceMonitor (#29828) ([bba5754](https://github.com/bitnami/charts/commit/bba5754878b88d7ec1ff4326e558cbb24e5c9331)), closes [#29828](https://github.com/bitnami/charts/issues/29828) [#29332](https://github.com/bitnami/charts/issues/29332)
+
+## 8.4.0 (2024-11-05)
+
+* [bitnami/external-dns] add support for multiple rfc2136 zones (#30011) ([174879d](https://github.com/bitnami/charts/commit/174879da11cc5678e38f5bcf8b1633e6a0f64376)), closes [#30011](https://github.com/bitnami/charts/issues/30011)
+
+## <small>8.3.12 (2024-10-29)</small>
+
+* [bitnami/external-dns] Allow rfc2136-zone to specify multiple zones (#28681) ([0868c63](https://github.com/bitnami/charts/commit/0868c633cc6b2f16efcbbd86e0dce126ac0fdcd1)), closes [#28681](https://github.com/bitnami/charts/issues/28681)
 
 ## <small>8.3.11 (2024-10-29)</small>
 

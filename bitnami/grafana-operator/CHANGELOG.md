@@ -1,8 +1,48 @@
 # Changelog
 
-## 4.7.5 (2024-11-04)
+## 4.9.5 (2025-01-24)
 
-* [bitnami/grafana-operator] Release 4.7.5 ([#30195](https://github.com/bitnami/charts/pull/30195))
+* [bitnami/grafana-operator] Release 4.9.5 ([#31556](https://github.com/bitnami/charts/pull/31556))
+
+## <small>4.9.4 (2025-01-21)</small>
+
+* [bitnami/grafana-operator] Add another missing CRD (#31406) ([09c1d15](https://github.com/bitnami/charts/commit/09c1d1585739f1c4e640dee8ef98a4b675d72482)), closes [#31406](https://github.com/bitnami/charts/issues/31406)
+
+## <small>4.9.3 (2025-01-17)</small>
+
+* [bitnami/grafana-operator] Release 4.9.3 (#31422) ([cd7288a](https://github.com/bitnami/charts/commit/cd7288a5a6afefe811fdcda6023863ad3dfc1ed3)), closes [#31422](https://github.com/bitnami/charts/issues/31422)
+
+## <small>4.9.2 (2025-01-16)</small>
+
+* [bitnami/grafana-operator] Release 4.9.2 (#31393) ([f4b98a6](https://github.com/bitnami/charts/commit/f4b98a615b5a98828edd0de67d40f7f7ce1358f4)), closes [#31393](https://github.com/bitnami/charts/issues/31393)
+
+## <small>4.9.1 (2025-01-12)</small>
+
+* [bitnami/grafana-operator] Release 4.9.1 (#31314) ([cff5398](https://github.com/bitnami/charts/commit/cff53987779d2a3f4151564a27c25ba235fdc3c4)), closes [#31314](https://github.com/bitnami/charts/issues/31314)
+
+## 4.9.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/grafana-operator] Detect non-standard images (#30886) ([0fd9040](https://github.com/bitnami/charts/commit/0fd904034666713debda0e1e937e0f547c34dfb2)), closes [#30886](https://github.com/bitnami/charts/issues/30886)
+
+## <small>4.8.1 (2024-12-03)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 2) (#30662) ([50e0570](https://github.com/bitnami/charts/commit/50e0570f98ab15308af7910b405baa4480e5fe3f)), closes [#30662](https://github.com/bitnami/charts/issues/30662)
+* [bitnami/grafana-operator] Release 4.8.1 (#30754) ([4a20938](https://github.com/bitnami/charts/commit/4a2093886e09a898d06a657b5cb52a6c1c772aa8)), closes [#30754](https://github.com/bitnami/charts/issues/30754)
+
+## 4.8.0 (2024-11-07)
+
+* [bitnami/grafana-operator]: Add podAnnotations for Grafana pod (#30240) ([3f8030f](https://github.com/bitnami/charts/commit/3f8030f8cb48113b3e273e9f2880db45f7e763da)), closes [#30240](https://github.com/bitnami/charts/issues/30240)
+
+## <small>4.7.6 (2024-11-07)</small>
+
+* [bitnami/grafana-operator] Release 4.7.6 (#30268) ([b218999](https://github.com/bitnami/charts/commit/b218999326e7d74d2014fab6f35adb656baf83f7)), closes [#30268](https://github.com/bitnami/charts/issues/30268)
+
+## <small>4.7.5 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/grafana-operator] Release 4.7.5 (#30195) ([ff0cafd](https://github.com/bitnami/charts/commit/ff0cafd4ac7651aea8bbf9b08e690a1d58482788)), closes [#30195](https://github.com/bitnami/charts/issues/30195)
 
 ## <small>4.7.4 (2024-10-18)</small>
 

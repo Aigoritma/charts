@@ -1,8 +1,45 @@
 # Changelog
 
-## 4.6.21 (2024-10-28)
+## 4.7.3 (2025-01-24)
 
-* [bitnami/grafana-loki] Fix conditional on ruler PDB creation ([#30112](https://github.com/bitnami/charts/pull/30112))
+* [bitnami/grafana-loki] Release 4.7.3 ([#31555](https://github.com/bitnami/charts/pull/31555))
+
+## <small>4.7.2 (2025-01-17)</small>
+
+* [bitnami/grafana-loki] Release 4.7.2 (#31418) ([2ec50f1](https://github.com/bitnami/charts/commit/2ec50f1a6d09f974b2d45dd78f438466d3449233)), closes [#31418](https://github.com/bitnami/charts/issues/31418)
+
+## <small>4.7.1 (2024-12-18)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/grafana-loki] Release 4.7.1 (#31097) ([9ccfb23](https://github.com/bitnami/charts/commit/9ccfb23668ecb1a785c0aa12f18b69fce21a7400)), closes [#31097](https://github.com/bitnami/charts/issues/31097)
+
+## 4.7.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/grafana-loki] Detect non-standard images (#30876) ([cb2d1b1](https://github.com/bitnami/charts/commit/cb2d1b14eda9779e2da95aa80108590f968ddcb0)), closes [#30876](https://github.com/bitnami/charts/issues/30876)
+
+## <small>4.6.25 (2024-12-05)</small>
+
+* [bitnami/grafana-loki] Release 4.6.25 (#30793) ([6be9a41](https://github.com/bitnami/charts/commit/6be9a41c3c51a3fb33956354c6e07164d8dd05e5)), closes [#30793](https://github.com/bitnami/charts/issues/30793)
+
+## <small>4.6.24 (2024-12-03)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 2) (#30662) ([50e0570](https://github.com/bitnami/charts/commit/50e0570f98ab15308af7910b405baa4480e5fe3f)), closes [#30662](https://github.com/bitnami/charts/issues/30662)
+* [bitnami/grafana-loki] Release 4.6.24 (#30751) ([300ba4b](https://github.com/bitnami/charts/commit/300ba4b3c61532fe725a5eeee419b6f75e63214c)), closes [#30751](https://github.com/bitnami/charts/issues/30751)
+
+## <small>4.6.23 (2024-11-20)</small>
+
+* [bitnami/grafana-loki] Release 4.6.23 (#30543) ([53f1731](https://github.com/bitnami/charts/commit/53f17313951afb5989f8c255add605cfc1c40138)), closes [#30543](https://github.com/bitnami/charts/issues/30543)
+
+## <small>4.6.22 (2024-11-07)</small>
+
+* [bitnami/grafana-loki] Release 4.6.22 (#30267) ([1445d2d](https://github.com/bitnami/charts/commit/1445d2dfb356b74ff8344e33f4c1525db9dcb0bb)), closes [#30267](https://github.com/bitnami/charts/issues/30267)
+
+## <small>4.6.21 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/grafana-loki] Fix conditional on ruler PDB creation (#30112) ([c10c73b](https://github.com/bitnami/charts/commit/c10c73b3185e95507c2ef41fa4d45fcdd899b91c)), closes [#30112](https://github.com/bitnami/charts/issues/30112)
 
 ## <small>4.6.20 (2024-10-17)</small>
 

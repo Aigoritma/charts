@@ -1,8 +1,34 @@
 # Changelog
 
+## 7.1.1 (2025-01-08)
+
+* [bitnami/fluentd] Release 7.1.1 ([#31254](https://github.com/bitnami/charts/pull/31254))
+
+## 7.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/fluentd] Detect non-standard images (#30877) ([7975300](https://github.com/bitnami/charts/commit/79753007a9eb6b973990ecaf84c51f2f1808f991)), closes [#30877](https://github.com/bitnami/charts/issues/30877)
+
+## <small>7.0.3 (2024-11-29)</small>
+
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 2) (#30662) ([50e0570](https://github.com/bitnami/charts/commit/50e0570f98ab15308af7910b405baa4480e5fe3f)), closes [#30662](https://github.com/bitnami/charts/issues/30662)
+* [bitnami/fluentd] Release 7.0.3 (#30679) ([a427241](https://github.com/bitnami/charts/commit/a4272412d4d43d8921beda27403b38990b0dd95a)), closes [#30679](https://github.com/bitnami/charts/issues/30679)
+
+## <small>7.0.2 (2024-11-09)</small>
+
+* [bitnami/fluentd] Release 7.0.2 (#30376) ([aa6e830](https://github.com/bitnami/charts/commit/aa6e830ebf892edd21bd7fb45594d4a674bbc370)), closes [#30376](https://github.com/bitnami/charts/issues/30376)
+
+## <small>7.0.1 (2024-11-05)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/fluentd] Release 7.0.1 (#30212) ([f6e469a](https://github.com/bitnami/charts/commit/f6e469a3894493edc1276df342e339c1146f6c49)), closes [#30212](https://github.com/bitnami/charts/issues/30212)
+
 ## 7.0.0 (2024-10-22)
 
-* [bitnami/fluentd] Major release 7.x.x ([#30031](https://github.com/bitnami/charts/pull/30031))
+* [bitnami/fluentd] Major release 7.x.x (#30031) ([d1b9a1f](https://github.com/bitnami/charts/commit/d1b9a1f3e9eb822b16643667316db02d1eeb5308)), closes [#30031](https://github.com/bitnami/charts/issues/30031)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
 
 ## <small>6.5.13 (2024-09-26)</small>
 

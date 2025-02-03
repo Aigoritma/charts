@@ -1,8 +1,47 @@
 # Changelog
 
-## 9.0.2 (2024-11-01)
+## 9.2.0 (2025-01-29)
 
-* [bitnami/mastodon] Mastodon initjob always tries to create admin on upgrade ([#30171](https://github.com/bitnami/charts/pull/30171))
+* [bitnami/mastodon] feature(minio): Bump MinIO subchart ([#31660](https://github.com/bitnami/charts/pull/31660))
+
+## <small>9.1.3 (2025-01-16)</small>
+
+* [bitnami/mastodon] Release 9.1.3 (#31400) ([a5b97a0](https://github.com/bitnami/charts/commit/a5b97a0c64ce4cabccde11f94e3a641d63cd125b)), closes [#31400](https://github.com/bitnami/charts/issues/31400)
+
+## <small>9.1.2 (2025-01-12)</small>
+
+* [bitnami/mastodon] Release 9.1.2 (#31308) ([712bf25](https://github.com/bitnami/charts/commit/712bf2565a95cc41b01448f2551d19f40ea12898)), closes [#31308](https://github.com/bitnami/charts/issues/31308)
+
+## <small>9.1.1 (2024-12-30)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/mastodon] Avoid mkdir issue when restarting (#31183) ([3e3b679](https://github.com/bitnami/charts/commit/3e3b6794ef9d0fa28a953d0c7932d46788b6d7a9)), closes [#31183](https://github.com/bitnami/charts/issues/31183)
+
+## 9.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/mastodon] Detect non-standard images (#30921) ([eea0814](https://github.com/bitnami/charts/commit/eea08143bfe95dfbd356d5f5fa8eb663b9bf130e)), closes [#30921](https://github.com/bitnami/charts/issues/30921)
+
+## <small>9.0.5 (2024-12-03)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 2) (#30687) ([c457848](https://github.com/bitnami/charts/commit/c457848b2a111aad59830b98f85ffa1e29918e10)), closes [#30687](https://github.com/bitnami/charts/issues/30687)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/mastodon] Release 9.0.5 (#30738) ([aec6ca5](https://github.com/bitnami/charts/commit/aec6ca52a4f822a7f7ccfa26187d413e2acb3ffe)), closes [#30738](https://github.com/bitnami/charts/issues/30738)
+
+## <small>9.0.4 (2024-11-09)</small>
+
+* [bitnami/mastodon] Release 9.0.4 (#30383) ([61061fc](https://github.com/bitnami/charts/commit/61061fc59a391e70de4782d64ce5e4a17d2115f1)), closes [#30383](https://github.com/bitnami/charts/issues/30383)
+
+## <small>9.0.3 (2024-11-08)</small>
+
+* [bitnami/mastodon] Unify seLinuxOptions default value (#30344) ([8bdf86a](https://github.com/bitnami/charts/commit/8bdf86acdaef7ebbf4f2f4e5dcac161f24f0209b)), closes [#30344](https://github.com/bitnami/charts/issues/30344)
+* [bitnami/mastodon][bitnami/prometheus] Fix README.md files typos (#30194) ([0ef19fb](https://github.com/bitnami/charts/commit/0ef19fb4ac61547d519c9cc029f39b7026ab70e2)), closes [#30194](https://github.com/bitnami/charts/issues/30194)
+
+## <small>9.0.2 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/mastodon] Mastodon initjob always tries to create admin on upgrade (#30171) ([14072e2](https://github.com/bitnami/charts/commit/14072e239862772aee311a73fb81538e0e02a377)), closes [#30171](https://github.com/bitnami/charts/issues/30171)
 
 ## <small>9.0.1 (2024-10-21)</small>
 

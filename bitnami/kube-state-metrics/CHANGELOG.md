@@ -1,8 +1,54 @@
 # Changelog
 
-## 4.2.14 (2024-10-02)
+## 5.0.0 (2025-02-03)
 
-* [bitnami/kube-state-metrics] Release 4.2.14 ([#29702](https://github.com/bitnami/charts/pull/29702))
+* [bitnami/kube-state-metrics] Remove resource VPA no longer available since v2.9.0 ([#31689](https://github.com/bitnami/charts/pull/31689))
+
+## 4.4.0 (2025-02-03)
+
+* [bitnami/kube-state-metrics] allow creation of custom resource state (#31687) ([e77870b](https://github.com/bitnami/charts/commit/e77870b5c15230186ce3091f2b620b7de986999f)), closes [#31687](https://github.com/bitnami/charts/issues/31687)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>4.3.4 (2025-01-24)</small>
+
+* [bitnami/kube-state-metrics] Release 4.3.4 (#31562) ([62970ac](https://github.com/bitnami/charts/commit/62970acb89b03bd6169fc418e5562c5e186bbc07)), closes [#31562](https://github.com/bitnami/charts/issues/31562)
+
+## <small>4.3.3 (2025-01-17)</small>
+
+* [bitnami/kube-state-metrics] Release 4.3.3 (#31428) ([c9f8c99](https://github.com/bitnami/charts/commit/c9f8c996cc05e44bc6db425dcfaefdf24d0237cf)), closes [#31428](https://github.com/bitnami/charts/issues/31428)
+
+## <small>4.3.2 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/kube-state-metrics] Release 4.3.2 (#31317) ([a0c2fe7](https://github.com/bitnami/charts/commit/a0c2fe7e76e93b29f8b944b9c7fcb13001da8a5a)), closes [#31317](https://github.com/bitnami/charts/issues/31317)
+
+## <small>4.3.1 (2024-12-10)</small>
+
+* [bitnami/kube-state-metrics] Fix typo in NOTES.txt (#30930) ([c2474c7](https://github.com/bitnami/charts/commit/c2474c7583d5d0dcc953bbc38a3a300e4f84ddaf)), closes [#30930](https://github.com/bitnami/charts/issues/30930)
+
+## 4.3.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/kube-state-metrics] Detect non-standard images (#30913) ([ad6e78f](https://github.com/bitnami/charts/commit/ad6e78f46b05f345be2b8b03f288ba3cc64ead3a)), closes [#30913](https://github.com/bitnami/charts/issues/30913)
+
+## <small>4.2.17 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/kube-state-metrics] Release 4.2.17 (#30759) ([7ac7caa](https://github.com/bitnami/charts/commit/7ac7caa6377a085be8d07a5cfc18be367ad266fd)), closes [#30759](https://github.com/bitnami/charts/issues/30759)
+
+## <small>4.2.16 (2024-11-08)</small>
+
+* [bitnami/kube-state-metrics] Release 4.2.16 (#30365) ([decfaea](https://github.com/bitnami/charts/commit/decfaea1cd0a5e2d6c8caa33301946b03e2fbbd4)), closes [#30365](https://github.com/bitnami/charts/issues/30365)
+
+## <small>4.2.15 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/kube-state-metrics] Release 4.2.15 (#30277) ([068ec88](https://github.com/bitnami/charts/commit/068ec88147390ea823af22ead339ab4e0e5b42d8)), closes [#30277](https://github.com/bitnami/charts/issues/30277)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>4.2.14 (2024-10-02)</small>
+
+* [bitnami/kube-state-metrics] Release 4.2.14 (#29702) ([ae112cf](https://github.com/bitnami/charts/commit/ae112cfdf05f6648bdbc0725e7d75ec26a1abd55)), closes [#29702](https://github.com/bitnami/charts/issues/29702)
 
 ## <small>4.2.13 (2024-09-06)</small>
 

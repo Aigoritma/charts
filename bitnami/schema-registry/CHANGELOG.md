@@ -1,8 +1,35 @@
 # Changelog
 
-## 21.0.3 (2024-11-04)
+## 23.1.2 (2025-01-28)
 
-* [bitnami/schema-registry] Release 21.0.3 ([#30190](https://github.com/bitnami/charts/pull/30190))
+* [bitnami/schema-registry] Release 23.1.2 ([#31640](https://github.com/bitnami/charts/pull/31640))
+
+## <small>23.1.1 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/schema-registry] Release 23.1.1 (#31325) ([8d00a21](https://github.com/bitnami/charts/commit/8d00a21f9a7b4c1c9dad0981ff73a4c23a1419d2)), closes [#31325](https://github.com/bitnami/charts/issues/31325)
+
+## 23.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/schema-registry] Detect non-standard images (#30965) ([fbbcc3f](https://github.com/bitnami/charts/commit/fbbcc3f9f48f692cb9c316f4d317c3fa0795ea3b)), closes [#30965](https://github.com/bitnami/charts/issues/30965)
+
+## 23.0.0 (2024-12-04)
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/*] docs: fix copy-paste typos with wrong references to Airflow (#30541) ([0a225d4](https://github.com/bitnami/charts/commit/0a225d44c1969429573b4e2630068eff129b6a96)), closes [#30541](https://github.com/bitnami/charts/issues/30541)
+* [bitnami/schema-registry] Release 23.0.0 (#30775) ([c0c64eb](https://github.com/bitnami/charts/commit/c0c64ebd9eef815a8a8ce4345fc03e4c689026bf)), closes [#30775](https://github.com/bitnami/charts/issues/30775)
+
+## 22.0.0 (2024-11-12)
+
+* [bitnami/schema-registry] Update kafka subchart to 31.0.0 (#30425) ([aeb7d43](https://github.com/bitnami/charts/commit/aeb7d430e5db1e05358978a7dffffca5b56298f1)), closes [#30425](https://github.com/bitnami/charts/issues/30425)
+
+## <small>21.0.3 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/schema-registry] Release 21.0.3 (#30190) ([e0c7e61](https://github.com/bitnami/charts/commit/e0c7e6100c124751454fb670e200220972c662e4)), closes [#30190](https://github.com/bitnami/charts/issues/30190)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
 
 ## <small>21.0.2 (2024-09-25)</small>
 

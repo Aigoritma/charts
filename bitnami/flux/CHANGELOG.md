@@ -1,8 +1,37 @@
 # Changelog
 
-## 2.3.20 (2024-10-02)
+## 2.4.3 (2025-01-24)
 
-* [bitnami/flux] Release 2.3.20 ([#29691](https://github.com/bitnami/charts/pull/29691))
+* [bitnami/flux] Release 2.4.3 ([#31552](https://github.com/bitnami/charts/pull/31552))
+
+## <small>2.4.2 (2025-01-17)</small>
+
+* [bitnami/flux] Release 2.4.2 (#31416) ([640bfd8](https://github.com/bitnami/charts/commit/640bfd8b53078ebca0b9a87aa576931253c84196)), closes [#31416](https://github.com/bitnami/charts/issues/31416)
+
+## <small>2.4.1 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/flux] Release 2.4.1 (#31313) ([0ed2580](https://github.com/bitnami/charts/commit/0ed2580d9f39676cb6b12ab5c9f5df680fca7efc)), closes [#31313](https://github.com/bitnami/charts/issues/31313)
+
+## 2.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/flux] Detect non-standard images (#30892) ([a4f4a9c](https://github.com/bitnami/charts/commit/a4f4a9c2bdc0bd2f5b91a307ddded6c22f9b4f03)), closes [#30892](https://github.com/bitnami/charts/issues/30892)
+
+## <small>2.3.22 (2024-12-03)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 2) (#30662) ([50e0570](https://github.com/bitnami/charts/commit/50e0570f98ab15308af7910b405baa4480e5fe3f)), closes [#30662](https://github.com/bitnami/charts/issues/30662)
+* [bitnami/flux] Release 2.3.22 (#30749) ([1ecb342](https://github.com/bitnami/charts/commit/1ecb342be439ce78a2bddb4cf433a9384505c09b)), closes [#30749](https://github.com/bitnami/charts/issues/30749)
+
+## <small>2.3.21 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/flux] Release 2.3.21 (#30263) ([0a49b81](https://github.com/bitnami/charts/commit/0a49b81709b631dcd2e3f4c71d2c33deb52fdd91)), closes [#30263](https://github.com/bitnami/charts/issues/30263)
+
+## <small>2.3.20 (2024-10-02)</small>
+
+* [bitnami/flux] Release 2.3.20 (#29691) ([ab05b82](https://github.com/bitnami/charts/commit/ab05b82e2d7f572995086c0935b6fbfaad70d184)), closes [#29691](https://github.com/bitnami/charts/issues/29691)
 
 ## <small>2.3.19 (2024-09-26)</small>
 

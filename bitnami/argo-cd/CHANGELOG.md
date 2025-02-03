@@ -1,8 +1,62 @@
 # Changelog
 
-## 7.0.21 (2024-11-04)
+## 7.1.6 (2025-01-29)
 
-* [bitnami/argo-cd] Release 7.0.21 ([#30196](https://github.com/bitnami/charts/pull/30196))
+* [bitnami/argo-cd] Release 7.1.6 ([#31669](https://github.com/bitnami/charts/pull/31669))
+
+## <small>7.1.5 (2025-01-24)</small>
+
+* [bitnami/argo-cd] Release 7.1.5 (#31541) ([71993b6](https://github.com/bitnami/charts/commit/71993b6e801a3c0d1308e4be88d8f14ce26a8cab)), closes [#31541](https://github.com/bitnami/charts/issues/31541)
+
+## <small>7.1.4 (2025-01-16)</small>
+
+* [bitnami/argo-cd] Release 7.1.4 (#31407) ([aef6466](https://github.com/bitnami/charts/commit/aef6466f8b9ee9d19b37dccd89d612673b487723)), closes [#31407](https://github.com/bitnami/charts/issues/31407)
+
+## <small>7.1.3 (2025-01-14)</small>
+
+* [bitnami/argo-cd] Release 7.1.3 (#31363) ([a6f0eb1](https://github.com/bitnami/charts/commit/a6f0eb19404e6760719e2f41c1f84c42adf49005)), closes [#31363](https://github.com/bitnami/charts/issues/31363)
+
+## <small>7.1.2 (2025-01-03)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/argo-cd] Release 7.1.2 (#31213) ([315299e](https://github.com/bitnami/charts/commit/315299e498e0b75494787fe330da6a029d4b8f7d)), closes [#31213](https://github.com/bitnami/charts/issues/31213)
+
+## <small>7.1.1 (2024-12-11)</small>
+
+* [bitnami/argo-cd] Release 7.1.1 (#30999) ([bff1f8c](https://github.com/bitnami/charts/commit/bff1f8c9c8a57a9dedd26997253ad122671d0153)), closes [#30999](https://github.com/bitnami/charts/issues/30999)
+
+## 7.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/argo-cd] Detect non-standard images (#30862) ([bfac8cc](https://github.com/bitnami/charts/commit/bfac8cc4ac38af311b6f5d0eab29028a2431b68c)), closes [#30862](https://github.com/bitnami/charts/issues/30862)
+
+## <small>7.0.26 (2024-12-03)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 1) (#30660) ([7409ca4](https://github.com/bitnami/charts/commit/7409ca4c21869fabe1532dd4f3ff24895df71c6d)), closes [#30660](https://github.com/bitnami/charts/issues/30660)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/argo-cd] Release 7.0.26 (#30743) ([70bd184](https://github.com/bitnami/charts/commit/70bd184d88136b8a2e87c9eab5c11371c14d922d)), closes [#30743](https://github.com/bitnami/charts/issues/30743)
+
+## <small>7.0.25 (2024-11-20)</small>
+
+* [bitnami/argo-cd] Release 7.0.25 (#30549) ([eaccca8](https://github.com/bitnami/charts/commit/eaccca888523fc41578e5f5c0f16e200e94c61e2)), closes [#30549](https://github.com/bitnami/charts/issues/30549)
+
+## <small>7.0.24 (2024-11-15)</small>
+
+* [bitnami/argo-cd] Release 7.0.24 (#30471) ([7e640aa](https://github.com/bitnami/charts/commit/7e640aa47963982bd3432301a72ea8ee48573b97)), closes [#30471](https://github.com/bitnami/charts/issues/30471)
+
+## <small>7.0.23 (2024-11-14)</small>
+
+* [bitnami/argo-cd] Fix repo-server PDB label selector (#30391) ([d2b71c2](https://github.com/bitnami/charts/commit/d2b71c2cc92ea4c46c27c40781106b948d2194a6)), closes [#30391](https://github.com/bitnami/charts/issues/30391)
+
+## <small>7.0.22 (2024-11-07)</small>
+
+* [bitnami/argo-cd] Release 7.0.22 (#30253) ([981c935](https://github.com/bitnami/charts/commit/981c9350763c152831eaa8dc310b3abd585fd705)), closes [#30253](https://github.com/bitnami/charts/issues/30253)
+
+## <small>7.0.21 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/argo-cd] Release 7.0.21 (#30196) ([f6e62be](https://github.com/bitnami/charts/commit/f6e62be0823be6af54b6cad537adf03a91630e0d)), closes [#30196](https://github.com/bitnami/charts/issues/30196)
 
 ## <small>7.0.20 (2024-10-18)</small>
 

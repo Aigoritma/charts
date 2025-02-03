@@ -1,8 +1,51 @@
 # Changelog
 
-## 10.0.1 (2024-10-31)
+## 11.1.3 (2025-01-24)
 
-* [bitnami/argo-workflows] Release 10.0.1 ([#30156](https://github.com/bitnami/charts/pull/30156))
+* [bitnami/argo-workflows] Release 11.1.3 ([#31542](https://github.com/bitnami/charts/pull/31542))
+
+## <small>11.1.2 (2025-01-16)</small>
+
+* [bitnami/argo-workflows] Release 11.1.2 (#31408) ([fc7398e](https://github.com/bitnami/charts/commit/fc7398e8b2d6b1e29fe2e2730b2af217dc307af3)), closes [#31408](https://github.com/bitnami/charts/issues/31408)
+
+## <small>11.1.1 (2025-01-12)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/argo-workflows] Release 11.1.1 (#31309) ([bd97fdc](https://github.com/bitnami/charts/commit/bd97fdc65c501405bc15950b778ae954a3959bf7)), closes [#31309](https://github.com/bitnami/charts/issues/31309)
+
+## 11.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/argo-workflows] Detect non-standard images (#30864) ([f47e86a](https://github.com/bitnami/charts/commit/f47e86a9b51dee8812bf752f2946fc6e5c24e3e0)), closes [#30864](https://github.com/bitnami/charts/issues/30864)
+
+## <small>11.0.3 (2024-12-03)</small>
+
+* [bitnami/argo-workflows] Release 11.0.3 (#30740) ([a3c6c77](https://github.com/bitnami/charts/commit/a3c6c77e3ed1f94056b2fc4212167b326c66bff6)), closes [#30740](https://github.com/bitnami/charts/issues/30740)
+
+## <small>11.0.2 (2024-12-02)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 1) (#30660) ([7409ca4](https://github.com/bitnami/charts/commit/7409ca4c21869fabe1532dd4f3ff24895df71c6d)), closes [#30660](https://github.com/bitnami/charts/issues/30660)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/argo-workflows] Release 11.0.2 (#30715) ([c186498](https://github.com/bitnami/charts/commit/c18649871d5e3d7b757dffd00b3b9bf4a71dc95f)), closes [#30715](https://github.com/bitnami/charts/issues/30715)
+
+## <small>11.0.1 (2024-11-15)</small>
+
+* [bitnami/argo-workflows] Release 11.0.1 (#30474) ([1c7a861](https://github.com/bitnami/charts/commit/1c7a8616140ab171241f0e0896aa1e74ac31fcc0)), closes [#30474](https://github.com/bitnami/charts/issues/30474)
+
+## 11.0.0 (2024-11-12)
+
+* [bitnami/argo-workflows] chore!: :arrow_up: :boom: Bump MySQL subchart to 12 (#30430) ([2486b2b](https://github.com/bitnami/charts/commit/2486b2b6cdd82475b8b4ea9c4672092c7ec2eb9a)), closes [#30430](https://github.com/bitnami/charts/issues/30430)
+
+## <small>10.0.2 (2024-11-07)</small>
+
+* [bitnami/argo-workflows] Release 10.0.2 (#30254) ([cb88066](https://github.com/bitnami/charts/commit/cb88066e9a869f78b5f4cea63512ea700f1aa348)), closes [#30254](https://github.com/bitnami/charts/issues/30254)
+
+## <small>10.0.1 (2024-10-31)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/argo-workflows] Release 10.0.1 (#30156) ([844a5df](https://github.com/bitnami/charts/commit/844a5df12aab12876d5822155d9c0c0f0dcb0aa5)), closes [#30156](https://github.com/bitnami/charts/issues/30156)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
 
 ## 10.0.0 (2024-10-03)
 

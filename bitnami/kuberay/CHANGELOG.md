@@ -1,8 +1,42 @@
 # Changelog
 
-## 1.2.18 (2024-10-02)
+## 1.3.4 (2025-01-24)
 
-* [bitnami/kuberay] Release 1.2.18 ([#29703](https://github.com/bitnami/charts/pull/29703))
+* [bitnami/kuberay] Release 1.3.4 ([#31566](https://github.com/bitnami/charts/pull/31566))
+
+## <small>1.3.3 (2025-01-20)</small>
+
+* [bitnami/kuberay] Adding the list and watch for endpoints resource to the cluster role to solve #306 ([173f920](https://github.com/bitnami/charts/commit/173f9209b057ea150870a867258e8cbc345a3c3e)), closes [#30648](https://github.com/bitnami/charts/issues/30648) [#31226](https://github.com/bitnami/charts/issues/31226) [#30648](https://github.com/bitnami/charts/issues/30648)
+
+## <small>1.3.2 (2025-01-17)</small>
+
+* [bitnami/kuberay] Release 1.3.2 (#31429) ([e444d5f](https://github.com/bitnami/charts/commit/e444d5fd384a6f6191f6dd2234752f4fd4b40230)), closes [#31429](https://github.com/bitnami/charts/issues/31429)
+
+## <small>1.3.1 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/kuberay] Release 1.3.1 (#31319) ([83e9735](https://github.com/bitnami/charts/commit/83e9735310a4599d4da2f070e4fbd8934a4a04da)), closes [#31319](https://github.com/bitnami/charts/issues/31319)
+
+## 1.3.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/kuberay] Detect non-standard images (#30918) ([a9558bc](https://github.com/bitnami/charts/commit/a9558bc475d78cbb012de01d09b04df980a7aec9)), closes [#30918](https://github.com/bitnami/charts/issues/30918)
+
+## <small>1.2.20 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 3) (#30666) ([82fc7e2](https://github.com/bitnami/charts/commit/82fc7e2fc12e2648ed22069942203c02bf5d4cc6)), closes [#30666](https://github.com/bitnami/charts/issues/30666)
+* [bitnami/kuberay] Release 1.2.20 (#30760) ([957d8a1](https://github.com/bitnami/charts/commit/957d8a193b23382675b451452ce0197ff03f081c)), closes [#30760](https://github.com/bitnami/charts/issues/30760)
+
+## <small>1.2.19 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/kuberay] Release 1.2.19 (#30278) ([f923bc9](https://github.com/bitnami/charts/commit/f923bc9d4a3120b8787da2e1d1db712e132897bc)), closes [#30278](https://github.com/bitnami/charts/issues/30278)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>1.2.18 (2024-10-02)</small>
+
+* [bitnami/kuberay] Release 1.2.18 (#29703) ([b971616](https://github.com/bitnami/charts/commit/b971616dbd1cb98e5319f2370c4d16cb18a7aeb2)), closes [#29703](https://github.com/bitnami/charts/issues/29703)
 
 ## <small>1.2.17 (2024-09-29)</small>
 

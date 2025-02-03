@@ -1,8 +1,30 @@
 # Changelog
 
-## 11.2.22 (2024-10-29)
+## 11.3.2 (2025-01-24)
 
-* [bitnami/apache] Release 11.2.22 ([#30118](https://github.com/bitnami/charts/pull/30118))
+* [bitnami/apache] Release 11.3.2 ([#31540](https://github.com/bitnami/charts/pull/31540))
+
+## <small>11.3.1 (2025-01-17)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/apache] Release 11.3.1 (#31449) ([9a77ff2](https://github.com/bitnami/charts/commit/9a77ff22affb31fae8ad04bb098d97112695e0cb)), closes [#31449](https://github.com/bitnami/charts/issues/31449)
+
+## 11.3.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/apache] Detect non-standard images (#30857) ([5666175](https://github.com/bitnami/charts/commit/5666175ae207b9527bb15070daf92f616aaa6c6a)), closes [#30857](https://github.com/bitnami/charts/issues/30857)
+
+## <small>11.2.23 (2024-12-08)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 1) (#30660) ([7409ca4](https://github.com/bitnami/charts/commit/7409ca4c21869fabe1532dd4f3ff24895df71c6d)), closes [#30660](https://github.com/bitnami/charts/issues/30660)
+* [bitnami/apache] Release 11.2.23 (#30827) ([f504f07](https://github.com/bitnami/charts/commit/f504f07780487955d3391075cc82721df6601bd8)), closes [#30827](https://github.com/bitnami/charts/issues/30827)
+
+## <small>11.2.22 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/apache] Release 11.2.22 (#30118) ([4d149a0](https://github.com/bitnami/charts/commit/4d149a0c7bb99f680887ae1184bf058b6a6a7fe5)), closes [#30118](https://github.com/bitnami/charts/issues/30118)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
 
 ## <small>11.2.21 (2024-10-16)</small>
 
