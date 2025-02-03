@@ -1,10 +1,6 @@
 name: '[Index] Monitor remote index.yaml'
 
 on:
-  schedule:
-    # Every 10 minutes
-    - cron: '*/10 * * * *'
-
 # Remove all permissions by default
 permissions: {}
 
