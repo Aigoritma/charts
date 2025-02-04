@@ -3,8 +3,6 @@
 
 name: '[Support] Close Solved issues'
 on:
-  schedule:
-# Remove all permissions by default. Actions are performed by Bitnami Bot
 permissions: {}
 jobs:
   stale:
