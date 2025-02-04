@@ -1,7 +1,5 @@
 name: '[Index] Sync index.yaml with OCI releases'
 on:
-  schedule:
-    - cron: "*/30 * * * *"
 # Remove all permissions by default.
 permissions: {}
 jobs:
